@@ -1,0 +1,36 @@
+
+/* Scientific image atlas and accessible lightbox */
+.figure-gallery-summary{display:grid;grid-template-columns:repeat(3,1fr);border:1px solid var(--line);margin:1rem 0 3rem;background:var(--surface)}
+.figure-gallery-summary>div{display:flex;flex-direction:column;gap:.35rem;padding:1.4rem 1.65rem;border-right:1px solid var(--line)}
+.figure-gallery-summary>div:last-child{border:0}
+.figure-gallery-summary strong{font-family:Georgia,serif;font-size:2.1rem;font-weight:400;color:var(--accent-dark)}
+.figure-gallery-summary span{font-size:.79rem;color:var(--muted);line-height:1.6}
+.figure-gallery-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1rem}
+.figure-gallery-item{display:flex;flex-direction:column;text-decoration:none!important;background:var(--surface);border:1px solid var(--line);color:var(--ink);min-width:0;transition:border-color .2s ease,transform .2s ease}
+.figure-gallery-item:hover{border-color:var(--accent);transform:translateY(-2px)}
+.figure-gallery-item__media{height:238px;background:var(--surface-tint);padding:1.1rem;display:flex;align-items:center;justify-content:center;overflow:hidden}
+.figure-gallery-item__media img{display:block;max-width:100%;max-height:100%;object-fit:contain;box-shadow:0 2px 8px rgba(0,0,0,.08)}
+.figure-gallery-item__meta{padding:1.25rem 1.35rem 1.45rem;display:flex;flex-direction:column;flex:1}
+.figure-gallery-item__index{font-size:.68rem;letter-spacing:.11em;color:var(--accent)}
+.figure-gallery-item__meta h3{font-family:var(--font-literary);color:var(--ink);font-size:1.28rem;font-weight:600;line-height:1.5;margin:.75rem 0}
+.figure-gallery-item__meta p{font-size:.83rem;line-height:1.85;color:var(--muted);margin:0 0 1rem}
+.figure-gallery-item__credit{font-size:.72rem;color:var(--accent-dark);margin-top:auto}
+.figure-gallery-method{border-top:1px solid var(--line);margin:3.7rem 0;padding-top:1.8rem;max-width:850px}
+.figure-gallery-method h2{font-size:1.65rem;font-family:var(--font-literary);margin:1rem 0}
+.figure-gallery-method p:not(.eyebrow-small){font-size:.9rem;line-height:2;color:var(--muted)}
+.book-plate__media{position:relative}
+.book-plate__media img{cursor:zoom-in}
+.book-plate__media img:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+.book-plate__media:has(img:hover):after{content:"点击放大 ↗";position:absolute;bottom:1.9rem;right:1.8rem;background:rgba(39,47,41,.82);color:#f6f3eb;font:600 .71rem var(--font-interface);padding:.45rem .68rem;letter-spacing:.05em;pointer-events:none}
+.plate-image-fallback{font-family:var(--font-interface);font-size:.83rem;line-height:1.85;color:var(--muted);background:var(--surface);border:1px dashed var(--line);padding:2rem 1rem;text-align:center}
+.figure-gallery-item .plate-image-fallback{font-size:.77rem;padding:1.2rem 1rem}
+.plate-lightbox{position:fixed;inset:0;z-index:9999;background:rgba(15,21,18,.95);display:flex;align-items:center;justify-content:center;flex-direction:column;gap:.8rem;padding:2.2rem .9rem;color:#f6f3e9;overscroll-behavior:contain}
+.plate-lightbox__image{max-height:77vh;max-width:min(94vw,1450px);object-fit:contain;background:#faf8f1;box-shadow:0 5px 28px #0005}
+.plate-lightbox__description{font-family:var(--font-interface);max-width:780px;max-height:3.8em;overflow:auto;font-size:.83rem;line-height:1.9;color:#ddd9cf;text-align:center;padding:0 .6rem}
+.plate-lightbox__actions{display:flex;justify-content:center;gap:.9rem;flex-wrap:wrap}
+.plate-lightbox__actions a,.plate-lightbox__actions button{font:600 .82rem var(--font-interface);background:transparent;border:1px solid #99a499;color:#f1ede6;padding:.62rem 1rem;text-decoration:none;cursor:pointer}
+.plate-lightbox__actions a:hover,.plate-lightbox__actions button:hover{background:#344238}
+.plate-lightbox__close{position:absolute;top:1rem;right:1.2rem;color:#f5f1e8!important;font-size:1.5rem!important;border:0!important;padding:.5rem 1rem!important}
+@media(max-width:990px){.figure-gallery-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:650px){.figure-gallery-grid{grid-template-columns:1fr}.figure-gallery-summary>div{padding:1rem}.figure-gallery-summary strong{font-size:1.5rem}.figure-gallery-summary span{font-size:.7rem}.figure-gallery-item__media{height:240px}.plate-lightbox{padding:2.8rem .5rem 1.2rem}.plate-lightbox__image{max-height:68vh;max-width:96vw}.plate-lightbox__description{max-height:4em;font-size:.76rem}.plate-lightbox__close{top:.4rem;right:.5rem}}
+@media(prefers-reduced-motion:reduce){.figure-gallery-item{transition:none}}

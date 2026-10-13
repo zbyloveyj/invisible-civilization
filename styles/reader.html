@@ -211,3 +211,48 @@ else ready();
   if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",apply,{once:true});else apply();
 })();
 </script>
+
+
+<script>
+/* Every in-story plate is keyboard accessible; zooms are entirely local. */
+(function(){
+ function init(){
+  document.querySelectorAll(".book-plate__media img").forEach(function(img){
+   img.tabIndex=0;img.setAttribute("role","button");img.setAttribute("aria-label","放大图版："+(img.alt||"科学图版"));
+   function enlarge(){
+    if(!img.complete||!img.naturalWidth)return;
+    const fig=img.closest(".book-plate"),caption=fig?.querySelector(".plate-description")?.textContent||img.alt||"科学图版";
+    const prevOverflow=document.body.style.overflow;
+    const curtain=document.createElement("div");curtain.className="plate-lightbox";curtain.setAttribute("role","dialog");curtain.setAttribute("aria-modal","true");curtain.setAttribute("aria-label","图版放大视图");curtain.tabIndex=-1;
+    const big=document.createElement("img");big.className="plate-lightbox__image";big.src=img.currentSrc||img.src;big.alt=img.alt||caption;
+    const desc=document.createElement("div");desc.className="plate-lightbox__description";desc.textContent=caption;
+    const actions=document.createElement("div");actions.className="plate-lightbox__actions";
+    const open=document.createElement("a");open.textContent="新窗口查看原图 ↗";open.href=big.src;open.target="_blank";open.rel="noopener noreferrer";
+    const close=document.createElement("button");close.type="button";close.textContent="关闭";close.setAttribute("aria-label","关闭图版放大视图");close.className="plate-lightbox__close";
+    actions.append(open);curtain.append(big,desc,actions,close);
+    let finished=false;
+    function shutdown(){if(finished)return;finished=true;document.removeEventListener("keydown",keys);curtain.remove();document.body.style.overflow=prevOverflow;img.focus({preventScroll:true})}
+    function keys(e){if(e.key==="Escape"){e.preventDefault();shutdown()}if(e.key==="Tab"){e.preventDefault();close.focus()}}
+    close.addEventListener("click",shutdown);
+    curtain.addEventListener("click",e=>{if(e.target===curtain)shutdown()});
+    document.addEventListener("keydown",keys);
+    document.body.append(curtain);document.body.style.overflow="hidden";close.focus();
+   }
+   img.addEventListener("click",enlarge);
+   img.addEventListener("keydown",e=>{if(e.key==="Enter"||e.key===" "){e.preventDefault();enlarge()}});
+  });
+  document.querySelectorAll(".book-plate--historical img,.figure-gallery-item__media img").forEach(function(img){
+   function failure(){
+     const area=img.closest(".book-plate__media,.figure-gallery-item__media");
+     if(!area||area.querySelector(".plate-image-fallback"))return;
+     img.style.display="none";const notice=document.createElement("div");notice.className="plate-image-fallback";
+     notice.textContent="馆藏图片暂时未能加载，仍可通过图注或图版目录查看来源。";
+     area.append(notice);
+   }
+   img.addEventListener("error",failure,{once:true});
+   if(img.complete&&img.naturalWidth===0)failure();
+  });
+ }
+ if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",init,{once:true});else init();
+})();
+</script>

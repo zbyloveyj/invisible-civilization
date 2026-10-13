@@ -131,6 +131,7 @@ format:
     css:
       - styles/reader.css
       - styles/home-v2.css
+      - styles/figure-gallery.css
     include-after-body: styles/reader.html
     toc: false
     smooth-scroll: true
