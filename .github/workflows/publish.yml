@@ -19,6 +19,8 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: quarto-dev/quarto-actions/setup@v2
+      - name: Check manuscript structure and continuity
+        run: python scripts/editorial_lint.py
       - name: Render HTML book
         run: quarto render --to html
       - name: Validate published pages, links and reading scripts
