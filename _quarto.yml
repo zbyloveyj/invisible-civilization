@@ -10,10 +10,46 @@ book:
   subtitle: "微生物与人类的三百年"
   author: "一心问道"
   site-url: "https://zbyloveyj.github.io/invisible-civilization/"
-  search: true
+  page-navigation: true
+  navbar:
+    title: 看不见的文明
+    search: true
+    pinned: true
+    collapse-below: lg
+    left:
+      - text: 首页
+        href: index.qmd
+      - text: 六卷目录
+        href: contents.qmd
+      - text: 科学年表
+        href: timeline.qmd
+      - text: 关于作者
+        href: about.qmd
+      - text: 下载
+        href: download.qmd
+    right:
+      - icon: github
+        href: https://github.com/zbyloveyj/invisible-civilization
+        aria-label: GitHub 仓库
+  sidebar:
+    title: 六卷 · 四十八章
+    style: docked
+    collapse-level: 1
+  search:
+    location: navbar
+    type: overlay
+    limit: 12
+  page-footer:
+    left: "© 2026 一心问道 · 保留所有权利"
+    right:
+      - text: 版本说明
+        href: appendices/editorial-note.qmd
+      - text: GitHub
+        href: https://github.com/zbyloveyj/invisible-civilization
   chapters:
     - index.qmd
-    - part: "第一卷 · 未知的生命"
+    - contents.qmd
+    - part: volumes/volume-01.qmd
       chapters:
         - chapters/volume-01/chapter-01.qmd
         - chapters/volume-01/chapter-02.qmd
@@ -23,7 +59,7 @@ book:
         - chapters/volume-01/chapter-06.qmd
         - chapters/volume-01/chapter-07.qmd
         - chapters/volume-01/chapter-08.qmd
-    - part: "第二卷 · 疾病与城市"
+    - part: volumes/volume-02.qmd
       chapters:
         - chapters/volume-02/chapter-09.qmd
         - chapters/volume-02/chapter-10.qmd
@@ -33,7 +69,7 @@ book:
         - chapters/volume-02/chapter-14.qmd
         - chapters/volume-02/chapter-15.qmd
         - chapters/volume-02/chapter-16.qmd
-    - part: "第三卷 · 医学与战争"
+    - part: volumes/volume-03.qmd
       chapters:
         - chapters/volume-03/chapter-17.qmd
         - chapters/volume-03/chapter-18.qmd
@@ -43,7 +79,7 @@ book:
         - chapters/volume-03/chapter-22.qmd
         - chapters/volume-03/chapter-23.qmd
         - chapters/volume-03/chapter-24.qmd
-    - part: "第四卷 · 生命的密码"
+    - part: volumes/volume-04.qmd
       chapters:
         - chapters/volume-04/chapter-25.qmd
         - chapters/volume-04/chapter-26.qmd
@@ -53,7 +89,7 @@ book:
         - chapters/volume-04/chapter-30.qmd
         - chapters/volume-04/chapter-31.qmd
         - chapters/volume-04/chapter-32.qmd
-    - part: "第五卷 · 人体的另一半"
+    - part: volumes/volume-05.qmd
       chapters:
         - chapters/volume-05/chapter-33.qmd
         - chapters/volume-05/chapter-34.qmd
@@ -63,7 +99,7 @@ book:
         - chapters/volume-05/chapter-38.qmd
         - chapters/volume-05/chapter-39.qmd
         - chapters/volume-05/chapter-40.qmd
-    - part: "第六卷 · 生命的新边界"
+    - part: volumes/volume-06.qmd
       chapters:
         - chapters/volume-06/chapter-41.qmd
         - chapters/volume-06/chapter-42.qmd
@@ -74,6 +110,9 @@ book:
         - chapters/volume-06/chapter-47.qmd
         - chapters/volume-06/chapter-48.qmd
   appendices:
+    - timeline.qmd
+    - about.qmd
+    - download.qmd
     - appendices/chronology.qmd
     - appendices/concepts.qmd
     - appendices/references.qmd
@@ -86,4 +125,5 @@ format:
     include-after-body: styles/reader.html
     toc: false
     smooth-scroll: true
+    anchor-sections: false
     link-external-newwindow: true

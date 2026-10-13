@@ -1,0 +1,7 @@
+---
+title: "下载与版本"
+title-block-style: none
+sidebar: false
+toc: false
+---
+<div class="editorial-page download-page"><header class="editorial-page-head"><p class="eyebrow-small">LIBRARY & EDITIONS</p><h1>下载与版本</h1><p>在线版持续更新。你可以保存完整章节源文件，或在 GitHub 查看每一章的修订历史。</p></header><div class="download-grid"><div class="download-item"><span class="download-item__badge">AVAILABLE · 已开放</span><h2>在线阅读</h2><p>六卷48章，支持章节检索、阅读进度、深色模式、字号调整和本地摘录笔记。</p><a href="contents.html">打开全书目录 ↗</a></div><div class="download-item"><span class="download-item__badge">AVAILABLE · 已开放</span><h2>完整写作源文件</h2><p>打包下载全部章节与网站源代码，适合离线保存、版本管理和后续编辑。</p><a href="https://github.com/zbyloveyj/invisible-civilization/archive/refs/heads/main.zip">下载 ZIP 项目文件 ↗</a></div><div class="download-item"><span class="download-item__badge">VERSIONED · 可追溯</span><h2>GitHub 文本版本</h2><p>查看每章源文件、提交记录和修订差异。小说全部章节均按卷独立存储。</p><a href="https://github.com/zbyloveyj/invisible-civilization">进入公开仓库 ↗</a></div><div class="download-item download-item--quiet"><span class="download-item__badge">EDITORIAL · 整理中</span><h2>排版版 PDF / Word</h2><p>完整书籍排版快照仍在整合中，尚未作为网站当前正式下载版本发布。这里不会提供失效的下载链接。</p><span class="download-item__pending">后续版本发布</span></div></div><section class="download-guidance"><p class="eyebrow-small">A NOTE ON RIGHTS</p><h2>作品版权</h2><p>本作品由“一心问道”创作，公开在线阅读不等于放弃版权。除非另有明确许可，未经授权不得将全文用于再出版、改编或商业使用。</p><a class="editorial-text-link" href="appendices/references.html">查阅科学史参考资料 ↗</a></section></div>

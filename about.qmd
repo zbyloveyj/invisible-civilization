@@ -1,0 +1,7 @@
+---
+title: "作者与作品"
+title-block-style: none
+sidebar: false
+toc: false
+---
+<div class="editorial-page about-page"><header class="editorial-page-head"><p class="eyebrow-small">BEHIND THE PAGES</p><h1>写在书页之外</h1><p>关于这本书的起点、故事的尺度，以及如何在文学想象与历史证据之间保持诚实。</p></header><div class="about-layout"><div class="about-monogram"><span>一心<br>问道</span><small>AUTHOR · 2026</small></div><div class="about-copy"><p class="eyebrow-small">THE AUTHOR · 作者</p><h2>一心问道</h2><p>华南理工大学博士在读，关注微生物组、脑科学与智能生物解析等交叉领域。《看不见的文明》是一次把微生物科学史写进普通人生活的文学尝试。</p><p>这里刻意保留了有限的个人信息。作品本身，以及它对历史、科学与人的追问，是这个网站更重要的内容。</p></div></div><div class="about-sections"><section><span class="eyebrow-small">WHY THIS BOOK</span><h2>为什么写它</h2><p>我们往往从书本上的发现年份认识科学史，却很少想象那些发现出现时，城市是什么气味，病房里是什么样子，普通人又为生活做了哪些选择。这本书试图让科学走回当时的生活。</p></section><section><span class="eyebrow-small">FICTION & HISTORY</span><h2>真实与虚构</h2><p>胡克、列文虎克、巴斯德、科赫等人的公开研究成果和主要历史节点有史料可查；乔纳、玛莎、程屿等人物及其生活经历属于文学虚构。每章末尾的科学史说明，用来尽可能明确两者的边界。</p></section><section><span class="eyebrow-small">WORK IN PROGRESS</span><h2>一部持续修订的书</h2><p>当前公开的是文学统稿版本。全书在人物塑造、叙事节奏、史实核验与文献著录方面仍会继续修订。GitHub 用于保存版本变化，而不是把未核验的内容包装成已经完成审校的出版定稿。</p></section></div><div class="about-bottom"><a class="editorial-button editorial-button--outline" href="contents.html">查看全书目录 ↗</a><a class="editorial-text-link" href="appendices/editorial-note.html">创作与校勘说明 ↗</a></div></div>
