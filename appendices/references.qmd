@@ -1,6 +1,6 @@
 # 史料与科学参考 {.unnumbered}
 
-> 当前列出57项参考资料的文献信息。正式出版前仍需逐条校验版本、页码和链接；此页不意味着全部书目信息已经通过独立核查。
+> 已整理57项可追溯的原始论文、历史出版物与机构馆藏资料。部分历史书目存在重印版、馆藏作者拼写或整书与片段重复引用关系；**全部57项尚未完成GB/T 7714—2025出版终审**。具体版本与核验进度见[参考文献核验进度](reference-audit.qmd)。
 
 [01]  Sumner J. Brewing Science, Technology and Print, 1700–1880. Pittsburgh: University of Pittsburgh Press, 2018. ISBN 9780822965312（本条链接对应2018年平装版；另有2016版权年份与较早版本）. [出版社书目](https://upittpress.org/books/9780822965312/).
 

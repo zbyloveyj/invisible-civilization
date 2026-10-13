@@ -29,4 +29,15 @@ ch38=chapters[37][2]
 if ch38.find("离开树林时")>ch38.find("回城的车上"):raise SystemExit("Chapter 38 forest/car chronology reverted")
 ch43=chapters[42][2]
 if ch43.find("展板试读结束后")<ch43.find("第二天，叶岚请团队成员参加一次展板试读"):raise SystemExit("Chapter 43 trial ordering reverted")
+
+# Keep the bibliography's 57-item identifiers and per-item source traceability intact.
+references=Path("appendices/references.qmd").read_text(encoding="utf-8")
+entries=[(int(m.group(1)),m.group(2)) for m in re.finditer(r"^\\[(\\d{2})\\]\\s+(.*)$",references,re.M)]
+if [n for n,_ in entries]!=list(range(1,58)):
+    raise SystemExit("Bibliography must preserve numbered items 01–57")
+if any(not re.search(r"https?://",line) for _,line in entries):
+    raise SystemExit("Every bibliography item must contain a DOI or traceable institutional/archive URL")
+if not Path("appendices/reference-audit.qmd").exists():
+    raise SystemExit("Bibliography audit file missing")
+print("PASS: 57 numbered reference records with source links")
 print("PASS: 48 chapter source files, fact notes, long-form paragraphs, and priority continuity checks.")
