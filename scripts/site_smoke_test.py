@@ -69,7 +69,8 @@ if figure_count < 12:
     raise SystemExit(f"Expected at least 12 in-story plates; found {figure_count}")
 # The plate atlas and the narrative should expose the same count of referenced items.
 fig_html=(root/"figures.html").read_text(encoding="utf-8")
-indexed=len(re.findall(r'class="figure-gallery-item"',fig_html))
+indexed_ids=set(re.findall(r'data-plate-id="(plate-[^"]+)"',fig_html))
+indexed=len(indexed_ids)
 if indexed!=figure_count:
     raise SystemExit(f"Figure atlas count {indexed} does not match narrative {figure_count}")
 if not (root/"assets/plates/hgt-mechanisms.svg").is_file():
