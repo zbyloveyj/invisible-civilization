@@ -6,7 +6,7 @@
 
 [02]  OpenStax, Microbiology, 3.1 Spontaneous Generation
 
-[03]  FEMS Microbiology Reviews, The roots of microbiology and the influence of Ferdinand Cohn on microbiology of the 19th century
+[03]  Drews G. The roots of microbiology and the influence of Ferdinand Cohn on microbiology of the 19th century. *FEMS Microbiology Reviews*. 2000;24(3):225–249. DOI: [10.1111/j.1574-6976.2000.tb00540.x](https://doi.org/10.1111/j.1574-6976.2000.tb00540.x).
 
 [04]  University of Oxford Jenner Institute, About Edward Jenner
 
@@ -14,31 +14,31 @@
 
 [06]  London Museum, John Snow: Cholera & the Broad Street Pump
 
-[07]  Cholera as a sanitary test of British cities, 1831–1866, The History of the Family
+[07]  Davenport RJ, Satchell M, Shaw-Taylor LMW. Cholera as a 'sanitary test' of British cities, 1831–1866. *The History of the Family*. 2019;24(2):404–438. DOI: [10.1080/1081602X.2018.1525755](https://doi.org/10.1080/1081602X.2018.1525755).
 
 [08]  Wellcome Collection, Official reports on cholera as observed in Russia in 1831 (London, 1832)
 
 [09]  John Snow, On the Mode of Communication of Cholera (1855), 1832 London water-supply retrospective
 
-[10]  Noakes et al. Semmelweis and the aetiology of puerperal sepsis 160 years on. Epidemiology & Infection (2008).
+[10]  Noakes TD, Borresen J, Hew-Butler T, Lambert MI, Jordaan E. Semmelweis and the aetiology of puerperal sepsis 160 years on: an historical review. *Epidemiology & Infection*. 2008;136(1):1–9. DOI: [10.1017/S0950268807008746](https://doi.org/10.1017/S0950268807008746).
 
-[11]  Loudon. Ignaz Phillip Semmelweis’ studies of death in childbirth. Journal of the Royal Society of Medicine (2013).
+[11]  Loudon I. Ignaz Phillip Semmelweis' studies of death in childbirth. *Journal of the Royal Society of Medicine*. 2013;106(11):461–463. DOI: [10.1177/0141076813507844](https://doi.org/10.1177/0141076813507844).
 
 [12]  John Snow. On the Mode of Communication of Cholera (1855), Broad Street pump outbreak, digitized primary text.
 
-[13]  Brody et al. Map-making and myth-making in Broad Street: the London cholera epidemic, 1854. The Lancet (2000).
+[13]  Brody H, Rip MR, Vinten-Johansen P, Paneth N, Rachman S. Map-making and myth-making in Broad Street: the London cholera epidemic, 1854. *The Lancet*. 2000;356(9223):64–68. DOI: [10.1016/S0140-6736(00)02442-9](https://doi.org/10.1016/S0140-6736(00)02442-9).
 
-[14]  Wirbel et al. Microbiome meta-analysis and cross-disease comparison enabled by the SIAMCAT machine learning toolbox. Genome Biology (2021).
+[14]  Wirbel J, Zych K, Essex M, et al. Microbiome meta-analysis and cross-disease comparison enabled by the SIAMCAT machine learning toolbox. *Genome Biology*. 2021;22:93. DOI: [10.1186/s13059-021-02306-1](https://doi.org/10.1186/s13059-021-02306-1).
 
 [15]  Filippo Pacini. Osservazioni microscopiche e deduzioni patologiche sul cholera asiatico. Firenze (1854). Wellcome Collection.
 
-[16]  Carboni. The enigma of Pacini’s Vibrio cholerae discovery. Journal of Medical Microbiology (2021).
+[16]  Carboni GP. The enigma of Pacini's *Vibrio cholerae* discovery. *Journal of Medical Microbiology*. 2021;70(11). DOI: [10.1099/jmm.0.001450](https://doi.org/10.1099/jmm.0.001450).
 
 [17]  Institut Pasteur. The Early Years, 1847–1862: Research on Fermentation and the Spontaneous Generation Debate.
 
 [18]  Université de Lille. Louis Pasteur and His Lille Period: Lactic Fermentation, 1857.
 
-[19]  Joseph Lister and the performance of antiseptic surgery. Notes and Records of the Royal Society (2013).
+[19]  Worboys M. Joseph Lister and the performance of antiseptic surgery. *Notes and Records of the Royal Society*. 2013;67(3):199–209. DOI: [10.1098/rsnr.2013.0028](https://doi.org/10.1098/rsnr.2013.0028).
 
 [20]  Joseph Lister. On the Antiseptic Principle of the Practice of Surgery (1867), historical primary text.
 
@@ -52,9 +52,9 @@
 
 [25]  Zhang Q, Zhang F, Yang B. Pneumonic plague epidemic in Northeast China in 1910–1911: Dr. Wu Lien-Teh’s epidemic preventive system for plague control. *Frontiers of Medicine*. 2018;12(1):113–115. DOI: [10.1007/s11684-018-0613-4](https://doi.org/10.1007/s11684-018-0613-4).
 
-[26]  Dr Wu Lien-Teh: modernising post-1911 China’s public health service. Journal of the Royal Society of Medicine, 2014.（东北肺鼠疫史料综述）
+[26]  Lee KH, Wong DTK, Ho TM, Ng KH. Dr Wu Lien-teh: modernising post-1911 China's public health service. *Singapore Medical Journal*. 2014;55(2):99–102. DOI: [10.11622/smedj.2014025](https://doi.org/10.11622/smedj.2014025).
 
-[27]  The Manchurian pandemic of pneumonic plague (1910–1911).（东北肺鼠疫历史综述）
+[27]  Michaleas SN, Laios K, Karamanou M, et al. The Manchurian pandemic of pneumonic plague (1910–1911). *Le Infezioni in Medicina*. 2022;30(3):464–468. DOI: [10.53854/liim-3003-17](https://doi.org/10.53854/liim-3003-17).
 
 [28]  吴文清.《大公报》视角下1918年大流感在中国的流行与防治. 中华医史杂志, 2021, 51(3):158–166. DOI:10.3760/cma.j.cn112155-20200806-00129.
 
@@ -76,42 +76,42 @@
 
 [37]  Nature Education. Discovery of DNA as the hereditary material: Griffith transformation experiments.
 
-[38]  CDC Emerging Infectious Diseases. The Discovery of Penicillin—New Insights After More Than 75 Years of Clinical Use, 2017.
+[38]  Gaynes R. The discovery of penicillin—new insights after more than 75 years of clinical use. *Emerging Infectious Diseases*. 2017;23(5):849–853. DOI: [10.3201/eid2305.161556](https://doi.org/10.3201/eid2305.161556).
 
-[39]  Avery OT, MacLeod CM, McCarty M. Studies on the Chemical Nature of the Substance Inducing Transformation of Pneumococcal Types. J Exp Med. 1944;79:137–158.
+[39]  Avery OT, MacLeod CM, McCarty M. Studies on the chemical nature of the substance inducing transformation of pneumococcal types: induction of transformation by a desoxyribonucleic acid fraction isolated from Pneumococcus type III. *Journal of Experimental Medicine*. 1944;79(2):137–158. DOI: [10.1084/jem.79.2.137](https://doi.org/10.1084/jem.79.2.137).
 
 [40]  Rockefeller University. The Transforming Principle: DNA, The Molecule of Heredity. 历史展览与相关手稿.
 
-[41]  Lederberg J, Tatum EL. Gene Recombination in Escherichia Coli. Nature. 1946;158:558.
+[41]  Lederberg J, Tatum EL. Gene recombination in *Escherichia coli*. *Nature*. 1946;158:558. DOI: [10.1038/158558a0](https://doi.org/10.1038/158558a0).
 
-[42]  Franklin RE, Gosling RG. Molecular Configuration in Sodium Thymonucleate. Nature. 1953;171:740–741.
+[42]  Franklin RE, Gosling RG. Molecular configuration in sodium thymonucleate. *Nature*. 1953;171:740–741. DOI: [10.1038/171740a0](https://doi.org/10.1038/171740a0).
 
-[43]  Watson JD, Crick FHC. Molecular Structure of Nucleic Acids: A Structure for Deoxyribose Nucleic Acid. Nature. 1953;171:737–738.
+[43]  Watson JD, Crick FHC. Molecular structure of nucleic acids: a structure for deoxyribose nucleic acid. *Nature*. 1953;171:737–738. DOI: [10.1038/171737a0](https://doi.org/10.1038/171737a0).
 
-[44]  Wilkins MHF, Stokes AR, Wilson HR. Molecular Structure of Deoxypentose Nucleic Acids. Nature. 1953;171:738–740.
+[44]  Wilkins MHF, Stokes AR, Wilson HR. Molecular structure of nucleic acids: molecular structure of deoxypentose nucleic acids. *Nature*. 1953;171:738–740. DOI: [10.1038/171738a0](https://doi.org/10.1038/171738a0).
 
 [45]  King’s College London. The Story behind Photograph 51. 2023年科学史解读.
 
 [46]  King’s College London. Rosalind Franklin deliberately created Photo 51 after earlier photograph revealed DNA’s structure. 2026年10月9日档案研究介绍.
 
-[47]  Jacob F, Monod J. Genetic regulatory mechanisms in the synthesis of proteins. J Mol Biol. 1961;3:318–356.
+[47]  Jacob F, Monod J. Genetic regulatory mechanisms in the synthesis of proteins. *Journal of Molecular Biology*. 1961;3(3):318–356. DOI: [10.1016/S0022-2836(61)80072-7](https://doi.org/10.1016/S0022-2836(61)80072-7).
 
-[48]  Woese CR, Fox GE. Phylogenetic structure of the prokaryotic domain: the primary kingdoms. PNAS. 1977;74:5088–5090.
+[48]  Woese CR, Fox GE. Phylogenetic structure of the prokaryotic domain: the primary kingdoms. *Proceedings of the National Academy of Sciences*. 1977;74(11):5088–5090. DOI: [10.1073/pnas.74.11.5088](https://doi.org/10.1073/pnas.74.11.5088).
 
-[49]  Woese CR, Kandler O, Wheelis ML. Towards a natural system of organisms: proposal for the domains Archaea, Bacteria, and Eucarya. PNAS. 1990;87:4576–4579.
+[49]  Woese CR, Kandler O, Wheelis ML. Towards a natural system of organisms: proposal for the domains Archaea, Bacteria, and Eucarya. *Proceedings of the National Academy of Sciences*. 1990;87(12):4576–4579. DOI: [10.1073/pnas.87.12.4576](https://doi.org/10.1073/pnas.87.12.4576).
 
-[50]  Pace NR. A molecular view of microbial diversity and the biosphere. Science. 1997;276:734–740.
+[50]  Pace NR. A molecular view of microbial diversity and the biosphere. *Science*. 1997;276(5313):734–740. DOI: [10.1126/science.276.5313.734](https://doi.org/10.1126/science.276.5313.734).
 
-[51]  Turnbaugh PJ, et al. An obesity-associated gut microbiome with increased capacity for energy harvest. Nature. 2006;444:1027–1031.
+[51]  Turnbaugh PJ, Ley RE, Mahowald MA, et al. An obesity-associated gut microbiome with increased capacity for energy harvest. *Nature*. 2006;444:1027–1031. DOI: [10.1038/nature05414](https://doi.org/10.1038/nature05414).
 
-[52]  Human Microbiome Project Consortium. Structure, function and diversity of the healthy human microbiome. Nature. 2012;486:207–214.
+[52]  Human Microbiome Project Consortium. Structure, function and diversity of the healthy human microbiome. *Nature*. 2012;486:207–214. DOI: [10.1038/nature11234](https://doi.org/10.1038/nature11234).
 
-[53]  Human Microbiome Project Consortium. A framework for human microbiome research. Nature. 2012;486:215–221.
+[53]  Human Microbiome Project Consortium. A framework for human microbiome research. *Nature*. 2012;486:215–221. DOI: [10.1038/nature11209](https://doi.org/10.1038/nature11209).
 
-[54]  van Nood E, et al. Duodenal infusion of donor feces for recurrent Clostridium difficile. N Engl J Med. 2013;368:407–415.
+[54]  van Nood E, Vrieze A, Nieuwdorp M, et al. Duodenal infusion of donor feces for recurrent *Clostridium difficile*. *New England Journal of Medicine*. 2013;368(5):407–415. DOI: [10.1056/NEJMoa1205037](https://doi.org/10.1056/NEJMoa1205037).
 
-[55]  Sudo N, et al. Postnatal microbial colonization programs the hypothalamic–pituitary–adrenal system for stress response in mice. J Physiol. 2004;558:263–275.
+[55]  Sudo N, Chida Y, Aiba Y, et al. Postnatal microbial colonization programs the hypothalamic–pituitary–adrenal system for stress response in mice. *The Journal of Physiology*. 2004;558(1):263–275. DOI: [10.1113/jphysiol.2004.063388](https://doi.org/10.1113/jphysiol.2004.063388).
 
-[56]  Barrangou R, et al. CRISPR provides acquired resistance against viruses in prokaryotes. Science. 2007;315:1709–1712.
+[56]  Barrangou R, Fremaux C, Deveau H, et al. CRISPR provides acquired resistance against viruses in prokaryotes. *Science*. 2007;315(5819):1709–1712. DOI: [10.1126/science.1138140](https://doi.org/10.1126/science.1138140).
 
-[57]  Jinek M, et al. A programmable dual-RNA-guided DNA endonuclease in adaptive bacterial immunity. Science. 2012;337:816–821.
+[57]  Jinek M, Chylinski K, Fonfara I, et al. A programmable dual-RNA-guided DNA endonuclease in adaptive bacterial immunity. *Science*. 2012;337(6096):816–821. DOI: [10.1126/science.1225829](https://doi.org/10.1126/science.1225829).

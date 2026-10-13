@@ -122,6 +122,7 @@ book:
     - appendices/chronology.qmd
     - appendices/concepts.qmd
     - appendices/references.qmd
+    - appendices/reference-audit.qmd
     - appendices/plates.qmd
     - appendices/editorial-note.qmd
 
