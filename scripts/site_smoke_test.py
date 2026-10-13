@@ -48,7 +48,7 @@ for plate in Path("assets/plates").glob("*.svg"):
 figure_count = 0
 chapters_with_figures = []
 for num in range(1,49):
-    path = ROOT / f"chapters/volume-{(num-1)//8+1:02d}/chapter-{num:02d}.html"
+    path = root / f"chapters/volume-{(num-1)//8+1:02d}/chapter-{num:02d}.html"
     html = path.read_text(encoding="utf-8")
     blocks = re.findall(r'<figure\b[^>]*book-plate[^>]*>[\s\S]*?</figure>', html)
     if blocks:
