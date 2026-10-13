@@ -21,6 +21,8 @@ jobs:
       - uses: quarto-dev/quarto-actions/setup@v2
       - name: Render HTML book
         run: quarto render --to html
+      - name: Validate published pages, links and reading scripts
+        run: python scripts/site_smoke_test.py
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
