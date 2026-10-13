@@ -64,23 +64,23 @@
 
 [31]  Fleming A. On the antibacterial action of cultures of a Penicillium, with special reference to their use in the isolation of B. influenzae. British Journal of Experimental Pathology, 1929, 10(3):226–236.
 
-[32]  Oxford University History of Science Museum. Original penicillin culture and specimen: Howard Florey and colleagues, c.1940–1941.
+[32]  History of Science Museum, University of Oxford. Original penicillin culture and specimen (Florey team, c.1940–1941) [EB/OL]. [引用日期：2026-10-14]. https://www.hsm.ox.ac.uk/original-penicillin-culture-and-specimen.
 
-[33]  University of Oxford. The lasting legacy of Norman Heatley, the penicillin pioneer.
+[33]  University of Oxford. The lasting legacy of Norman Heatley, the unassuming penicillin pioneer who changed the course of medicine [EB/OL]. 2024-02-22 [引用日期：2026-10-14]. https://www.ox.ac.uk/giving/stories/norman-heatley-the-unassuming-penicillin-pioneer-who-changed-the-course-of-medicine.
 
-[34]  Oxford Health Histories. Penicillin: timeline of development and clinical treatment.
+[34]  Oxford Health Histories. Penicillin [EB/OL]. [引用日期：2026-10-14]. https://oxfordhealth.web.ox.ac.uk/penicillin.（专题包含文学化第一人称历史叙述，不等于真实患者访谈原文）
 
-[35]  USDA Agricultural Research Service. Penicillin: Opening the Era of Antibiotics.
+[35]  United States Department of Agriculture, Agricultural Research Service. Penicillin: Opening the Era of Antibiotics [EB/OL]. [引用日期：2026-10-14]. https://www.ars.usda.gov/midwest-area/peoria-il/national-center-for-agricultural-utilization-research/docs/penicillin-opening-the-era-of-antibiotics/.
 
 [36]  Griffith F. The significance of pneumococcal types. Journal of Hygiene, 1928, 27(2):113–159. DOI: 10.1017/S0022172400031879.
 
-[37]  Nature Education. Discovery of DNA as the hereditary material: Griffith transformation experiments.
+[37]  Nature Education, Scitable. Discovery of DNA as the Hereditary Material [EB/OL]. [引用日期：2026-10-14]. https://www.nature.com/scitable/topicpage/discovery-of-dna-as-the-hereditary-material-340/.
 
 [38]  Gaynes R. The discovery of penicillin—new insights after more than 75 years of clinical use. *Emerging Infectious Diseases*. 2017;23(5):849–853. DOI: [10.3201/eid2305.161556](https://doi.org/10.3201/eid2305.161556).
 
 [39]  Avery OT, MacLeod CM, McCarty M. Studies on the chemical nature of the substance inducing transformation of pneumococcal types: induction of transformation by a desoxyribonucleic acid fraction isolated from Pneumococcus type III. *Journal of Experimental Medicine*. 1944;79(2):137–158. DOI: [10.1084/jem.79.2.137](https://doi.org/10.1084/jem.79.2.137).
 
-[40]  Rockefeller University. The Transforming Principle: DNA, The Molecule of Heredity. 历史展览与相关手稿.
+[40]  The Rockefeller University. The Transforming Principle: DNA, The Molecule of Heredity [exhibition] [EB/OL]. [引用日期：2026-10-14]. https://digitalcommons.rockefeller.edu/transforming-principle-dna/index.html.
 
 [41]  Lederberg J, Tatum EL. Gene recombination in *Escherichia coli*. *Nature*. 1946;158:558. DOI: [10.1038/158558a0](https://doi.org/10.1038/158558a0).
 
@@ -90,9 +90,9 @@
 
 [44]  Wilkins MHF, Stokes AR, Wilson HR. Molecular structure of nucleic acids: molecular structure of deoxypentose nucleic acids. *Nature*. 1953;171:738–740. DOI: [10.1038/171738a0](https://doi.org/10.1038/171738a0).
 
-[45]  King’s College London. The Story behind Photograph 51. 2023年科学史解读.
+[45]  Sutton B. The story behind Photograph 51. King's College London [EB/OL]. 2023-04-14 [引用日期：2026-10-14]. https://www.kcl.ac.uk/the-story-behind-photograph-51.
 
-[46]  King’s College London. Rosalind Franklin deliberately created Photo 51 after earlier photograph revealed DNA’s structure. 2026年10月9日档案研究介绍.
+[46]  King's College London. Rosalind Franklin deliberately created 'Photo 51' after earlier photograph revealed DNA's structure [EB/OL]. 2026-10-09 [引用日期：2026-10-14]. https://www.kcl.ac.uk/news/rosalind-franklin-deliberately-created-photo-51-after-earlier-photograph-revealed-dnas-structure.（2026科学史新研究，非1952年原始论文）
 
 [47]  Jacob F, Monod J. Genetic regulatory mechanisms in the synthesis of proteins. *Journal of Molecular Biology*. 1961;3(3):318–356. DOI: [10.1016/S0022-2836(61)80072-7](https://doi.org/10.1016/S0022-2836(61)80072-7).
 
