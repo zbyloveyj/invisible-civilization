@@ -14,7 +14,7 @@
 
 周宁把两份分离株报告摊在桌上，让年轻同事指出究竟哪一处证明发生了患者间的直接传播。对方指着相同的耐药基因和一段高度相似的序列，周宁又问采样时间、病区接触史、细菌的整体基因组关系是否支持同一条路径。对方翻了很久，最后承认还缺少几项关键信息。周宁没有否定他的努力，只请他把‘证据已经支持’与‘尚待排查’分别标记。实验室外有人推着标本车走过，车轮的声响使两个人停顿片刻，然后继续核对。
 
-<figure id="plate-42-hgt" class="book-plate book-plate--diagram"><div class="book-plate__media"><img loading="lazy" decoding="async" src="../../assets/plates/hgt-mechanisms.svg" alt="水平基因转移三机制图：细胞间接合，环境DNA转化，噬菌体介导转导"/></div><figcaption><span class="plate-category">现代科学示意 · 42</span><span class="plate-description">细菌水平基因转移的接合、转化和转导三种机制示意。检测到同源基因或相关性，不能单独证明某次转移实际发生。</span><span class="plate-credit">本书原创矢量图 · 现代科学解释用图</span></figcaption></figure>
+<figure id="plate-42-hgt" class="book-plate book-plate--diagram"><div class="book-plate__media"><img loading="lazy" decoding="async" src="../../assets/plates/hgt-mechanisms.svg" alt="水平基因转移三机制图：细胞间接合，环境DNA转化，噬菌体介导转导"/></div><figcaption><span class="plate-category">现代科学示意 · PLATE 12</span><span class="plate-description">细菌水平基因转移的接合、转化和转导三种机制示意。检测到同源基因或相关性，不能单独证明某次转移实际发生。</span><span class="plate-credit">本书原创矢量图 · 现代科学解释用图</span></figcaption></figure>
 
 会议上，感染科医生先介绍临床背景。部分患者确实存在需要积极处理的感染，而另一些样本反映的是筛查或定植情况，不能把所有分离阳性的结果混在一起统计。周宁随后展示药敏和分离株鉴定信息，强调基因存在与实际药物敏感性之间的关系需要结合具体机制和实验室证据判断。杜然打开基因组比较图，指出某些耐药相关序列具有相似的周边结构，但仍可能来自已经广泛传播的遗传元件，不能据此证明它们在这几位患者体内直接交换。
 

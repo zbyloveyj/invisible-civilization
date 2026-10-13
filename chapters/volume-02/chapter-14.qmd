@@ -38,7 +38,7 @@
 
 朱利安把那只玻璃瓶举到眼前，对着窗外的亮光反复看了好一阵。瓶颈看起来脆弱，像是手稍微用力便会折断；可正是那道并不实用的弯曲，使它成为一件独特的工具。他曾经无数次用木桶装发酵液，桶越结实越好，接缝越严密越好。这里的研究者却希望在空气仍能进入的条件下，减少某些来自环境的颗粒接触到液体。朱利安并不知道那些颗粒具体包含什么，也说不清它们是否总能引起变化，只觉得人们过去把许多事情笼统称作“空气使东西坏了”，如今似乎有机会再仔细问一句，究竟是空气里的什么东西起了作用。
 
-<figure id="plate-14-pasteur" class="book-plate book-plate--diagram"><div class="book-plate__media"><img loading="lazy" decoding="async" src="../../assets/plates/pasteur-swan-neck.svg" alt="两个玻璃烧瓶对比，一个有弯曲完整的鹅颈，一个瓶颈被破坏，说明空气与污染颗粒不能等同"/></div><figcaption><span class="plate-category">现代科学示意 · FIGURE 14</span><span class="plate-description">鹅颈瓶实验的现代复原示意：空气能够进入瓶口，但携带颗粒可能滞留在弯曲的玻璃颈部。图像不代表巴斯德原始实验记录。</span><span class="plate-credit">原创矢量绘图 · 本书编辑图版</span></figcaption></figure>
+<figure id="plate-14-pasteur" class="book-plate book-plate--diagram"><div class="book-plate__media"><img loading="lazy" decoding="async" src="../../assets/plates/pasteur-swan-neck.svg" alt="两个玻璃烧瓶对比，一个有弯曲完整的鹅颈，一个瓶颈被破坏，说明空气与污染颗粒不能等同"/></div><figcaption><span class="plate-category">现代科学示意 · PLATE 06</span><span class="plate-description">鹅颈瓶实验的现代复原示意：空气能够进入瓶口，但携带颗粒可能滞留在弯曲的玻璃颈部。图像不代表巴斯德原始实验记录。</span><span class="plate-credit">原创矢量绘图 · 本书编辑图版</span></figcaption></figure>
 
 回程前，朱利安从勒内那里买下几个普通实验容器，还额外支付一点钱，让对方送他一只略有瑕疵、不能按原价出售的小型弯颈玻璃瓶。他打算把它带回里尔给玛蒂尔德看看，毕竟女儿这些年常追问父亲为什么总把发酸的酒挂在嘴边。勒内替他用稻草和布把瓶子包好，提醒路上千万别碰碎，朱利安便把它放在随身的箱子中央，两侧都塞上衣服。一路上车厢晃得厉害，他隔一会儿便伸手摸摸箱盖，生怕里面传出玻璃破裂的声音。
 

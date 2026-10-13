@@ -6,7 +6,7 @@ from urllib.parse import urlsplit, unquote
 import re, subprocess, sys
 
 root=Path("_site").resolve()
-need=["index.html","contents.html","timeline.html","about.html","download.html"]
+need=["index.html","contents.html","timeline.html","about.html","download.html","figures.html"]
 need += [f"volumes/volume-{v:02d}.html" for v in range(1,7)]
 need += [f"chapters/volume-{(n-1)//8+1:02d}/chapter-{n:02d}.html" for n in range(1,49)]
 missing=[p for p in need if not (root/p).is_file()]
@@ -65,8 +65,15 @@ for num in range(1,49):
             target = (path.parent / src).resolve()
             if not target.is_file():
                 raise SystemExit(f"Missing local image: {target} (chapter {num})")
-if figure_count < 8:
-    raise SystemExit(f"Expected at least 8 in-story plates; found {figure_count}")
-print(f"PASS: {figure_count} illustrated figures in chapters {chapters_with_figures}")
+if figure_count < 12:
+    raise SystemExit(f"Expected at least 12 in-story plates; found {figure_count}")
+# The plate atlas and the narrative should expose the same count of referenced items.
+fig_html=(root/"figures.html").read_text(encoding="utf-8")
+indexed=len(re.findall(r'class="figure-gallery-item"',fig_html))
+if indexed!=figure_count:
+    raise SystemExit(f"Figure atlas count {indexed} does not match narrative {figure_count}")
+if not (root/"assets/plates/hgt-mechanisms.svg").is_file():
+    raise SystemExit("Missing HGT plate asset")
+print(f"PASS: {figure_count} illustrated figures in chapters {chapters_with_figures}; atlas {indexed} plates")
 
 print(f"PASS: {len(need)} book pages; {checked} local links; reader script syntax.")

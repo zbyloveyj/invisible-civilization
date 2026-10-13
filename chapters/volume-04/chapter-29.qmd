@@ -36,7 +36,7 @@
 
 四月，关于DNA双螺旋结构的论文正式发表。伊芙琳在《自然》上看见沃森和克里克提出的模型，以及同一期中富兰克林与戈斯林、威尔金斯及其同事分别发表的实验研究。她把几篇文章的题目抄在笔记本上，发现它们虽然谈的是同一种分子，却从不同角度提供信息。结构模型清楚地展示了两条链的配对和空间安排，也提示了遗传信息复制的可能机制；衍射研究则提供了模型必须满足的实验约束。她翻到熟悉的图像，觉得自己终于知道为什么有人愿意花几十个小时只为得到一张底片，却仍然不能仅凭那张图便讲完整个故事。
 
-<figure id="plate-29-dna" class="book-plate book-plate--diagram"><div class="book-plate__media"><img loading="lazy" decoding="async" src="../../assets/plates/dna-structure.svg" alt="DNA双链螺旋结构与碱基配对的概念图"/></div><figcaption><span class="plate-category">现代科学示意 · FIGURE 29</span><span class="plate-description">DNA双螺旋的结构性示意，不是1952年富兰克林与戈斯林获得的X射线衍射图，也不是所谓“照片51”的复制。</span><span class="plate-credit">原创矢量绘图 · 本书编辑图版</span></figcaption></figure>
+<figure id="plate-29-dna" class="book-plate book-plate--diagram"><div class="book-plate__media"><img loading="lazy" decoding="async" src="../../assets/plates/dna-structure.svg" alt="DNA双链螺旋结构与碱基配对的概念图"/></div><figcaption><span class="plate-category">现代科学示意 · PLATE 09</span><span class="plate-description">DNA双螺旋的结构性示意，不是1952年富兰克林与戈斯林获得的X射线衍射图，也不是所谓“照片51”的复制。</span><span class="plate-credit">原创矢量绘图 · 本书编辑图版</span></figcaption></figure>
 
 朱迪思从晚课回来时，见她正在看期刊，便问是不是又出现了什么重大发现。伊芙琳把几篇文章摊开，指着其中一幅衍射图，告诉她这就是此前大家一直讨论的那类影像。朱迪思坐下来读了一会儿，说自己在课堂上听见了关于双螺旋模型的介绍，还听老师谈起模型和实验之间的关系。两个人讨论到夜里，发现彼此仍有许多不懂的地方，却已经不再像一年前那样，把一幅黑白斑点图当成无法解读的谜语。朱迪思忽然问，既然这么多人的工作都很重要，后来的人会不会记得每一份贡献。伊芙琳想了想，说恐怕不会全部记住，就像印在报纸上的一张照片，读者很少会知道是谁保存的底片、是谁检查的暗房温度。
 
