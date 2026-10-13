@@ -119,6 +119,7 @@ book:
     - appendices/chronology.qmd
     - appendices/concepts.qmd
     - appendices/references.qmd
+    - appendices/plates.qmd
     - appendices/editorial-note.qmd
 
 format:

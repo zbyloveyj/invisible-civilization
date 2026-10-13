@@ -256,3 +256,33 @@ html[data-reader-theme="night"] input,html[data-reader-theme="night"] textarea{c
 }
 @media(max-width:390px){.home-hero__actions{flex-direction:column;width:100%}.editorial-button{width:100%}.feature-chapters{grid-template-columns:1fr}.history-strip__events{grid-template-columns:repeat(2,1fr)}.home-hero__heading{font-size:2.9rem!important}}
 @media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;transition:none!important;animation:none!important}}
+
+
+/* Evidence-based book plates placed inside the narrative */
+.novel-chapter .book-plate{
+  margin:3.3rem auto 3.4rem;
+  max-width:760px;
+  padding:0;
+  border-top:1px solid var(--line);
+  border-bottom:1px solid var(--line);
+  background:var(--surface);
+  text-indent:0;
+}
+.book-plate__media{padding:1.6rem;display:flex;align-items:center;justify-content:center;min-height:180px;background:var(--surface-tint);overflow:hidden}
+.book-plate img{
+  max-width:100%;height:auto;max-height:560px;display:block;
+  object-fit:contain;background:#f6f3eb;border:1px solid #dad5c8;
+}
+.book-plate--historical img{filter:grayscale(.14);max-height:600px}
+.book-plate figcaption{display:flex;flex-direction:column;align-items:flex-start;gap:.6rem;padding:1.2rem 1.55rem 1.35rem;color:var(--ink-light);font-family:var(--font-interface);font-size:.81rem;line-height:1.85;text-align:left}
+.book-plate .plate-category{color:var(--accent);letter-spacing:.13em;font-size:.7rem;font-weight:600}
+.book-plate .plate-description{font-family:var(--font-literary);font-size:.89rem;line-height:1.9}
+.book-plate .plate-credit{font-size:.74rem;color:var(--muted);overflow-wrap:anywhere}
+.book-plate a{color:var(--accent-dark)}
+.book-plate:has(img[loading="lazy"]){content-visibility:auto;contain-intrinsic-size:auto 530px}
+@media(max-width:720px){
+ .novel-chapter .book-plate{margin:2.6rem -0.15rem 2.8rem}
+ .book-plate__media{padding:.75rem;min-height:130px}
+ .book-plate img{max-height:410px}
+ .book-plate figcaption{padding:1.05rem 1rem;font-size:.77rem}
+}

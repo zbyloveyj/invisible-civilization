@@ -20,7 +20,7 @@ toc: false
   <div class="ic-hero__actions"><a class="ic-button ic-button--primary" href="chapters/volume-01/chapter-01.html"><span>开始阅读</span><span aria-hidden="true">↗</span></a><a class="ic-button ic-button--secondary" href="contents.html"><span>查看全书目录</span><span aria-hidden="true">→</span></a></div>
   <div class="ic-hero__byline"><span>一心问道 · 著</span><span class="ic-dot"></span><span>六卷 · 四十八章</span></div>
  </div>
- <figure class="ic-hero__figure"><img src="assets/micrograph-plate.svg" alt="以传统科学史铜版画为灵感绘制的菌丝与孢子显微图版" width="720" height="880" loading="eager"><figcaption>MICROGRAPHIC STUDIES <span>PLATE NO. 001</span></figcaption></figure>
+ <figure class="ic-hero__figure"><img src="assets/micrograph-plate.svg" alt="以传统科学史铜版画为灵感绘制的菌丝与孢子显微图版" width="720" height="880" loading="eager"><figcaption>原创科学线描 · 非历史原图 <span>PLATE NO. 001</span></figcaption></figure>
 </section>
 
 <div class="ic-ribbon"><span><strong>06</strong><small>VOLUMES / 卷</small></span><span><strong>48</strong><small>CHAPTERS / 章</small></span><span><strong>1665—2026</strong><small>ACROSS THE CENTURIES</small></span><div class="ic-ribbon__end">一部持续修订的科学历史小说 <span aria-hidden="true">↘</span></div></div>
