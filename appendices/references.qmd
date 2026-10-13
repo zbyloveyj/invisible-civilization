@@ -10,7 +10,7 @@
 
 [04]  University of Oxford Jenner Institute, About Edward Jenner
 
-[05]  Morgan & Parker, The Edward Jenner Museum and the history of vaccination, Clinical & Experimental Immunology
+[05]  Morgan A J, Parker S. Translational Mini-Review Series on Vaccines: The Edward Jenner Museum and the history of vaccination. *Clinical and Experimental Immunology*. 2007;147(3):389–394. DOI: [10.1111/j.1365-2249.2006.03304.x](https://doi.org/10.1111/j.1365-2249.2006.03304.x).
 
 [06]  London Museum, John Snow: Cholera & the Broad Street Pump
 
@@ -50,7 +50,7 @@
 
 [24]  Ayres PBC, Lowson JA. Report on the Outbreak of Bubonic Plague in Hongkong, 1894. Wellcome Collection 藏本（原始公共卫生报告）.
 
-[25]  Zhang Q, Zhang F, Yang B. Pneumonic plague epidemic in Northeast China in 1910–1911: Dr. Wu Lien-Teh’s epidemic preventive system for plague control. Frontiers of Medicine, 2018. DOI:10.1007/s11684-018-0613-4.
+[25]  Zhang Q, Zhang F, Yang B. Pneumonic plague epidemic in Northeast China in 1910–1911: Dr. Wu Lien-Teh’s epidemic preventive system for plague control. *Frontiers of Medicine*. 2018;12(1):113–115. DOI: [10.1007/s11684-018-0613-4](https://doi.org/10.1007/s11684-018-0613-4).
 
 [26]  Dr Wu Lien-Teh: modernising post-1911 China’s public health service. Journal of the Royal Society of Medicine, 2014.（东北肺鼠疫史料综述）
 
