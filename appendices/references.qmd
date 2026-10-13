@@ -1,0 +1,117 @@
+# 史料与科学参考 {.unnumbered}
+
+> 当前列出57项参考资料的文献信息。正式出版前仍需逐条校验版本、页码和链接；此页不意味着全部书目信息已经通过独立核查。
+
+[01]  James Sumner, Brewing Science, Technology and Print, 1700–1880 (University of Pittsburgh Press, 2016)
+
+[02]  OpenStax, Microbiology, 3.1 Spontaneous Generation
+
+[03]  FEMS Microbiology Reviews, The roots of microbiology and the influence of Ferdinand Cohn on microbiology of the 19th century
+
+[04]  University of Oxford Jenner Institute, About Edward Jenner
+
+[05]  Morgan & Parker, The Edward Jenner Museum and the history of vaccination, Clinical & Experimental Immunology
+
+[06]  London Museum, John Snow: Cholera & the Broad Street Pump
+
+[07]  Cholera as a sanitary test of British cities, 1831–1866, The History of the Family
+
+[08]  Wellcome Collection, Official reports on cholera as observed in Russia in 1831 (London, 1832)
+
+[09]  John Snow, On the Mode of Communication of Cholera (1855), 1832 London water-supply retrospective
+
+[10]  Noakes et al. Semmelweis and the aetiology of puerperal sepsis 160 years on. Epidemiology & Infection (2008).
+
+[11]  Loudon. Ignaz Phillip Semmelweis’ studies of death in childbirth. Journal of the Royal Society of Medicine (2013).
+
+[12]  John Snow. On the Mode of Communication of Cholera (1855), Broad Street pump outbreak, digitized primary text.
+
+[13]  Brody et al. Map-making and myth-making in Broad Street: the London cholera epidemic, 1854. The Lancet (2000).
+
+[14]  Wirbel et al. Microbiome meta-analysis and cross-disease comparison enabled by the SIAMCAT machine learning toolbox. Genome Biology (2021).
+
+[15]  Filippo Pacini. Osservazioni microscopiche e deduzioni patologiche sul cholera asiatico. Firenze (1854). Wellcome Collection.
+
+[16]  Carboni. The enigma of Pacini’s Vibrio cholerae discovery. Journal of Medical Microbiology (2021).
+
+[17]  Institut Pasteur. The Early Years, 1847–1862: Research on Fermentation and the Spontaneous Generation Debate.
+
+[18]  Université de Lille. Louis Pasteur and His Lille Period: Lactic Fermentation, 1857.
+
+[19]  Joseph Lister and the performance of antiseptic surgery. Notes and Records of the Royal Society (2013).
+
+[20]  Joseph Lister. On the Antiseptic Principle of the Practice of Surgery (1867), historical primary text.
+
+[21]  Robert Koch Institute. Robert Koch: One of the Founders of Microbiology, tuberculosis announcement 24 March 1882.
+
+[22]  Robert Koch Institute Museum. Tuberculosis Then & Now, original scientific discovery and clinical context.
+
+[23]  Sihn K. Reorganizing Hospital Space: The 1894 Plague Epidemic in Hong Kong and the Germ Theory. Korean Journal of Medical History, 2017, 26(1):59–94. DOI: 10.13081/kjmh.2017.26.59.
+
+[24]  Ayres PBC, Lowson JA. Report on the Outbreak of Bubonic Plague in Hongkong, 1894. Wellcome Collection 藏本（原始公共卫生报告）.
+
+[25]  Zhang Q, Zhang F, Yang B. Pneumonic plague epidemic in Northeast China in 1910–1911: Dr. Wu Lien-Teh’s epidemic preventive system for plague control. Frontiers of Medicine, 2018. DOI:10.1007/s11684-018-0613-4.
+
+[26]  Dr Wu Lien-Teh: modernising post-1911 China’s public health service. Journal of the Royal Society of Medicine, 2014.（东北肺鼠疫史料综述）
+
+[27]  The Manchurian pandemic of pneumonic plague (1910–1911).（东北肺鼠疫历史综述）
+
+[28]  吴文清.《大公报》视角下1918年大流感在中国的流行与防治. 中华医史杂志, 2021, 51(3):158–166. DOI:10.3760/cma.j.cn112155-20200806-00129.
+
+[29]  陈弘宇, 袁媛. 上海1918—1919年大流感的抗疫与反思. 医学与哲学, 2025, 46(7):71–76. DOI:10.12014/j.issn.1002-0772.2025.07.14.
+
+[30]  Shepherd JR. Reassessing the Mortality Impact of the 1918 Influenza Pandemic in China. Modern China, 2024. DOI:10.1177/00977004231189278.
+
+[31]  Fleming A. On the antibacterial action of cultures of a Penicillium, with special reference to their use in the isolation of B. influenzae. British Journal of Experimental Pathology, 1929, 10(3):226–236.
+
+[32]  Oxford University History of Science Museum. Original penicillin culture and specimen: Howard Florey and colleagues, c.1940–1941.
+
+[33]  University of Oxford. The lasting legacy of Norman Heatley, the penicillin pioneer.
+
+[34]  Oxford Health Histories. Penicillin: timeline of development and clinical treatment.
+
+[35]  USDA Agricultural Research Service. Penicillin: Opening the Era of Antibiotics.
+
+[36]  Griffith F. The significance of pneumococcal types. Journal of Hygiene, 1928, 27(2):113–159. DOI: 10.1017/S0022172400031879.
+
+[37]  Nature Education. Discovery of DNA as the hereditary material: Griffith transformation experiments.
+
+[38]  CDC Emerging Infectious Diseases. The Discovery of Penicillin—New Insights After More Than 75 Years of Clinical Use, 2017.
+
+[39]  Avery OT, MacLeod CM, McCarty M. Studies on the Chemical Nature of the Substance Inducing Transformation of Pneumococcal Types. J Exp Med. 1944;79:137–158.
+
+[40]  Rockefeller University. The Transforming Principle: DNA, The Molecule of Heredity. 历史展览与相关手稿.
+
+[41]  Lederberg J, Tatum EL. Gene Recombination in Escherichia Coli. Nature. 1946;158:558.
+
+[42]  Franklin RE, Gosling RG. Molecular Configuration in Sodium Thymonucleate. Nature. 1953;171:740–741.
+
+[43]  Watson JD, Crick FHC. Molecular Structure of Nucleic Acids: A Structure for Deoxyribose Nucleic Acid. Nature. 1953;171:737–738.
+
+[44]  Wilkins MHF, Stokes AR, Wilson HR. Molecular Structure of Deoxypentose Nucleic Acids. Nature. 1953;171:738–740.
+
+[45]  King’s College London. The Story behind Photograph 51. 2023年科学史解读.
+
+[46]  King’s College London. Rosalind Franklin deliberately created Photo 51 after earlier photograph revealed DNA’s structure. 2026年10月9日档案研究介绍.
+
+[47]  Jacob F, Monod J. Genetic regulatory mechanisms in the synthesis of proteins. J Mol Biol. 1961;3:318–356.
+
+[48]  Woese CR, Fox GE. Phylogenetic structure of the prokaryotic domain: the primary kingdoms. PNAS. 1977;74:5088–5090.
+
+[49]  Woese CR, Kandler O, Wheelis ML. Towards a natural system of organisms: proposal for the domains Archaea, Bacteria, and Eucarya. PNAS. 1990;87:4576–4579.
+
+[50]  Pace NR. A molecular view of microbial diversity and the biosphere. Science. 1997;276:734–740.
+
+[51]  Turnbaugh PJ, et al. An obesity-associated gut microbiome with increased capacity for energy harvest. Nature. 2006;444:1027–1031.
+
+[52]  Human Microbiome Project Consortium. Structure, function and diversity of the healthy human microbiome. Nature. 2012;486:207–214.
+
+[53]  Human Microbiome Project Consortium. A framework for human microbiome research. Nature. 2012;486:215–221.
+
+[54]  van Nood E, et al. Duodenal infusion of donor feces for recurrent Clostridium difficile. N Engl J Med. 2013;368:407–415.
+
+[55]  Sudo N, et al. Postnatal microbial colonization programs the hypothalamic–pituitary–adrenal system for stress response in mice. J Physiol. 2004;558:263–275.
+
+[56]  Barrangou R, et al. CRISPR provides acquired resistance against viruses in prokaryotes. Science. 2007;315:1709–1712.
+
+[57]  Jinek M, et al. A programmable dual-RNA-guided DNA endonuclease in adaptive bacterial immunity. Science. 2012;337:816–821.
