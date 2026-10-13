@@ -46,7 +46,7 @@
 
 [22]  Robert Koch Institute Museum. Tuberculosis then & now — a presentation from the museum [EB/OL]. 2025 [引用日期：2026-10-14]. https://www.rki.de/EN/Institute/Service-and-visitor-information/Museum/Museum-at-RKI/projects.html.
 
-[23]  Sihn K. Reorganizing Hospital Space: The 1894 Plague Epidemic in Hong Kong and the Germ Theory. Korean Journal of Medical History, 2017, 26(1):59–94. DOI: 10.13081/kjmh.2017.26.59.
+[23]  Sihn KH. Reorganizing Hospital Space: The 1894 Plague Epidemic in Hong Kong and the Germ Theory. Korean Journal of Medical History. 2017;26(1):59–94. DOI: [10.13081/kjmh.2017.26.59](https://doi.org/10.13081/kjmh.2017.26.59).
 
 [24]  Ayres PBC, Lowson JA. Report on the outbreak of bubonic plague in Hongkong, 1894. Hong Kong: China Mail Office, 1894. 29 p.,1 plan.（影印题名页署 Lowson；Wellcome规范编目作 Lawson）[Wellcome Collection](https://wellcomecollection.org/works/kxpv9yac).
 
@@ -56,13 +56,13 @@
 
 [27]  Michaleas SN, Laios K, Karamanou M, et al. The Manchurian pandemic of pneumonic plague (1910–1911). *Le Infezioni in Medicina*. 2022;30(3):464–468. DOI: [10.53854/liim-3003-17](https://doi.org/10.53854/liim-3003-17).
 
-[28]  吴文清.《大公报》视角下1918年大流感在中国的流行与防治. 中华医史杂志, 2021, 51(3):158–166. DOI:10.3760/cma.j.cn112155-20200806-00129.
+[28]  吴文清.《大公报》视角下1918年大流感在中国的流行与防治. 中华医史杂志. 2021;51(3):158–166. DOI: [10.3760/cma.j.cn112155-20200806-00129](https://doi.org/10.3760/cma.j.cn112155-20200806-00129).
 
-[29]  陈弘宇, 袁媛. 上海1918—1919年大流感的抗疫与反思. 医学与哲学, 2025, 46(7):71–76. DOI:10.12014/j.issn.1002-0772.2025.07.14.
+[29]  陈弘宇, 袁媛. 上海1918—1919年大流感的抗疫与反思. 医学与哲学. 2025;46(7):71–76. DOI: [10.12014/j.issn.1002-0772.2025.07.14](https://doi.org/10.12014/j.issn.1002-0772.2025.07.14).
 
-[30]  Shepherd JR. Reassessing the Mortality Impact of the 1918 Influenza Pandemic in China. Modern China, 2024. DOI:10.1177/00977004231189278.
+[30]  Shepherd JR. Reassessing the Mortality Impact of the 1918 Influenza Pandemic in China. Modern China. 2024. DOI: [10.1177/00977004231189278](https://doi.org/10.1177/00977004231189278).
 
-[31]  Fleming A. On the antibacterial action of cultures of a Penicillium, with special reference to their use in the isolation of B. influenzae. British Journal of Experimental Pathology, 1929, 10(3):226–236.
+[31]  Fleming A. On the Antibacterial Action of Cultures of a Penicillium, with Special Reference to their Use in the Isolation of B. influenzæ. British Journal of Experimental Pathology. 1929;10(3):226–236. [原始论文全文 PMC2048009](https://pmc.ncbi.nlm.nih.gov/articles/PMC2048009/).
 
 [32]  History of Science Museum, University of Oxford. Original penicillin culture and specimen (Florey team, c.1940–1941) [EB/OL]. [引用日期：2026-10-14]. https://www.hsm.ox.ac.uk/original-penicillin-culture-and-specimen.
 
@@ -72,7 +72,7 @@
 
 [35]  United States Department of Agriculture, Agricultural Research Service. Penicillin: Opening the Era of Antibiotics [EB/OL]. [引用日期：2026-10-14]. https://www.ars.usda.gov/midwest-area/peoria-il/national-center-for-agricultural-utilization-research/docs/penicillin-opening-the-era-of-antibiotics/.
 
-[36]  Griffith F. The significance of pneumococcal types. Journal of Hygiene, 1928, 27(2):113–159. DOI: 10.1017/S0022172400031879.
+[36]  Griffith F. The significance of pneumococcal types. Journal of Hygiene. 1928;27(2):113–159. DOI: [10.1017/S0022172400031879](https://doi.org/10.1017/S0022172400031879).
 
 [37]  Nature Education, Scitable. Discovery of DNA as the Hereditary Material [EB/OL]. [引用日期：2026-10-14]. https://www.nature.com/scitable/topicpage/discovery-of-dna-as-the-hereditary-material-340/.
 
