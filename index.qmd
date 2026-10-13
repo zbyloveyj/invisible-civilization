@@ -1,39 +1,75 @@
 ---
-title: "看不见的文明"
+title: ""
 title-block-style: none
 page-layout: full
 sidebar: false
 toc: false
 ---
 
-<div class="book-home">
-<section class="home-hero" aria-label="作品封面">
-<div class="home-hero__left">
-<div class="editorial-eyebrow"><span class="eyebrow-rule"></span> A SCIENCE–HISTORY NOVEL</div>
-<p class="home-hero__genre">科学历史长篇小说 · 六卷四十八章</p>
-<h1 class="home-hero__heading">看不见的<br><em>文明</em></h1>
-<p class="home-hero__subtitle">微生物与人类的三百年</p>
-<div class="home-hero__line"></div>
-<p class="home-hero__desc">在显微镜出现之前，人类已经与无数看不见的生命共同生活。<br>一部有关疾病、城市、医学、遗传、生态与科学探索的长篇小说。</p>
-<div class="home-hero__actions"><a class="editorial-button editorial-button--solid" href="chapters/volume-01/chapter-01.html">开始阅读 <span aria-hidden="true">↗</span></a><a class="editorial-button editorial-button--outline" href="contents.html">浏览全书目录 <span aria-hidden="true">→</span></a></div>
-<p class="home-hero__credit">一心问道 · 著 <span>　|　</span> 公开文学统稿 · 持续修订</p>
-</div>
-<div class="home-hero__art" aria-hidden="true"><div class="art-topline"><span>THE INVISIBLE</span><span>1665—2026</span></div><div class="art-orbit art-orbit--one"></div><div class="art-orbit art-orbit--two"></div><div class="art-orbit art-orbit--three"></div><div class="art-spore art-spore--one"></div><div class="art-spore art-spore--two"></div><div class="art-spore art-spore--three"></div><div class="art-spore art-spore--four"></div><div class="art-central"><span>生<br>命</span></div><div class="art-bottomline"><span>NOTES ON THE UNSEEN WORLD</span><span>01 — 06</span></div></div>
+<div class="ic-home">
+
+<section class="ic-hero" aria-label="作品封面">
+ <div class="ic-hero__content">
+  <div class="ic-hero__meta"><span class="ic-kicker"><i></i> A SCIENCE-HISTORY NOVEL</span><span class="ic-hero__edition">2026 / EDITORIAL EDITION</span></div>
+  <p class="ic-hero__overline">跨越三个多世纪的科学与人类故事</p>
+  <h1 class="ic-hero__title">看不见的<br><span>文明</span></h1>
+  <p class="ic-hero__subtitle">微生物与人类的三百年</p>
+  <div class="ic-hero__hairline"></div>
+  <p class="ic-hero__lead">人类用了几百年才知道，<br>那些看不见的生命，始终与我们共同生活。</p>
+  <p class="ic-hero__brief">从显微镜里的第一滴水，到霍乱街区、战争年代的实验室，再到基因组与脑肠轴研究。这是一部关于发现、误解、抗争与理解的长篇小说。</p>
+  <div class="ic-hero__actions"><a class="ic-button ic-button--primary" href="chapters/volume-01/chapter-01.html"><span>开始阅读</span><span aria-hidden="true">↗</span></a><a class="ic-button ic-button--secondary" href="contents.html"><span>查看全书目录</span><span aria-hidden="true">→</span></a></div>
+  <div class="ic-hero__byline"><span>一心问道 · 著</span><span class="ic-dot"></span><span>六卷 · 四十八章</span></div>
+ </div>
+ <figure class="ic-hero__figure"><img src="assets/micrograph-plate.svg" alt="以传统科学史铜版画为灵感绘制的菌丝与孢子显微图版" width="720" height="880" loading="eager"><figcaption>MICROGRAPHIC STUDIES <span>PLATE NO. 001</span></figcaption></figure>
 </section>
-<div class="home-statbar"><span><strong>06</strong> 卷</span><span class="statbar-separator"></span><span><strong>48</strong> 章</span><span class="statbar-separator"></span><span><strong>1665—2026</strong> 历史跨度</span><span class="statbar-right">文学 × 科学史 × 人类命运</span></div>
-<section id="continue-reading" class="home-resume" hidden aria-label="继续阅读"><div class="home-resume__left"><span class="eyebrow-small">YOUR READING JOURNEY</span><h2>接着上次读</h2><p id="resume-label"></p></div><a id="resume-link" class="editorial-button editorial-button--outline" href="chapters/volume-01/chapter-01.html">继续阅读 ↗</a></section>
-<section class="home-intro home-section"><div><p class="eyebrow-small">01 / THE STORY</p><h2 class="editorial-heading">人类用了很长时间，<br>才意识到自己并不孤独。</h2></div><div class="home-intro__copy"><p>这不是一部按照年代排列的科学家传记。1665年伦敦书铺的学徒、1854年经历霍乱的洗衣妇、战争年代的实验室技术员，与2026年面对模型失效的研究者，生活在不同的时间，却不断遇见相似的问题。</p><p>他们怎样相信一种尚未被解释的现象？新的知识要付出什么代价才能进入日常生活？在可以测量越来越多数据的今天，人类又能确定什么？</p><a class="editorial-text-link" href="about.html">了解创作缘起 ↗</a></div></section>
-<section id="volumes" class="home-section"><div class="section-head"><div><p class="eyebrow-small">02 / THE SIX VOLUMES</p><h2 class="editorial-heading">六卷故事</h2></div><a class="editorial-text-link" href="contents.html">查看全部四十八章 ↗</a></div><div class="volume-panels"><a class="volume-panel" href="volumes/volume-01.html"><span class="volume-panel__top"><span>VOL. 01</span><span>1665—1796</span></span><span class="volume-panel__title">未知的生命</span><span class="volume-panel__en">THE UNSEEN</span><span class="volume-panel__copy">显微镜、霉菌与水滴。看见曾经不存在于知识中的生命，也重新看见普通人的日常。</span><span class="volume-panel__bottom">进入本卷 <span aria-hidden="true">↗</span></span></a>
-<a class="volume-panel" href="volumes/volume-02.html"><span class="volume-panel__top"><span>VOL. 02</span><span>1832—1867</span></span><span class="volume-panel__title">疾病与城市</span><span class="volume-panel__en">DISEASE & CITY</span><span class="volume-panel__copy">霍乱流经城市，病例变成地图。疾病、供水、卫生制度与个人命运交织在一起。</span><span class="volume-panel__bottom">进入本卷 <span aria-hidden="true">↗</span></span></a>
-<a class="volume-panel" href="volumes/volume-03.html"><span class="volume-panel__top"><span>VOL. 03</span><span>1882—1945</span></span><span class="volume-panel__title">医学与战争</span><span class="volume-panel__en">MEDICINE & WAR</span><span class="volume-panel__copy">鼠疫、流感与青霉素。医学不只发生在实验室，也发生在车站、病房和战争年代。</span><span class="volume-panel__bottom">进入本卷 <span aria-hidden="true">↗</span></span></a>
-<a class="volume-panel" href="volumes/volume-04.html"><span class="volume-panel__top"><span>VOL. 04</span><span>1928—1977</span></span><span class="volume-panel__title">生命的密码</span><span class="volume-panel__en">CODE OF LIFE</span><span class="volume-panel__copy">从转化实验到DNA结构，从细菌遗传重组到古菌。生命的谱系逐渐改变模样。</span><span class="volume-panel__bottom">进入本卷 <span aria-hidden="true">↗</span></span></a>
-<a class="volume-panel" href="volumes/volume-05.html"><span class="volume-panel__top"><span>VOL. 05</span><span>1995—2010年代</span></span><span class="volume-panel__title">人体的另一半</span><span class="volume-panel__en">WITHIN US</span><span class="volume-panel__copy">宏基因组、人体微生物组和微生态治疗。人与微生物并不只存在对抗关系。</span><span class="volume-panel__bottom">进入本卷 <span aria-hidden="true">↗</span></span></a>
-<a class="volume-panel" href="volumes/volume-06.html"><span class="volume-panel__top"><span>VOL. 06</span><span>2004—2026</span></span><span class="volume-panel__title">生命的新边界</span><span class="volume-panel__en">NEW FRONTIERS</span><span class="volume-panel__copy">脑肠轴、基因交换、人工智能和临床伦理。掌握更多数据，不意味着拥有全部答案。</span><span class="volume-panel__bottom">进入本卷 <span aria-hidden="true">↗</span></span></a></div></section>
-<section class="home-section home-passage"><div><p class="eyebrow-small">03 / A NOTE FROM THE BOOK</p><div class="passage-mark" aria-hidden="true">“</div></div><blockquote>有些东西，人们已经能够准确测量，却仍未真正理解。<span>这不是旅程的终点，而是它得以继续的原因。</span></blockquote><p class="passage-source">作品主题摘记 · 不是历史人物引言</p></section>
-<section class="home-section"><div class="section-head"><div><p class="eyebrow-small">04 / START SOMEWHERE</p><h2 class="editorial-heading">从这些章节开始</h2></div><p class="section-head__aside">也可以不从第一章开始。</p></div><div class="feature-chapters"><a class="feature-chapter" href="chapters/volume-01/chapter-01.html"><span class="feature-chapter__index">01 / 48</span><span class="feature-chapter__title">纸上的霉</span><span class="feature-chapter__date">1665 · 伦敦</span><span class="feature-chapter__arrow" aria-hidden="true">↗</span></a>
-<a class="feature-chapter" href="chapters/volume-02/chapter-11.html"><span class="feature-chapter__index">11 / 48</span><span class="feature-chapter__title">布罗德街</span><span class="feature-chapter__date">1854 · 伦敦</span><span class="feature-chapter__arrow" aria-hidden="true">↗</span></a>
-<a class="feature-chapter" href="chapters/volume-03/chapter-22.html"><span class="feature-chapter__index">22 / 48</span><span class="feature-chapter__title">长霉的培养皿</span><span class="feature-chapter__date">1928 · 伦敦</span><span class="feature-chapter__arrow" aria-hidden="true">↗</span></a>
-<a class="feature-chapter" href="chapters/volume-06/chapter-48.html"><span class="feature-chapter__index">48 / 48</span><span class="feature-chapter__title">看不见的文明</span><span class="feature-chapter__date">2026 · 中国南方</span><span class="feature-chapter__arrow" aria-hidden="true">↗</span></a></div></section>
-<section class="home-section history-strip"><div><p class="eyebrow-small">05 / THROUGH THE CENTURIES</p><h2 class="editorial-heading">三百余年的观察与争论</h2></div><div class="history-strip__events"><div><b>1665</b><span>显微观察</span></div><div><b>1854</b><span>霍乱与城市</span></div><div><b>1928</b><span>抗生素与遗传</span></div><div><b>1953</b><span>DNA结构</span></div><div><b>2012</b><span>人体微生物组</span></div><div><b>2026</b><span>现代故事线</span></div></div><a class="editorial-text-link" href="timeline.html">阅读完整科学史年表 ↗</a></section>
-<section class="home-section home-close"><p class="eyebrow-small">READ • THINK • RETURN</p><h2>去读一页，<br>再遇见一个世界。</h2><a class="editorial-button editorial-button--solid" href="chapters/volume-01/chapter-01.html">翻开第一章 ↗</a><p>每章附真实历史与科学解读。全书持续进行文学与科学史审校。</p></section>
-<footer class="home-colophon"><span>《看不见的文明》 · 一心问道 © 2026</span><span><a href="download.html">下载与版本</a>　·　<a href="https://github.com/zbyloveyj/invisible-civilization">GitHub</a></span></footer></div>
+
+<div class="ic-ribbon"><span><strong>06</strong><small>VOLUMES / 卷</small></span><span><strong>48</strong><small>CHAPTERS / 章</small></span><span><strong>1665—2026</strong><small>ACROSS THE CENTURIES</small></span><div class="ic-ribbon__end">一部持续修订的科学历史小说 <span aria-hidden="true">↘</span></div></div>
+
+<div class="ic-continue" id="continue-reading" hidden><div><span class="ic-section-label">YOUR READING JOURNEY</span><h2>从上一次停下的地方继续</h2><p id="resume-label">重新进入书中的那个世界。</p></div><a id="resume-link" class="ic-text-link" href="chapters/volume-01/chapter-01.html">继续阅读 <span aria-hidden="true">↗</span></a></div>
+
+<section class="ic-section ic-manifesto" id="about-the-book"><div class="ic-section__label"><span>01 / THE STORY</span><i></i></div><div class="ic-manifesto__grid"><h2>我们所居住的世界，<br>从不只有人类。</h2><div class="ic-manifesto__body"><p>本书不是六位科学家的传记，也不是一本按年份编排的微生物学教材。历史上的重要发现，与那些没有留下名字的普通人，共同构成了故事。</p><p>伦敦书铺的学徒、经历霍乱的母女、东北防疫的护士、研究DNA的实验人员，与现代研究者程屿的困惑相互映照：我们究竟看见了什么？又凭什么相信自己已经理解？</p><a class="ic-text-link" href="about.html">关于作品与作者 <span aria-hidden="true">↗</span></a></div></div></section>
+
+<section class="ic-section ic-volumes" id="volumes"><div class="ic-section__heading"><div><span class="ic-section-label">02 / THE SIX VOLUMES</span><h2>六卷，一部不断展开的历史。</h2></div><a class="ic-text-link" href="contents.html">全部48章 <span aria-hidden="true">↗</span></a></div><div class="ic-volume-grid">
+<a class="ic-volume" href="volumes/volume-01.html" aria-label="进入第1卷未知的生命">
+  <div class="ic-volume__top"><span class="ic-volume__index">01 <small>/ 06</small></span><span class="ic-volume__years">1665 — 1796</span></div>
+  <h3>未知的生命</h3><p class="ic-volume__latin">THE FIRST SIGHT</p><p class="ic-volume__summary">显微镜、发酵与未知的生命</p>
+  <div class="ic-volume__bottom"><span>8 CHAPTERS</span><span class="ic-volume__arrow" aria-hidden="true">↗</span></div></a>
+<a class="ic-volume" href="volumes/volume-02.html" aria-label="进入第2卷疾病与城市">
+  <div class="ic-volume__top"><span class="ic-volume__index">02 <small>/ 06</small></span><span class="ic-volume__years">1832 — 1867</span></div>
+  <h3>疾病与城市</h3><p class="ic-volume__latin">THE CITY & DISEASE</p><p class="ic-volume__summary">霍乱、水井与城市秩序</p>
+  <div class="ic-volume__bottom"><span>8 CHAPTERS</span><span class="ic-volume__arrow" aria-hidden="true">↗</span></div></a>
+<a class="ic-volume" href="volumes/volume-03.html" aria-label="进入第3卷医学与战争">
+  <div class="ic-volume__top"><span class="ic-volume__index">03 <small>/ 06</small></span><span class="ic-volume__years">1882 — 1945</span></div>
+  <h3>医学与战争</h3><p class="ic-volume__latin">MEDICINE & WAR</p><p class="ic-volume__summary">鼠疫、抗生素与战争年代</p>
+  <div class="ic-volume__bottom"><span>8 CHAPTERS</span><span class="ic-volume__arrow" aria-hidden="true">↗</span></div></a>
+<a class="ic-volume" href="volumes/volume-04.html" aria-label="进入第4卷生命的密码">
+  <div class="ic-volume__top"><span class="ic-volume__index">04 <small>/ 06</small></span><span class="ic-volume__years">1928 — 1990</span></div>
+  <h3>生命的密码</h3><p class="ic-volume__latin">THE CODE OF LIFE</p><p class="ic-volume__summary">DNA、细菌遗传与古菌</p>
+  <div class="ic-volume__bottom"><span>8 CHAPTERS</span><span class="ic-volume__arrow" aria-hidden="true">↗</span></div></a>
+<a class="ic-volume" href="volumes/volume-05.html" aria-label="进入第5卷人体的另一半">
+  <div class="ic-volume__top"><span class="ic-volume__index">05 <small>/ 06</small></span><span class="ic-volume__years">1995 — 2019</span></div>
+  <h3>人体的另一半</h3><p class="ic-volume__latin">THE OTHER HALF</p><p class="ic-volume__summary">人体微生物组与生态健康</p>
+  <div class="ic-volume__bottom"><span>8 CHAPTERS</span><span class="ic-volume__arrow" aria-hidden="true">↗</span></div></a>
+<a class="ic-volume" href="volumes/volume-06.html" aria-label="进入第6卷生命的新边界">
+  <div class="ic-volume__top"><span class="ic-volume__index">06 <small>/ 06</small></span><span class="ic-volume__years">2004 — 2026</span></div>
+  <h3>生命的新边界</h3><p class="ic-volume__latin">NEW FRONTIERS</p><p class="ic-volume__summary">脑肠轴、人工智能与伦理</p>
+  <div class="ic-volume__bottom"><span>8 CHAPTERS</span><span class="ic-volume__arrow" aria-hidden="true">↗</span></div></a>
+</div></section>
+
+<section class="ic-breath"><div class="ic-breath__left"><span>FROM THE PAGES</span><div class="ic-breath__mark" aria-hidden="true">“</div></div><div class="ic-breath__right"><p>我们能看见的，<br>永远只是世界的一部分。</p><span>作品主题引语 · 非历史人物原话</span></div></section>
+
+<section class="ic-section ic-selected"><div class="ic-section__heading"><div><span class="ic-section-label">03 / WHERE TO BEGIN</span><h2>从一章故事开始。</h2></div><p>四个不同年代，四种观看生命的方式。</p></div><div class="ic-picks"><a class="ic-pick" href="chapters/volume-01/chapter-01.html"><span class="ic-pick__head"><b>01</b><span>EDITOR'S SELECTION</span></span><h3>纸上的霉</h3><p>一张霉菌图改变了少年理解世界的方式。</p><div class="ic-pick__foot"><span>1665 · 伦敦</span><span aria-hidden="true">↗</span></div></a>
+<a class="ic-pick" href="chapters/volume-02/chapter-11.html"><span class="ic-pick__head"><b>11</b><span>EDITOR'S SELECTION</span></span><h3>布罗德街</h3><p>当疾病进入城市，一口水井承载了太多人的命运。</p><div class="ic-pick__foot"><span>1854 · 伦敦</span><span aria-hidden="true">↗</span></div></a>
+<a class="ic-pick" href="chapters/volume-03/chapter-22.html"><span class="ic-pick__head"><b>22</b><span>EDITOR'S SELECTION</span></span><h3>长霉的培养皿</h3><p>一次不寻常的实验观察，距离救治病人仍有漫长道路。</p><div class="ic-pick__foot"><span>1928 · 伦敦</span><span aria-hidden="true">↗</span></div></a>
+<a class="ic-pick" href="chapters/volume-06/chapter-48.html"><span class="ic-pick__head"><b>48</b><span>EDITOR'S SELECTION</span></span><h3>看不见的文明</h3><p>科学仍有未完成的问题，生活也仍将继续。</p><div class="ic-pick__foot"><span>2026 · 中国南方</span><span aria-hidden="true">↗</span></div></a></div></section>
+
+<section class="ic-section ic-time"><div class="ic-section__heading"><div><span class="ic-section-label">04 / A HISTORY IN FRAGMENTS</span><h2>三百余年的时间刻度。</h2></div><a class="ic-text-link" href="timeline.html">完整科学史年表 <span aria-hidden="true">↗</span></a></div><div class="ic-time__track"><div><b>1665</b><span>显微镜</span></div><div><b>1854</b><span>霍乱与城市</span></div><div><b>1928</b><span>青霉素</span></div><div><b>1953</b><span>DNA结构</span></div><div><b>2012</b><span>微生物组</span></div><div><b>2026</b><span>当代故事</span></div></div></section>
+
+<section class="ic-section ic-principles"><div class="ic-section__heading"><div><span class="ic-section-label">05 / HOW TO READ</span><h2>小说，也是一次科学史旅行。</h2></div></div><div class="ic-principles__grid"><article><span>01</span><h3>故事先于解释</h3><p>每一章都有自己的场景、人物和冲突。科学发现进入生活，而不是代替故事。</p></article><article><span>02</span><h3>史实与虚构分明</h3><p>章末附“真实历史与科学解读”，说明事实依据和虚构情节，避免把想象当作史料。</p></article><article><span>03</span><h3>持续公开修订</h3><p>正在公开的是文学统稿，后续将在保留章节历史的基础上继续完善科学和文学细节。</p></article></div></section>
+
+<section class="ic-author"><div><span class="ic-section-label">THE AUTHOR</span><h2>一心问道</h2><p>华南理工大学博士在读，关注微生物组、脑科学与智能生物解析。这本书源于对微生物科学史与普通人命运的共同兴趣。</p></div><a class="ic-text-link" href="about.html">读一读作者的话 ↗</a></section>
+
+<section class="ic-finale"><div class="ic-finale__top">INVITATION TO READ <span>VOLUME I — VI</span></div><h2>从一滴水开始，<br>走进另一个世界。</h2><p>六卷 · 四十八章 · 全文开放阅读</p><a class="ic-button ic-button--light" href="chapters/volume-01/chapter-01.html"><span>翻开第一章</span><span aria-hidden="true">↗</span></a></section>
+
+<footer class="ic-home-footer"><span>© 2026 一心问道 · 保留所有权利</span><div><a href="download.html">下载与版本</a><a href="appendices/references.html">参考资料</a><a href="https://github.com/zbyloveyj/invisible-civilization">GitHub ↗</a></div></footer>
+</div>

@@ -1,6 +1,8 @@
 project:
   type: book
   output-dir: _site
+  resources:
+    - assets/**
 
 lang: zh-CN
 number-sections: false
@@ -9,6 +11,7 @@ book:
   title: "看不见的文明"
   subtitle: "微生物与人类的三百年"
   author: "一心问道"
+  favicon: assets/favicon.svg
   site-url: "https://zbyloveyj.github.io/invisible-civilization/"
   page-navigation: true
   navbar:
@@ -121,7 +124,9 @@ book:
 format:
   html:
     theme: cosmo
-    css: styles/reader.css
+    css:
+      - styles/reader.css
+      - styles/home-v2.css
     include-after-body: styles/reader.html
     toc: false
     smooth-scroll: true
