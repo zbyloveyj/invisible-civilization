@@ -192,3 +192,22 @@ else ready();
 })();
 
 </script>
+<script>
+/* Avoid broken remote historical-image icons when an archive host is unreachable. */
+(function(){
+  function apply(){
+    document.querySelectorAll(".book-plate--historical img").forEach(function(img){
+      img.addEventListener("error",function(){
+        var media=img.closest(".book-plate__media");
+        if(!media||media.querySelector(".plate-image-fallback"))return;
+        img.style.display="none";
+        var fallback=document.createElement("div");
+        fallback.className="plate-image-fallback";
+        fallback.textContent="馆藏图像暂时无法加载，可通过下方来源链接查看原始图版。";
+        media.appendChild(fallback);
+      },{once:true});
+    });
+  }
+  if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",apply,{once:true});else apply();
+})();
+</script>

@@ -286,3 +286,6 @@ html[data-reader-theme="night"] input,html[data-reader-theme="night"] textarea{c
  .book-plate img{max-height:410px}
  .book-plate figcaption{padding:1.05rem 1rem;font-size:.77rem}
 }
+
+
+.plate-image-fallback{font-family:var(--font-interface);font-size:.86rem;line-height:1.9;color:var(--muted);border:1px dashed var(--line);padding:2rem;text-align:center;max-width:600px}

@@ -71,5 +71,5 @@ toc: false
 
 <section class="ic-finale"><div class="ic-finale__top">INVITATION TO READ <span>VOLUME I — VI</span></div><h2>从一滴水开始，<br>走进另一个世界。</h2><p>六卷 · 四十八章 · 全文开放阅读</p><a class="ic-button ic-button--light" href="chapters/volume-01/chapter-01.html"><span>翻开第一章</span><span aria-hidden="true">↗</span></a></section>
 
-<footer class="ic-home-footer"><span>© 2026 一心问道 · 保留所有权利</span><div><a href="download.html">下载与版本</a><a href="appendices/references.html">参考资料</a><a href="https://github.com/zbyloveyj/invisible-civilization">GitHub ↗</a></div></footer>
+<footer class="ic-home-footer"><span>© 2026 一心问道 · 保留所有权利</span><div><a href="download.html">下载与版本</a><a href="appendices/references.html">参考资料</a><a href="appendices/plates.html">图版与来源</a><a href="https://github.com/zbyloveyj/invisible-civilization">GitHub ↗</a></div></footer>
 </div>

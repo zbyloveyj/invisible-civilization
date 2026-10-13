@@ -40,4 +40,33 @@ try:
  temp.write_text("\n;\n".join(blocks),encoding="utf-8")
  subprocess.run(["node","--check",str(temp)],check=True)
 finally:temp.unlink(missing_ok=True)
+
+# Editorial illustration QA: verify source-controlled SVG plates, alt texts and in-story placement.
+from xml.etree import ElementTree
+for plate in Path("assets/plates").glob("*.svg"):
+    ElementTree.parse(plate)
+figure_count = 0
+chapters_with_figures = []
+for num in range(1,49):
+    path = ROOT / f"chapters/volume-{(num-1)//8+1:02d}/chapter-{num:02d}.html"
+    html = path.read_text(encoding="utf-8")
+    blocks = re.findall(r'<figure\b[^>]*book-plate[^>]*>[\s\S]*?</figure>', html)
+    if blocks:
+        chapters_with_figures.append(num)
+    for block in blocks:
+        figure_count += 1
+        if not re.search(r'<figcaption\b', block) or not re.search(r'<img\b[^>]*\balt="[^"]+"', block):
+            raise SystemExit(f"Figure missing caption or accessible alt: chapter {num}")
+        m = re.search(r'<img\b[^>]*\bsrc="([^"]+)"', block)
+        if not m:
+            raise SystemExit(f"Figure missing image source: chapter {num}")
+        src = m.group(1)
+        if not src.startswith(("http://","https://")):
+            target = (path.parent / src).resolve()
+            if not target.is_file():
+                raise SystemExit(f"Missing local image: {target} (chapter {num})")
+if figure_count < 8:
+    raise SystemExit(f"Expected at least 8 in-story plates; found {figure_count}")
+print(f"PASS: {figure_count} illustrated figures in chapters {chapters_with_figures}")
+
 print(f"PASS: {len(need)} book pages; {checked} local links; reader script syntax.")
