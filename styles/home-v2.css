@@ -157,3 +157,69 @@ html[data-reader-theme="night"] #quarto-header .navbar-nav .nav-link{color:#dce8
 @media(max-width:790px){body:has(.ic-home) .ic-home{width:calc(100% - 36px)}.ic-hero{grid-template-columns:1fr;min-height:0;margin:24px 0 0}.ic-hero__content{padding:40px 30px 32px}.ic-hero__overline{margin:36px 0 10px}.ic-hero__title{font-size:clamp(4.2rem,11.5vw,6rem)!important}.ic-hero__subtitle{font-size:1.22rem}.ic-hero__lead{font-size:1.15rem}.ic-hero__actions{margin-bottom:17px}.ic-hero__byline{padding-top:14px}.ic-hero__figure{border-left:0;border-top:1px solid var(--ic-rule);height:460px;overflow:hidden}.ic-hero__figure img{width:100%;height:100%;object-fit:contain;padding:10px 30px}.ic-ribbon{gap:18px;flex-wrap:wrap;padding:17px 0}.ic-ribbon__end{width:100%;margin:0}.ic-section{margin-top:68px}.ic-manifesto__grid{grid-template-columns:1fr;gap:15px}.ic-manifesto__body{border-left:0;border-top:1px solid var(--ic-rule);padding:20px 0 0}.ic-breath{grid-template-columns:1fr;gap:5px;padding:33px 0}.ic-breath__mark{display:none}.ic-principles__grid{grid-template-columns:1fr;gap:0}.ic-principles__grid article{padding:20px 0}.ic-author{flex-direction:column;align-items:flex-start;margin-top:70px;padding:32px}.ic-home-footer{flex-direction:column;align-items:flex-start}.ic-hero__brief br{display:none}}
 @media(max-width:520px){#quarto-header nav.navbar{min-height:62px!important}#quarto-header .navbar-container{padding:0 18px!important}#quarto-header .navbar-brand{font-size:1.08rem!important}.ic-hero{margin:10px 0 0}.ic-hero__content{padding:28px 22px 25px}.ic-hero__meta{font-size:.59rem;letter-spacing:.08em}.ic-hero__overline{font-size:.82rem;margin-top:27px}.ic-hero__title{font-size:clamp(3.15rem,13vw,4.6rem)!important}.ic-hero__subtitle{font-size:1.05rem;letter-spacing:.09em;margin-top:18px}.ic-hero__hairline{margin:23px 0}.ic-hero__lead{font-size:1.04rem}.ic-hero__brief{font-size:.86rem}.ic-hero__actions{width:100%;gap:8px}.ic-button{width:100%;min-height:50px}.ic-hero__figure{height:350px}.ic-hero__figure img{padding:0 16px}.ic-hero__figure figcaption{font-size:.49rem;bottom:12px}.ic-ribbon>span{gap:7px}.ic-ribbon strong{font-size:1.1rem}.ic-ribbon small{font-size:.58rem}.ic-ribbon__end{font-size:.76rem}.ic-volume-grid{grid-template-columns:1fr}.ic-volume{min-height:263px;padding:25px}.ic-volume h3{margin-top:28px}.ic-picks{grid-template-columns:1fr}.ic-pick{min-height:220px}.ic-pick h3{margin-top:25px}.ic-manifesto h2{font-size:2rem}.ic-section__heading{align-items:flex-start;flex-direction:column;gap:10px}.ic-section__heading h2{font-size:1.9rem}.ic-time__track{grid-template-columns:repeat(2,1fr)}.ic-finale{padding:35px 24px 48px}.ic-finale__top{font-size:.64rem}.ic-finale h2{font-size:2.2rem}.ic-continue{padding:22px;flex-direction:column;align-items:flex-start}}
 @media(prefers-reduced-motion:reduce){.ic-home *, .ic-home *:before, .ic-home *:after{transition:none!important;animation:none!important}}
+
+/* Site-wide editorial consistency: eliminate duplicated Quarto headings on
+   custom index pages and make their grid independent of book sidebar columns. */
+body:has(.editorial-page) #quarto-content.page-layout-full,
+body:has(.editorial-page) #quarto-content.page-columns{
+  display:block!important;width:100%!important;max-width:none!important;
+  grid-template-columns:none!important;padding:0!important;margin:0!important;
+}
+body:has(.editorial-page) main#quarto-document-content{
+  display:block!important;grid-column:auto!important;width:100%!important;
+  max-width:none!important;margin:0!important;padding:0!important;
+}
+body:has(.editorial-page) .editorial-page{
+  width:min(1140px,calc(100% - 96px))!important;
+  max-width:none!important;margin:65px auto 110px!important;
+}
+body:has(.editorial-page) .editorial-page-head h1{
+  font-size:clamp(2.3rem,4.3vw,3.6rem)!important;
+}
+body:has(.editorial-page) .editorial-page-head{
+  padding:55px 0 45px;border-bottom:1px solid var(--ic-rule);
+}
+body:has(.volume-opening) #quarto-document-content>header#title-block-header{
+  display:none!important;
+}
+body:has(.volume-opening) #quarto-document-content>.volume-opening{
+  border:1px solid var(--ic-rule);box-shadow:0 9px 25px rgba(45,57,46,.035);
+}
+body.has-novel #quarto-document-content{
+  padding-top:1.2rem;padding-bottom:5rem;
+}
+body.has-novel #quarto-document-content>.chapter-preface{
+  margin:2.1rem 0 .9rem;
+}
+body.has-novel #quarto-document-content>h1{
+  font-family:var(--ic-serif);font-size:clamp(2.15rem,3.2vw,3.05rem);
+  letter-spacing:.065em;font-weight:700;line-height:1.45;margin:0 0 .45rem;
+}
+body.has-novel #quarto-document-content .chapter-dateline{
+  font-size:.92rem;color:var(--ic-muted);letter-spacing:.1em;
+}
+body.has-novel #quarto-document-content .chapter-reading-meta{
+  color:var(--ic-muted);padding-bottom:24px;margin-bottom:40px;
+}
+body.has-novel #quarto-document-content .novel-chapter{
+  max-width:780px;
+}
+body.has-novel #quarto-document-content .novel-chapter p{
+  font-family:var(--ic-serif);line-height:2.12;letter-spacing:.012em;
+}
+body.has-novel #quarto-document-content .history-note{
+  border-top:1px solid var(--ic-forest);background:var(--surface-tint);
+  padding:2rem;border-radius:0;
+}
+body.has-novel #quarto-sidebar{border-right:1px solid var(--ic-rule)}
+body.has-novel .chapter-turn a{
+  background:var(--ic-paper);border:1px solid var(--ic-rule);
+}
+@media(max-width:790px){
+  body:has(.editorial-page) .editorial-page{
+    width:calc(100% - 34px)!important;margin:18px auto 60px!important;
+  }
+  body:has(.editorial-page) .editorial-page-head{padding:28px 0 26px}
+  body.has-novel #quarto-document-content{padding-top:.8rem}
+  body.has-novel #quarto-document-content .history-note{padding:1.3rem}
+}
