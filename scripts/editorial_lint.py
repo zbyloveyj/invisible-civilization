@@ -32,7 +32,7 @@ if ch43.find("展板试读结束后")<ch43.find("第二天，叶岚请团队成�
 
 # Keep the bibliography's 57-item identifiers and per-item source traceability intact.
 references=Path("appendices/references.qmd").read_text(encoding="utf-8")
-entries=[(int(m.group(1)),m.group(2)) for m in re.finditer(r"^\\[(\\d{2})\\]\\s+(.*)$",references,re.M)]
+entries=[(int(line[1:3]),line[4:].strip()) for line in references.splitlines() if len(line)>4 and line.startswith('[') and line[1:3].isdigit() and line[3]==']']
 if [n for n,_ in entries]!=list(range(1,58)):
     raise SystemExit("Bibliography must preserve numbered items 01–57")
 if any(not re.search(r"https?://",line) for _,line in entries):
