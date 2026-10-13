@@ -2,53 +2,53 @@
 
 > 当前列出57项参考资料的文献信息。正式出版前仍需逐条校验版本、页码和链接；此页不意味着全部书目信息已经通过独立核查。
 
-[01]  James Sumner, Brewing Science, Technology and Print, 1700–1880 (University of Pittsburgh Press, 2016)
+[01]  Sumner J. Brewing Science, Technology and Print, 1700–1880. Pittsburgh: University of Pittsburgh Press, 2018. ISBN 9780822965312（本条链接对应2018年平装版；另有2016版权年份与较早版本）. [出版社书目](https://upittpress.org/books/9780822965312/).
 
-[02]  OpenStax, Microbiology, 3.1 Spontaneous Generation
+[02]  OpenStax. Microbiology: 3.1 Spontaneous Generation [EB/OL]. 2016 [引用日期：2026-10-14]. https://openstax.org/books/microbiology/pages/3-1-spontaneous-generation.
 
 [03]  Drews G. The roots of microbiology and the influence of Ferdinand Cohn on microbiology of the 19th century. *FEMS Microbiology Reviews*. 2000;24(3):225–249. DOI: [10.1111/j.1574-6976.2000.tb00540.x](https://doi.org/10.1111/j.1574-6976.2000.tb00540.x).
 
-[04]  University of Oxford Jenner Institute, About Edward Jenner
+[04]  University of Oxford, Jenner Institute. About Edward Jenner [EB/OL]. [引用日期：2026-10-14]. https://www.jenner.ac.uk/about/edward-jenner.
 
 [05]  Morgan A J, Parker S. Translational Mini-Review Series on Vaccines: The Edward Jenner Museum and the history of vaccination. *Clinical and Experimental Immunology*. 2007;147(3):389–394. DOI: [10.1111/j.1365-2249.2006.03304.x](https://doi.org/10.1111/j.1365-2249.2006.03304.x).
 
-[06]  London Museum, John Snow: Cholera & the Broad Street Pump
+[06]  London Museum. John Snow: Cholera & the Broad Street pump [EB/OL]. [引用日期：2026-10-14]. https://www.londonmuseum.org.uk/collections/london-stories/john-snow-cholera-broad-street-pump/.
 
 [07]  Davenport RJ, Satchell M, Shaw-Taylor LMW. Cholera as a 'sanitary test' of British cities, 1831–1866. *The History of the Family*. 2019;24(2):404–438. DOI: [10.1080/1081602X.2018.1525755](https://doi.org/10.1080/1081602X.2018.1525755).
 
-[08]  Wellcome Collection, Official reports on cholera as observed in Russia in 1831 (London, 1832)
+[08]  Russell W, Barry D. Official reports made to government on the disease called cholera spasmodica, as observed during their mission to Russia in 1831. London: Winchester and Varnham, 1832. iv,147 p. [Wellcome Collection 公有领域影印本](https://wellcomecollection.org/works/kn5cfm77).
 
-[09]  John Snow, On the Mode of Communication of Cholera (1855), 1832 London water-supply retrospective
+[09]  Snow J. On the Mode of Communication of Cholera. 2nd ed. London: John Churchill, 1855. vii,162 p.,2 folded maps. [Wellcome Collection 馆藏第二版](https://wellcomecollection.org/works/uqa27qrt).
 
 [10]  Noakes TD, Borresen J, Hew-Butler T, Lambert MI, Jordaan E. Semmelweis and the aetiology of puerperal sepsis 160 years on: an historical review. *Epidemiology & Infection*. 2008;136(1):1–9. DOI: [10.1017/S0950268807008746](https://doi.org/10.1017/S0950268807008746).
 
 [11]  Loudon I. Ignaz Phillip Semmelweis' studies of death in childbirth. *Journal of the Royal Society of Medicine*. 2013;106(11):461–463. DOI: [10.1177/0141076813507844](https://doi.org/10.1177/0141076813507844).
 
-[12]  John Snow. On the Mode of Communication of Cholera (1855), Broad Street pump outbreak, digitized primary text.
+[12]  Snow J. On the Mode of Communication of Cholera. 2nd ed. London: John Churchill, 1855:38–55（Broad Street / Golden Square段落；与[09]为同一著作的章节级引用）. [UCLA John Snow Archive](https://epi-snow.ph.ucla.edu/Stream1_introduction_d9.html).
 
 [13]  Brody H, Rip MR, Vinten-Johansen P, Paneth N, Rachman S. Map-making and myth-making in Broad Street: the London cholera epidemic, 1854. *The Lancet*. 2000;356(9223):64–68. DOI: [10.1016/S0140-6736(00)02442-9](https://doi.org/10.1016/S0140-6736(00)02442-9).
 
 [14]  Wirbel J, Zych K, Essex M, et al. Microbiome meta-analysis and cross-disease comparison enabled by the SIAMCAT machine learning toolbox. *Genome Biology*. 2021;22:93. DOI: [10.1186/s13059-021-02306-1](https://doi.org/10.1186/s13059-021-02306-1).
 
-[15]  Filippo Pacini. Osservazioni microscopiche e deduzioni patologiche sul cholera asiatico. Firenze (1854). Wellcome Collection.
+[15]  Pacini F. Osservazioni microscopiche e deduzioni patalogiche sul cholera Asiatico. Firenze: Tipografia di Federigo Bencini, 1854:3–29（保留Wellcome馆藏原题拼写“patalogiche”）. [Wellcome Collection](https://wellcomecollection.org/works/ybjppw95).
 
 [16]  Carboni GP. The enigma of Pacini's *Vibrio cholerae* discovery. *Journal of Medical Microbiology*. 2021;70(11). DOI: [10.1099/jmm.0.001450](https://doi.org/10.1099/jmm.0.001450).
 
-[17]  Institut Pasteur. The Early Years, 1847–1862: Research on Fermentation and the Spontaneous Generation Debate.
+[17]  Institut Pasteur. The early years 1847–1862 [EB/OL]. 2016 [引用日期：2026-10-14]. https://www.pasteur.fr/en/about-us/early-years-1847-1862.
 
-[18]  Université de Lille. Louis Pasteur and His Lille Period: Lactic Fermentation, 1857.
+[18]  Société des Sciences de Lille, Université de Lille. Louis Pasteur: fermentation lactique, 1857 [EB/OL]. [引用日期：2026-10-14]. https://ssaal.univ-lille.fr/louis-pasteur.
 
 [19]  Worboys M. Joseph Lister and the performance of antiseptic surgery. *Notes and Records of the Royal Society*. 2013;67(3):199–209. DOI: [10.1098/rsnr.2013.0028](https://doi.org/10.1098/rsnr.2013.0028).
 
-[20]  Joseph Lister. On the Antiseptic Principle of the Practice of Surgery (1867), historical primary text.
+[20]  Lister J. On the antiseptic principle in the practice of surgery. British Medical Journal. 1867;2(351):246–248. DOI: [10.1136/bmj.2.351.246](https://doi.org/10.1136/bmj.2.351.246).
 
-[21]  Robert Koch Institute. Robert Koch: One of the Founders of Microbiology, tuberculosis announcement 24 March 1882.
+[21]  Robert Koch Institute. Robert Koch: One of the founders of microbiology [EB/OL]. 2018 [引用日期：2026-10-14]. https://www.rki.de/EN/Institute/The-RKI/History/Robert-Koch/Robert_Koch_en.html.
 
-[22]  Robert Koch Institute Museum. Tuberculosis Then & Now, original scientific discovery and clinical context.
+[22]  Robert Koch Institute Museum. Tuberculosis then & now — a presentation from the museum [EB/OL]. 2025 [引用日期：2026-10-14]. https://www.rki.de/EN/Institute/Service-and-visitor-information/Museum/Museum-at-RKI/projects.html.
 
 [23]  Sihn K. Reorganizing Hospital Space: The 1894 Plague Epidemic in Hong Kong and the Germ Theory. Korean Journal of Medical History, 2017, 26(1):59–94. DOI: 10.13081/kjmh.2017.26.59.
 
-[24]  Ayres PBC, Lowson JA. Report on the Outbreak of Bubonic Plague in Hongkong, 1894. Wellcome Collection 藏本（原始公共卫生报告）.
+[24]  Ayres PBC, Lowson JA. Report on the outbreak of bubonic plague in Hongkong, 1894. Hong Kong: China Mail Office, 1894. 29 p.,1 plan.（影印题名页署 Lowson；Wellcome规范编目作 Lawson）[Wellcome Collection](https://wellcomecollection.org/works/kxpv9yac).
 
 [25]  Zhang Q, Zhang F, Yang B. Pneumonic plague epidemic in Northeast China in 1910–1911: Dr. Wu Lien-Teh’s epidemic preventive system for plague control. *Frontiers of Medicine*. 2018;12(1):113–115. DOI: [10.1007/s11684-018-0613-4](https://doi.org/10.1007/s11684-018-0613-4).
 
