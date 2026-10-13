@@ -1,3 +1,194 @@
 <script>
-(()=>{if(!document.querySelector('.novel-chapter'))return;const root=document.documentElement;const key='invisible-civilization-reader-size';let s=Number(localStorage.getItem(key)||1);if(!Number.isFinite(s))s=1;s=Math.min(1.25,Math.max(.85,s));function apply(){root.style.setProperty('--reader-size',String(s))}apply();const progress=document.createElement('div');progress.className='reader-progress';progress.setAttribute('aria-hidden','true');document.body.append(progress);const bar=document.createElement('div');bar.className='reader-controls';bar.setAttribute('aria-label','阅读字号');bar.innerHTML='<button type="button" aria-label="缩小字号">A−</button><button type="button" aria-label="放大字号">A＋</button>';bar.querySelectorAll('button').forEach((b,i)=>b.addEventListener('click',()=>{s=Math.min(1.25,Math.max(.85,Math.round((s+(i?0.05:-0.05))*100)/100));apply();localStorage.setItem(key,String(s))}));document.body.append(bar);let f=false;function draw(){f=false;const max=document.documentElement.scrollHeight-innerHeight;progress.style.width=(max>0?Math.max(0,Math.min(100,100*scrollY/max)):0)+'%'}window.addEventListener('scroll',()=>{if(!f){f=true;requestAnimationFrame(draw)}},{passive:true});window.addEventListener('resize',draw,{passive:true});draw()})();
+(function(){try{if(localStorage.getItem("ic:theme")==="night")document.documentElement.dataset.readerTheme="night";}catch(e){}})();
+window.IC_CHAPTERS=["纸上的霉","一滴水","寄往伦敦的信","档案盒","发酵的屋子","瓶中的争论","一个男孩的手臂","酱香","河水进了屋","医生的双手","布罗德街","地图的另一边","没人相信的弯线","鹅颈瓶","洁净的手术室","死亡登记簿","白色病人","港口的鼠","零下三十度","一道关闭的门","流感之年","长霉的培养皿","药物只剩下一瓶","没有万能药","死去的细菌","白色沉淀","交换","被折叠的谱系","一张尚未完成的照片","开关","第三种生命","谱系之外","培养不出的居民","不同的体重","人体地图","谁是健康的人","借来的菌群","一座移动的森林","泥土的另一部历史","身体里的邻居","神经传来的消息","借来的基因","不止细菌","失灵的预测","一张脑影像","机器猜测的因果","一份没有签字的报告","看不见的文明"];
+window.IC_VOLUMES=["未知的生命","疾病与城市","医学与战争","生命的密码","人体的另一半","生命的新边界"];
+</script>
+<script>
+
+(function () {
+"use strict";
+const names = window.IC_CHAPTERS || [];
+const volumes = window.IC_VOLUMES || [];
+const root = location.pathname.indexOf("/invisible-civilization/") !== -1 ? "/invisible-civilization/" : "/";
+const pathFor = n => root + "chapters/volume-" + String(Math.floor((n-1)/8)+1).padStart(2,"0") + "/chapter-" + String(n).padStart(2,"0") + ".html";
+const storage = {
+ get(k){try{return localStorage.getItem(k)}catch(e){return null}},
+ set(k,v){try{localStorage.setItem(k,v)}catch(e){}},
+ json(k,fallback){try{const v=localStorage.getItem(k);return v?JSON.parse(v):fallback}catch(e){return fallback}}
+};
+const chapterMatch = location.pathname.match(/chapter-(\d{2})\.html$/);
+const number = chapterMatch ? Number(chapterMatch[1]) : null;
+function elem(tag,className,text) {const e=document.createElement(tag);if(className)e.className=className;if(text!==undefined)e.textContent=text;return e}
+function makeButton(text,label,fn){
+ const b=elem("button",null,text);b.type="button";b.setAttribute("aria-label",label);b.title=label;b.addEventListener("click",fn);return b;
+}
+function escapeHtml(s){return String(s).replace(/[&<>"]/g,ch=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[ch]))}
+function toast(message){
+ let t=document.querySelector(".reader-toast");if(!t){t=elem("div","reader-toast");t.setAttribute("role","status");document.body.append(t)}
+ t.textContent=message;t.hidden=false;clearTimeout(t._hide);t._hide=setTimeout(()=>{t.hidden=true},2300);
+}
+function setTheme(value){
+ const night=value==="night";document.documentElement.dataset.readerTheme=night?"night":"light";
+ storage.set("ic:theme",night?"night":"light");
+ if(window.themeButton){window.themeButton.textContent=night?"☀":"☾";window.themeButton.title=night?"切换为日间模式":"切换为夜间模式"}
+}
+function initDirectory(){
+ const input=document.getElementById("chapter-filter");if(!input)return;
+ const items=[...document.querySelectorAll(".directory-item")];
+ const blocks=[...document.querySelectorAll(".directory-volume")];
+ const count=document.getElementById("chapter-count"),empty=document.getElementById("directory-empty");
+ const update=()=>{
+  const q=input.value.trim().toLocaleLowerCase();let found=0;
+  for(const item of items){const hit=!q||item.textContent.toLocaleLowerCase().includes(q);item.hidden=!hit;if(hit)found++}
+  for(const block of blocks){block.hidden=!block.querySelector(".directory-item:not([hidden])")}
+  if(count)count.textContent="匹配 "+found+" / 48 章";
+  if(empty)empty.hidden=found!==0;
+ };
+ input.addEventListener("input",update);
+}
+function initHome(){
+ const card=document.getElementById("continue-reading");if(!card)return;
+ const last=storage.json("ic:last-read",null);
+ if(!last||!(last.n>=1&&last.n<=48))return;
+ const meta=names[last.n-1];const label=document.getElementById("resume-label");
+ const link=document.getElementById("resume-link");
+ if(label)label.textContent="第"+last.n+"章《"+meta+"》 · 已读约 "+Math.round(Number(last.pct)||0)+"%";
+ if(link)link.href=pathFor(last.n)+"?resume=1";
+ card.hidden=false;
+}
+let scale=Math.max(.86,Math.min(1.28,parseFloat(storage.get("ic:font-scale")||"1")||1));
+function applyScale(){document.documentElement.style.setProperty("--reader-scale",String(scale))}
+let dialog=null,backdrop=null;
+function initToolbar(){
+ const bar=elem("div","reader-controls");bar.setAttribute("role","toolbar");bar.setAttribute("aria-label","阅读工具");
+ if(number){
+  bar.append(makeButton("A−","缩小正文",()=>{scale=Math.max(.86,Math.round((scale-.05)*100)/100);storage.set("ic:font-scale",scale);applyScale();toast("已调整字号")}));
+  bar.append(makeButton("A＋","放大正文",()=>{scale=Math.min(1.28,Math.round((scale+.05)*100)/100);storage.set("ic:font-scale",scale);applyScale();toast("已调整字号")}));
+ }
+ const theme=makeButton("☾","切换夜间模式",()=>setTheme(document.documentElement.dataset.readerTheme==="night"?"light":"night"));
+ window.themeButton=theme;bar.append(theme);setTheme(storage.get("ic:theme")==="night"?"night":"light");
+ if(number){
+  const saved=storage.json("ic:bookmarks",[]);
+  const mark=makeButton(saved.includes(number)?"★":"☆","收藏或取消本章书签",()=>{
+   let arr=storage.json("ic:bookmarks",[]);if(!Array.isArray(arr))arr=[];
+   if(arr.includes(number)){arr=arr.filter(n=>n!==number);toast("已移除本章书签");mark.textContent="☆";mark.classList.remove("is-active")}
+   else{arr.push(number);toast("本章已加入书签");mark.textContent="★";mark.classList.add("is-active")}
+   storage.set("ic:bookmarks",JSON.stringify(arr));
+  });if(saved.includes(number))mark.classList.add("is-active");bar.append(mark);
+  bar.append(makeButton("✎","查看和管理本章摘录笔记",()=>openNotes(null)));
+ }
+ bar.append(makeButton("↑","回到页面顶部",()=>window.scrollTo({top:0,behavior:"smooth"})));
+ document.body.append(bar);
+}
+function initChapter(){
+ if(!number||number<1||number>48)return;
+ const body=document.querySelector(".novel-chapter");
+ if(!body)return;
+ document.body.classList.add("has-novel");applyScale();
+ const bookTitle=names[number-1],volNo=Math.floor((number-1)/8)+1;
+ const h1=document.querySelector("main h1");
+ if(h1){
+  const crumb=elem("div","chapter-preface");
+  const a=elem("a",null,"第"+["一","二","三","四","五","六"][volNo-1]+"卷 · "+volumes[volNo-1]);
+  a.href=root+"volumes/volume-"+String(volNo).padStart(2,"0")+".html";
+  crumb.append(a,elem("span","chapter-preface__sep","/"),elem("span",null,"第"+number+"章"));
+  h1.before(crumb);
+ }
+ const date=document.querySelector(".chapter-dateline");
+ const charCount=(body.textContent||"").replace(/\s+/g,"").length;
+ const minutes=Math.max(3,Math.round(charCount/390));
+ const meta=elem("div","chapter-reading-meta");
+ meta.append(elem("span",null,"预计阅读 "+minutes+" 分钟"),elem("span",null,"阅读位置仅存于此设备"));
+ if(date)date.after(meta);
+ const note=document.querySelector(".history-note")||body;
+ const nav=elem("nav","chapter-turn");nav.setAttribute("aria-label","章节切换");
+ const prevNum=number-1,nextNum=number+1;
+ const prev=elem("a","previous");prev.href=prevNum>=1?pathFor(prevNum):root+"contents.html";
+ const pe=elem("span","chapter-turn__eyebrow","← "+(prevNum>=1?"上一章":"全书目录"));
+ const pt=elem("span","chapter-turn__title",prevNum>=1?names[prevNum-1]:"六卷目录");prev.append(pe,pt);
+ const next=elem("a","next");next.href=nextNum<=48?pathFor(nextNum):root+"index.html";
+ const ne=elem("span","chapter-turn__eyebrow",(nextNum<=48?"下一章":"返回扉页")+" →");
+ const nt=elem("span","chapter-turn__title",nextNum<=48?names[nextNum-1]:"看不见的文明");next.append(ne,nt);
+ nav.append(prev,next);note.after(nav);
+ const progress=elem("div","reader-progress");progress.setAttribute("aria-hidden","true");document.body.append(progress);
+ let scheduled=false,lastWrite=0;
+ const update=()=>{
+  scheduled=false;const max=Math.max(1,document.documentElement.scrollHeight-innerHeight);
+  const pct=Math.min(100,Math.max(0,window.scrollY/max*100));progress.style.width=pct+"%";
+  if(Date.now()-lastWrite>=1200){storage.set("ic:last-read",JSON.stringify({n:number,pct:Math.round(pct),ts:Date.now()}));lastWrite=Date.now()}
+ };
+ window.addEventListener("scroll",()=>{if(!scheduled){scheduled=true;requestAnimationFrame(update)}},{passive:true});
+ window.addEventListener("resize",update,{passive:true});update();
+ if(new URLSearchParams(location.search).get("resume")==="1"){
+  const last=storage.json("ic:last-read",null);
+  if(last&&last.n===number&&last.pct>0&&last.pct<99)setTimeout(()=>{
+   const max=Math.max(0,document.documentElement.scrollHeight-innerHeight);
+   window.scrollTo({top:max*last.pct/100,behavior:"instant"});
+  },200);
+ }
+ initSelection(body);
+}
+function closeNotes(){if(dialog){dialog.remove();dialog=null}if(backdrop){backdrop.remove();backdrop=null}}
+function openNotes(quote){
+ if(!number)return;closeNotes();
+ backdrop=elem("div","note-drawer-backdrop");backdrop.addEventListener("click",closeNotes);
+ dialog=elem("aside","note-drawer");dialog.setAttribute("role","dialog");dialog.setAttribute("aria-modal","true");dialog.setAttribute("aria-label","本章摘录与笔记");
+ const head=elem("div","note-drawer__header");head.append(elem("h2",null,"第"+number+"章 · 阅读笔记"));
+ head.append(makeButton("✕","关闭笔记",closeNotes));
+ const inside=elem("div","note-drawer__content");
+ inside.append(elem("p","note-drawer__hint","摘录与笔记仅保存在当前浏览器。清除浏览器数据后可能丢失，不会同步到 GitHub 或其他设备。"));
+ if(quote){
+  const compose=elem("div","note-compose"),blockquote=elem("blockquote",null,quote);
+  const input=elem("textarea");input.placeholder="写下你的想法（可留空）";input.setAttribute("aria-label","本条摘录的笔记");
+  const save=makeButton("保存这段摘录","保存摘录",()=>{
+   const key="ic:notes:"+number,arr=storage.json(key,[]);
+   const notes=Array.isArray(arr)?arr:[];
+   notes.unshift({id:Date.now()+Math.random(),quote:quote.slice(0,420),comment:input.value.trim().slice(0,1500),ts:new Date().toLocaleString("zh-CN")});
+   storage.set(key,JSON.stringify(notes.slice(0,100)));toast("已保存到本地笔记");openNotes(null);
+  });
+  compose.append(blockquote,input,save);inside.append(compose);
+ }
+ const key="ic:notes:"+number,saved=storage.json(key,[]);
+ if(!Array.isArray(saved)||!saved.length)inside.append(elem("p","note-drawer__hint","本章尚无笔记。选中正文中的一段文字，再选择“摘录”。"));
+ else for(const item of saved){
+  const row=elem("article","note-row");row.append(elem("div","note-row__quote",item.quote));
+  if(item.comment)row.append(elem("p","note-row__text",item.comment));
+  const foot=elem("div","note-row__footer");foot.append(elem("span",null,item.ts||""));
+  const del=makeButton("删除","删除此条摘录",()=>{
+   const arr=storage.json(key,[]);storage.set(key,JSON.stringify((Array.isArray(arr)?arr:[]).filter(i=>i.id!==item.id)));openNotes(null);
+  });foot.append(del);row.append(foot);inside.append(row);
+ }
+ dialog.append(head,inside);document.body.append(backdrop,dialog);
+ const close=head.querySelector("button");if(close)close.focus();
+}
+function initSelection(body){
+ const pop=elem("div","selection-popover");pop.hidden=true;
+ let pending="";
+ const copy=makeButton("复制文字","复制选中的正文",async()=>{
+  pop.hidden=true;
+  try{await navigator.clipboard.writeText(pending);toast("选中文本已复制")}catch(e){toast("浏览器未允许复制，请手动复制")}
+ });
+ const clip=makeButton("摘录到笔记","保存选中的正文到笔记",()=>{
+  pop.hidden=true;const q=pending;if(q)openNotes(q);
+ });
+ pop.append(clip,copy);document.body.append(pop);
+ const update=()=>{
+  const sel=window.getSelection();if(!sel||sel.isCollapsed||!sel.rangeCount){pop.hidden=true;return}
+  const s=sel.toString().trim().replace(/\s+/g," ");if(s.length<5||s.length>420){pop.hidden=true;return}
+  const node=sel.anchorNode instanceof Element?sel.anchorNode:sel.anchorNode?.parentElement;
+  if(!node||!body.contains(node)){pop.hidden=true;return}
+  pending=s;const rect=sel.getRangeAt(0).getBoundingClientRect();
+  pop.style.left=Math.max(8,Math.min(window.innerWidth-165,rect.left+rect.width/2-75))+"px";
+  pop.style.top=Math.max(68,Math.min(window.innerHeight-50,rect.top-44))+"px";
+  pop.hidden=false;
+ };
+ document.addEventListener("mouseup",e=>{if(pop.contains(e.target)||dialog?.contains(e.target))return;setTimeout(update,20)});
+ document.addEventListener("touchend",()=>setTimeout(update,350),{passive:true});
+ document.addEventListener("keydown",e=>{if(e.key==="Escape"){pop.hidden=true;closeNotes()}});
+}
+function ready(){initDirectory();initHome();initToolbar();initChapter()}
+if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",ready,{once:true});
+else ready();
+})();
+
 </script>
