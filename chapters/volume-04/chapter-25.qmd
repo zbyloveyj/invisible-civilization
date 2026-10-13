@@ -30,7 +30,7 @@
 
 迈尔斯问亨利，这篇论文有没有把他们一直想知道的事情全部解释清楚。亨利说没有。结果提示，某种来自已失去活性的细菌材料的作用，可能使另一种活菌获得新的、能够延续的特征；但这种作用究竟来自什么物质，仍然不清楚。迈尔斯说这便是事情最有意思的地方，纸上看似已经写完，问题却比从前多了。亨利没有接话。他仍旧有些不习惯这种感觉，仿佛研究做了那么久，终于得到一份能够发表的结果，转过头却又发现门外还有一条长路。
 
-<figure class="book-plate book-plate--diagram"><div class="book-plate__media"><img loading="lazy" decoding="async" src="../../assets/plates/griffith-transformation.svg" alt="肺炎链球菌S型和R型、热灭活细菌与混合处理的四种小鼠实验结果示意"/></div><figcaption><span class="plate-category">现代科学示意 · FIGURE 25</span><span class="plate-description">格里菲思1928年肺炎链球菌转化实验的现代逻辑示意。记录现象并不等于当时已经知道转化物质就是DNA。</span><span class="plate-credit">原创矢量绘图 · 本书编辑图版</span></figcaption></figure>
+<figure id="plate-25-griffith" class="book-plate book-plate--diagram"><div class="book-plate__media"><img loading="lazy" decoding="async" src="../../assets/plates/griffith-transformation.svg" alt="肺炎链球菌S型和R型、热灭活细菌与混合处理的四种小鼠实验结果示意"/></div><figcaption><span class="plate-category">现代科学示意 · FIGURE 25</span><span class="plate-description">格里菲思1928年肺炎链球菌转化实验的现代逻辑示意。记录现象并不等于当时已经知道转化物质就是DNA。</span><span class="plate-credit">原创矢量绘图 · 本书编辑图版</span></figcaption></figure>
 
 春天，萝丝在学校得了一个小奖，老师送给她一册新的作业本。她把本子带回家，兴奋地向父亲展示封面上贴着的名字。亨利答应星期日带她去公园，碰巧实验室又有几项观察需要完成，只好请迈尔斯帮忙换一次班。迈尔斯平时不喜欢替别人加班，这次却爽快答应，说自己下周也要请假去看妹妹，到时候让亨利还回来便好。星期日天气难得晴朗，一家三口去了海德公园。萝丝追着鸽子跑，艾达坐在长椅上补手套，亨利看见一群孩子正在水边放小船，便想起自己小时候也做过相似的东西。他忽然发现，过去几个月心里总惦记着的那些实验，竟然可以在一个下午暂时放下。
 

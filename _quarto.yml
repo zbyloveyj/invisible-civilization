@@ -26,6 +26,8 @@ book:
         href: contents.qmd
       - text: 科学年表
         href: timeline.qmd
+      - text: 科学图版
+        href: figures.qmd
       - text: 关于作者
         href: about.qmd
       - text: 下载
@@ -113,6 +115,7 @@ book:
         - chapters/volume-06/chapter-47.qmd
         - chapters/volume-06/chapter-48.qmd
   appendices:
+    - figures.qmd
     - timeline.qmd
     - about.qmd
     - download.qmd

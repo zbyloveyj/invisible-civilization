@@ -1,27 +1,39 @@
 # 科学图版与授权来源 {.unnumbered}
 
-本书目前采用两种图像：历史出版物或馆藏的数字图版，以及为帮助读者理解科学史问题而重新绘制的**现代解释图**。两者在正文图注中均已明确区分。**现代解释图并非历史原始证据，也不代表新的实验结果。**
+本书共选入十二幅图版，历史原始材料、后世绘画和作者原创的现代解释图分别标注。历史出版物中展示的是科学家当时能够观察、记录或后人重构的资料；**现代解释图并非历史原始证据，也不构成新的生物学实验结果**。
 
-## 历史原始图版
+完整缩略图目录见[《科学图版》](../figures.qmd)。读者在正文中点击图像可以查看放大版本；每一张历史图像均有原始文件信息入口。
 
-1. **第一章《纸上的霉》：胡克《显微图谱》的跳蚤铜版画（1665）**。来源：Wellcome Collection，经 Wikimedia Commons 提供的数字图像，馆藏标识 L0043503。授权标记：Creative Commons Attribution 4.0（CC BY 4.0）。[查阅文件与许可](https://commons.wikimedia.org/wiki/File:Robert_Hooke,_Micrographia,_flea_Wellcome_L0043503.jpg)。本站使用时保留原来源与许可证链接。
-2. **第二章《一滴水》：列文虎克式显微镜图（1753）**。作者：Henry Baker，后来的历史图示，不是1676年观察的实时记录。Wikimedia Commons 标记：Public Domain。 [查阅馆藏和许可](https://commons.wikimedia.org/wiki/File:Leeuwenhoek_microscope_drawn_by_Baker,_1753.jpg)。
-3. **第十一章《布罗德街》：斯诺1854年霍乱暴发死亡分布的历史地图**。相关经典图版发表于1855年的著作与报告中。Wikimedia Commons 标记：Public Domain。此图不能被描述为1854年9月撤除水泵手柄之前已完成的调查工具。[查看图版来源与许可](https://commons.wikimedia.org/wiki/File:Snow-cholera-map-1.jpg)。
+## 来源与证据性质
 
-以上三项历史图像均在叙事内部出现，并附有简洁图注。站点暂时引用开放馆藏的数字图像网址；如来源站点暂时不可达，读者可通过图注中的文件页找到作品。对于版权状态不明的近现代照片，**本版没有擅自采用**。
+1. **第1章《书皮上的霉菌》**（历史原图 · 1665）。《显微图谱》图版XII上部；与第一章的羊皮书皮观察相呼应。 来源：[Robert Hooke · Public Domain](https://commons.wikimedia.org/wiki/File:Robert_Hooke_Micrographia_Schematic_12_Upper_Part.png)。 
 
-## 本书原创科学示意
+2. **第1章《跳蚤的另一副面孔》**（历史原图 · 1665）。展示放大后足部与身体结构；数字图像来自 Wellcome Collection。 来源：[Wellcome Collection · CC BY 4.0](https://commons.wikimedia.org/wiki/File:Robert_Hooke,_Micrographia,_flea_Wellcome_L0043503.jpg)。 
 
-- 第十四章《鹅颈瓶》：玻璃曲颈与微粒传播的现代示意。
-- 第二十五章《死去的细菌》：格里菲思肺炎链球菌转化实验的概念图。
-- 第二十九章《一张尚未完成的照片》：DNA双螺旋结构示意，**不是**富兰克林与戈斯林的“照片51”。
-- 第三十五章《人体地图》：口腔、皮肤和肠道等不同生态位的微生物群落示意，不表示真实丰度。
-- 第四十一章《神经传来的消息》：微生物组、外周过程与脑功能指标的研究关联框架，不表示确证的因果机制。
+3. **第2章《列文虎克式显微镜》**（后世图示 · 1753）。贝克1753年绘图；不能误认为1676年观察现场照片。 来源：[Henry Baker · Public Domain](https://commons.wikimedia.org/wiki/File:Leeuwenhoek_microscope_drawn_by_Baker,_1753.jpg)。 
 
-这些矢量图为本书重新绘制，存放于 `assets/plates/`。其作用是解释概念与帮助阅读，而不是装饰性地制造科研结果。
+4. **第7章《詹纳与第一次牛痘接种》**（后世油画 · 20世纪）。埃内斯特·博德追溯1796年事件的绘画，不是事件发生当日的画面。 来源：[Ernest Board / Wellcome · CC BY 4.0](https://commons.wikimedia.org/wiki/File:Dr_Jenner_performing_his_first_vaccination,_1796_Wellcome_M0000144.jpg)。 
 
-## 编辑原则
+5. **第11章《布罗德街的地图》**（历史地图 · 1855）。1854年疫情调查的历史地图，经典图版发表于1855年。 来源：[John Snow · Public Domain](https://commons.wikimedia.org/wiki/File:Snow-cholera-map-1.jpg)。 
 
-图版应出现在读者刚刚遇到对应问题的正文位置，而不是统一堆在每章最后；每张图都须提供替代文本、明确年代、来源、授权和“历史材料/现代示意”的标记。其展示不改变小说人物实际掌握的知识；例如1854年故事人物不能提前看见1855年发表的斯诺地图。
+6. **第14章《鹅颈瓶与空气》**（原创示意 · 现代解释）。反映空气与颗粒污染的区别，并非巴斯德的原始实验绘图。 绘图由本书作者编辑制作，矢量源文件存于 `assets/plates/pasteur-swan-neck.svg`。 
 
-如将来出版纸质版，需要再次确认数字馆藏图片是否满足出版使用地的许可条件，并按最终印刷图像重新记录来源。
+7. **第19章《伍连德的时代》**（历史肖像 · 1910—1915）。美国国会图书馆贝恩新闻资料中的伍连德肖像，非小说现场照片。 来源：[Bain / Library of Congress · PD-US](https://commons.wikimedia.org/wiki/File:Wu_Lien-teh_-_c._1910%E2%80%931915.jpg)。 
+
+8. **第25章《死去的细菌》**（原创示意 · 1928实验）。四组对照展示细菌转化观察，并不把DNA机制提前写进1928年。 绘图由本书作者编辑制作，矢量源文件存于 `assets/plates/griffith-transformation.svg`。 
+
+9. **第29章《双螺旋》**（原创示意 · 结构概念）。结构模型不等于“照片51”的原始X射线衍射图。 绘图由本书作者编辑制作，矢量源文件存于 `assets/plates/dna-structure.svg`。 
+
+10. **第35章《人体中的不同生态位》**（原创示意 · 微生物组）。示意口腔、皮肤、肠道群落的不同；点状符号不表示测序丰度。 绘图由本书作者编辑制作，矢量源文件存于 `assets/plates/human-microbiome.svg`。 
+
+11. **第41章《肠与脑之间》**（原创示意 · 跨尺度）。区分微生物组、外周过程和脑功能的证据层级。 绘图由本书作者编辑制作，矢量源文件存于 `assets/plates/gut-brain-evidence.svg`。 
+
+12. **第42章《借来的基因》**（原创示意 · 遗传交换）。接合、转化、转导是不同机制；基因共现不能直接证明实际转移。 绘图由本书作者编辑制作，矢量源文件存于 `assets/plates/hgt-mechanisms.svg`。 
+
+## 审校原则
+
+图像按小说场景出现的顺序穿插于正文，不集体堆在章末；每张图注明确说明其史料地位、采集或绘制时间、来源与许可。带有“后世绘画”的图像不应当被误读为历史目击者当年拍摄的图像。
+
+数字化图片的著作权判断依赖馆藏来源和司法辖区。本站已尽力选择开放许可或公共领域的材料，并保留馆藏来源。纸质出版前仍须再次确认最终印刷版本的授权和署名要求。若外部馆藏暂时无法加载，可点击对应图注来源链接。
+
+原创示意图（鹅颈瓶、格里菲思转化实验、DNA结构、人体生态位、脑肠轴证据以及水平基因转移）的文字与图示为帮助阅读而简化，请以史料和科学论文的具体证据为准。
