@@ -19,6 +19,8 @@
 - `chapters/`：全部小说正文
 - `styles/reader.css`：文学编辑视觉样式
 - `styles/reader.html`：阅读交互与本地笔记
+- `styles/chapter-reader.css`：独立小说阅读版心、字体和图版样式
+- `styles/chapter-reader.html`：可展开的六卷目录抽屉
 - `scripts/site_smoke_test.py`：发布前页面与脚本检查
 
 修改小说后提交到 `main` 分支，将自动重新构建 GitHub Pages。

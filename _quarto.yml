@@ -133,7 +133,10 @@ format:
       - styles/reader.css
       - styles/home-v2.css
       - styles/figure-gallery.css
-    include-after-body: styles/reader.html
+      - styles/chapter-reader.css
+    include-after-body:
+      - styles/reader.html
+      - styles/chapter-reader.html
     toc: false
     smooth-scroll: true
     anchor-sections: false

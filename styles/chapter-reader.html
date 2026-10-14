@@ -1,0 +1,31 @@
+<script>
+/* Book chapter navigation: reuses the existing Quarto chapter list as an accessible drawer. */
+(function(){
+"use strict";
+function init(){
+ if(!document.querySelector(".novel-chapter"))return;
+ const toc=document.getElementById("quarto-sidebar"),meta=document.querySelector(".chapter-reading-meta");
+ if(!toc||!meta)return;
+ const cover=document.createElement("div");cover.className="ic-toc-backdrop";cover.hidden=true;cover.setAttribute("aria-hidden","true");document.body.append(cover);
+ let expanded=false;const controls=[];
+ function toggle(next){
+  expanded=Boolean(next);document.body.classList.toggle("ic-toc-open",expanded);
+  cover.hidden=!expanded;toc.setAttribute("aria-hidden",String(!expanded));
+  for(const b of controls)b.setAttribute("aria-expanded",String(expanded));
+  if(expanded){const focus=toc.querySelector(".sidebar-link.active")||toc.querySelector("a.sidebar-link");focus?.focus({preventScroll:true});}
+ }
+ function control(text,cls){const b=document.createElement("button");b.type="button";b.className=cls;b.textContent=text;b.title="打开或关闭全书目录";b.setAttribute("aria-controls","quarto-sidebar");b.setAttribute("aria-expanded","false");b.addEventListener("click",()=>toggle(!expanded));controls.push(b);return b}
+ const headButton=control("目录 ☰","ic-chapter-toc");meta.append(headButton);
+ const bar=document.querySelector(".reader-controls");if(bar)bar.prepend(control("☰","ic-chapter-toc-icon"));
+ cover.addEventListener("click",()=>toggle(false));
+ toc.addEventListener("click",e=>{if(e.target.closest("a[href]"))toggle(false)});
+ document.addEventListener("keydown",e=>{if(e.key==="Escape"&&expanded){e.preventDefault();toggle(false);headButton.focus()}});
+ const head=document.querySelector("#quarto-document-content > #title-block-header");
+ if(head&&!head.querySelector(".ic-chapter-supertitle")){
+  const small=document.createElement("p");small.className="ic-chapter-supertitle";
+  small.textContent="THE INVISIBLE CIVILIZATION  /  FICTION & HISTORY";head.prepend(small);
+ }
+}
+if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",init,{once:true});else init();
+})();
+</script>
