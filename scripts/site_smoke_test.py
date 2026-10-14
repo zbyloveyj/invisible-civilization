@@ -118,4 +118,15 @@ if len(grid_parser.direct_children) != 6 or any(
     )
 print("PASS: exactly six homepage volume cards; no empty seventh grid cell.")
 
+# Safeguard the separate literary reading experience across future Quarto upgrades.
+chapter_html=(root/"chapters/volume-01/chapter-01.html").read_text(encoding="utf-8")
+chapter_css=root/"styles/chapter-reader.css"
+if not chapter_css.exists() or "chapter-reader.css" not in chapter_html:
+    raise SystemExit("The chapter-specific reading stylesheet is absent")
+for needle in ('class="novel-chapter"', 'class="chapter-dateline"', 'ic-chapter-toc', 'ic-toc-open'):
+    if needle not in chapter_html:
+        raise SystemExit("Chapter reading UI is missing: "+needle)
+if "body:has(.novel-chapter) #quarto-content.page-columns" not in chapter_css.read_text(encoding="utf-8"):
+    raise SystemExit("Centered chapter page rule is missing")
+print("PASS: centered chapter sheet, chapter navigation drawer and reading controls.")
 print(f"PASS: {len(need)} book pages; {checked} local links; reader script syntax.")
