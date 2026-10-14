@@ -29,6 +29,7 @@ toc: false
 
 <section class="ic-section ic-manifesto" id="about-the-book"><div class="ic-section__label"><span>01 / THE STORY</span><i></i></div><div class="ic-manifesto__grid"><h2>我们所居住的世界，<br>从不只有人类。</h2><div class="ic-manifesto__body"><p>本书不是六位科学家的传记，也不是一本按年份编排的微生物学教材。历史上的重要发现，与那些没有留下名字的普通人，共同构成了故事。</p><p>伦敦书铺的学徒、经历霍乱的母女、东北防疫的护士、研究DNA的实验人员，与现代研究者程屿的困惑相互映照：我们究竟看见了什么？又凭什么相信自己已经理解？</p><a class="ic-text-link" href="about.html">关于作品与作者 <span aria-hidden="true">↗</span></a></div></div></section>
 
+```{=html}
 <section class="ic-section ic-volumes" id="volumes"><div class="ic-section__heading"><div><span class="ic-section-label">02 / THE SIX VOLUMES</span><h2>六卷，一部不断展开的历史。</h2></div><a class="ic-text-link" href="contents.html">全部48章 <span aria-hidden="true">↗</span></a></div><div class="ic-volume-grid">
 <a class="ic-volume" href="volumes/volume-01.html" aria-label="进入第1卷未知的生命">
   <div class="ic-volume__top"><span class="ic-volume__index">01 <small>/ 06</small></span><span class="ic-volume__years">1665 — 1796</span></div>
@@ -55,6 +56,7 @@ toc: false
   <h3>生命的新边界</h3><p class="ic-volume__latin">NEW FRONTIERS</p><p class="ic-volume__summary">脑肠轴、人工智能与伦理</p>
   <div class="ic-volume__bottom"><span>8 CHAPTERS</span><span class="ic-volume__arrow" aria-hidden="true">↗</span></div></a>
 </div></section>
+```
 
 <section class="ic-breath"><div class="ic-breath__left"><span>FROM THE PAGES</span><div class="ic-breath__mark" aria-hidden="true">“</div></div><div class="ic-breath__right"><p>我们能看见的，<br>永远只是世界的一部分。</p><span>作品主题引语 · 非历史人物原话</span></div></section>
 

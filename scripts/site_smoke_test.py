@@ -77,4 +77,45 @@ if not (root/"assets/plates/hgt-mechanisms.svg").is_file():
     raise SystemExit("Missing HGT plate asset")
 print(f"PASS: {figure_count} illustrated figures in chapters {chapters_with_figures}; atlas {indexed} plates")
 
+
+# Regression guard: a stray Markdown paragraph after the final volume card must never
+# become the seventh CSS-grid cell on the homepage.
+class VolumeGridParser(HTMLParser):
+    def __init__(self):
+        super().__init__()
+        self.in_grid = False
+        self.depth = 0
+        self.direct_children = []
+    def handle_starttag(self, tag, attrs):
+        attrs = dict(attrs)
+        if not self.in_grid:
+            if tag == "div" and "ic-volume-grid" in attrs.get("class","").split():
+                self.in_grid = True
+                self.depth = 1
+            return
+        if self.depth == 1:
+            self.direct_children.append((tag, attrs.get("class", ""), attrs.get("href","")))
+        if tag not in {"br","img","input","hr","meta","link","source","wbr","area"}:
+            self.depth += 1
+    def handle_endtag(self, tag):
+        if not self.in_grid:
+            return
+        if tag not in {"br","img","input","hr","meta","link","source","wbr","area"}:
+            self.depth -= 1
+            if self.depth == 0:
+                self.in_grid = False
+
+homepage = (root / "index.html").read_text(encoding="utf-8")
+grid_parser = VolumeGridParser()
+grid_parser.feed(homepage)
+if len(grid_parser.direct_children) != 6 or any(
+    tag != "a" or "ic-volume" not in classes.split() or not href
+    for tag, classes, href in grid_parser.direct_children
+):
+    raise SystemExit(
+        "Homepage volume grid must contain exactly six linked cards, no blank cells: "
+        + repr(grid_parser.direct_children)
+    )
+print("PASS: exactly six homepage volume cards; no empty seventh grid cell.")
+
 print(f"PASS: {len(need)} book pages; {checked} local links; reader script syntax.")
