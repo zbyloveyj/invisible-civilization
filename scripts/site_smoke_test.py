@@ -130,3 +130,34 @@ if "body:has(.novel-chapter) #quarto-content.page-columns" not in chapter_css.re
     raise SystemExit("Centered chapter page rule is missing")
 print("PASS: centered chapter sheet, chapter navigation drawer and reading controls.")
 print(f"PASS: {len(need)} book pages; {checked} local links; reader script syntax.")
+
+# Directory feature and responsive-asset smoke checks.
+contents_source=Path("contents.qmd").read_text(encoding="utf-8")
+items=re.findall(r'<a class="directory-item"[^>]*href="([^"]+)"[^>]*data-kind="(modern|history)"[^>]*data-search="([^"]+)"',contents_source)
+if len(items)!=48:
+    raise SystemExit(f"Directory must expose 48 chapter summaries and filters, found {len(items)}")
+for idx,(href,kind,summary) in enumerate(items,1):
+    expected=f"chapter-{idx:02d}.html"
+    if expected not in href or len(summary)<16:
+        raise SystemExit(f"Invalid directory entry {idx}: {href}")
+for vol in range(1,7):
+    if f'id="volume-{vol}"' not in contents_source:
+        raise SystemExit(f"Missing volume jump target {vol}")
+catalog=(root/"contents.html").read_text(encoding="utf-8")
+for hook in ("chapter-filter","directory-reset","directory-continue","data-kind-filter"):
+    if hook not in catalog:
+        raise SystemExit("Missing compiled directory interaction: "+hook)
+for css in ("styles/directory-revision.css","styles/editorial-corrections.css"):
+    if not (root/css).is_file():
+        raise SystemExit("Missing directory/bridge stylesheet: "+css)
+chapter_reader=Path("styles/chapter-reader.html").read_text(encoding="utf-8")
+scripts=re.findall(r"<script[^>]*>(.*?)</script>",chapter_reader,flags=re.S)
+if not scripts:
+    raise SystemExit("Missing chapter-reader scripts")
+js_check=root/"_chapter_syntax_check.js"
+try:
+    js_check.write_text("\n;\n".join(scripts),encoding="utf-8")
+    subprocess.run(["node","--check",str(js_check)],check=True)
+finally:
+    js_check.unlink(missing_ok=True)
+print("PASS: responsive chapter catalogue, metadata, reader controls and client JavaScript.")

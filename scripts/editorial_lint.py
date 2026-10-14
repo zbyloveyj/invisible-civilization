@@ -41,3 +41,20 @@ if not Path("appendices/reference-audit.qmd").exists():
     raise SystemExit("Bibliography audit file missing")
 print("PASS: 57 numbered reference records with source links")
 print("PASS: 48 chapter source files, fact notes, long-form paragraphs, and priority continuity checks.")
+
+# Focused regressions for narrative time and revised long-form results.
+for n in [33,34,39,42,45,46]:
+    if chapters[n-1][1] < 3600:
+        raise SystemExit(f"Revised narrative fell below review threshold: chapter {n}")
+ch33=chapters[32][2]
+if not (ch33.index("圣诞节前夕") < ch33.index("父亲把那只坏掉的点火部件拆开给她看") < ch33.index("假期结束，艾米丽回到研究所")):
+    raise SystemExit("Chapter 33: visit/return chronology reverted")
+ch34=chapters[33][2]
+if not (ch34.index("周末，劳拉带着儿子来到圣路易斯") < ch34.index("劳拉来访的晚上") < ch34.index("饭后，劳拉坚持")):
+    raise SystemExit("Chapter 34: dinner chronology reverted")
+ch39=chapters[38][2]
+if not (ch39.index("第二天清晨，父亲果然准时") < ch39.index("返校以后，许知微") < ch39.index("返校后的分析") < ch39.index("到了收获后的一个周末")):
+    raise SystemExit("Chapter 39: fieldwork/results chronology reverted")
+if "准备回家吃早饭。" in ch39:
+    raise SystemExit("Chapter 39: meal timing reverted")
+print("PASS: revised chapters retain minimum length and corrected narrative timelines.")
