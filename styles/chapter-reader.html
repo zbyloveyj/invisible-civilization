@@ -1,31 +1,139 @@
 <script>
-/* Book chapter navigation: reuses the existing Quarto chapter list as an accessible drawer. */
+/* Accessible, book-first chapter opening, table of contents and reading typesetting. */
 (function(){
-"use strict";
-function init(){
- if(!document.querySelector(".novel-chapter"))return;
- const toc=document.getElementById("quarto-sidebar"),meta=document.querySelector(".chapter-reading-meta");
- if(!toc||!meta)return;
- const cover=document.createElement("div");cover.className="ic-toc-backdrop";cover.hidden=true;cover.setAttribute("aria-hidden","true");document.body.append(cover);
- let expanded=false;const controls=[];
- function toggle(next){
-  expanded=Boolean(next);document.body.classList.toggle("ic-toc-open",expanded);
-  cover.hidden=!expanded;toc.setAttribute("aria-hidden",String(!expanded));
-  for(const b of controls)b.setAttribute("aria-expanded",String(expanded));
-  if(expanded){const focus=toc.querySelector(".sidebar-link.active")||toc.querySelector("a.sidebar-link");focus?.focus({preventScroll:true});}
- }
- function control(text,cls){const b=document.createElement("button");b.type="button";b.className=cls;b.textContent=text;b.title="打开或关闭全书目录";b.setAttribute("aria-controls","quarto-sidebar");b.setAttribute("aria-expanded","false");b.addEventListener("click",()=>toggle(!expanded));controls.push(b);return b}
- const headButton=control("目录 ☰","ic-chapter-toc");meta.append(headButton);
- const bar=document.querySelector(".reader-controls");if(bar)bar.prepend(control("☰","ic-chapter-toc-icon"));
- cover.addEventListener("click",()=>toggle(false));
- toc.addEventListener("click",e=>{if(e.target.closest("a[href]"))toggle(false)});
- document.addEventListener("keydown",e=>{if(e.key==="Escape"&&expanded){e.preventDefault();toggle(false);headButton.focus()}});
- const head=document.querySelector("#quarto-document-content > #title-block-header");
- if(head&&!head.querySelector(".ic-chapter-supertitle")){
-  const small=document.createElement("p");small.className="ic-chapter-supertitle";
-  small.textContent="THE INVISIBLE CIVILIZATION  /  FICTION & HISTORY";head.prepend(small);
- }
-}
-if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",init,{once:true});else init();
+  'use strict';
+  function safeGet(key){try{return localStorage.getItem(key)}catch(_){return null}}
+  function safeSet(key,value){try{localStorage.setItem(key,value)}catch(_){}}
+  const WIDTHS={quiet:'690px',standard:'750px',wide:'820px'};
+  const LEADING={regular:'1.98',relaxed:'2.16',airy:'2.32'};
+  function init(){
+    const novel=document.querySelector('.novel-chapter');
+    if(!novel)return;
+    const toc=document.getElementById('quarto-sidebar');
+    const meta=document.querySelector('.chapter-reading-meta');
+    const header=document.querySelector('#quarto-document-content > #title-block-header');
+    if(!toc||!meta||!header)return;
+    const chapterNumber=Number((location.pathname.match(/chapter-(\d{2})\.html$/)||[])[1]||0);
+    const root=document.documentElement;
+    const applySetting=(name,value)=>{
+      if(name==='width' && WIDTHS[value]){root.style.setProperty('--ic-reader-width',WIDTHS[value]);safeSet('ic:reading-width',value)}
+      if(name==='leading' && LEADING[value]){root.style.setProperty('--ic-reader-leading',LEADING[value]);safeSet('ic:reading-leading',value)}
+    };
+    applySetting('width',safeGet('ic:reading-width')||'standard');
+    applySetting('leading',safeGet('ic:reading-leading')||'relaxed');
+
+    const pageTitle=header.querySelector('h1.title');
+    if(pageTitle){
+      const raw=pageTitle.textContent.trim();
+      // Preserve the full Quarto document title for search and browser tabs;
+      // on the book leaf only, display the literary chapter name.
+      const match=raw.match(/^第[一二三四五六七八九十百零]+章[\s\u3000]*(.+)$/);
+      if(match)pageTitle.textContent=match[1];
+    }
+    const eyebrow=document.createElement('p');
+    eyebrow.className='ic-chapter-supertitle';
+    eyebrow.textContent=chapterNumber?`CHAPTER ${String(chapterNumber).padStart(2,'0')}  /  48`:'THE INVISIBLE CIVILIZATION';
+    header.prepend(eyebrow);
+
+    // Correct the generated navbar: otherwise "首页" can appear selected on every chapter.
+    for(const link of document.querySelectorAll('#quarto-header .navbar-nav .nav-link')){
+      const text=link.textContent.trim();
+      if(text==='首页'){link.classList.remove('active');link.removeAttribute('aria-current')}
+      if(text==='六卷目录'){link.classList.add('active');link.setAttribute('aria-current','page')}
+    }
+
+    const veil=document.createElement('div');
+    veil.className='ic-toc-backdrop';veil.hidden=true;veil.setAttribute('aria-hidden','true');
+    document.body.append(veil);
+    toc.setAttribute('aria-hidden','true');
+    const controls=[];
+    let drawerOpen=false,lastFocused=null,previousOverflow='';
+    function setDrawer(value){
+      drawerOpen=Boolean(value);
+      document.body.classList.toggle('ic-toc-open',drawerOpen);
+      veil.hidden=!drawerOpen;
+      toc.setAttribute('aria-hidden',String(!drawerOpen));
+      controls.forEach(c=>c.setAttribute('aria-expanded',String(drawerOpen)));
+      if(drawerOpen){
+        lastFocused=document.activeElement;
+        previousOverflow=document.body.style.overflow;
+        document.body.style.overflow='hidden';
+        (toc.querySelector('.sidebar-link.active')||toc.querySelector('.sidebar-link'))?.focus({preventScroll:true});
+      }else{
+        document.body.style.overflow=previousOverflow;
+        if(lastFocused?.isConnected)lastFocused.focus({preventScroll:true});
+      }
+    }
+    function makeTocButton(label,cls){
+      const b=document.createElement('button');b.type='button';b.textContent=label;
+      b.className=cls;b.setAttribute('aria-controls','quarto-sidebar');
+      b.setAttribute('aria-expanded','false');b.setAttribute('aria-label','打开或关闭全书章节目录');
+      b.addEventListener('click',()=>setDrawer(!drawerOpen));controls.push(b);return b;
+    }
+    const tocButton=makeTocButton('目录 ☰','ic-chapter-toc');
+    const toolbar=document.querySelector('.reader-controls');
+    if(toolbar)toolbar.prepend(makeTocButton('☰','ic-chapter-toc-icon'));
+    veil.addEventListener('click',()=>setDrawer(false));
+    toc.addEventListener('click',e=>{if(e.target.closest('a[href]'))setDrawer(false)});
+    document.addEventListener('keydown',e=>{
+      if(e.key==='Escape' && drawerOpen){e.preventDefault();setDrawer(false)}
+      if(e.key==='Tab' && drawerOpen){
+        const focusables=[...toc.querySelectorAll('a[href],button:not([disabled]),[tabindex="0"]')]
+          .filter(x=>getComputedStyle(x).visibility!=='hidden'&&x.getBoundingClientRect().width>0);
+        if(focusables.length){
+          const first=focusables[0],last=focusables[focusables.length-1];
+          if(e.shiftKey&&document.activeElement===first){e.preventDefault();last.focus()}
+          else if(!e.shiftKey&&document.activeElement===last){e.preventDefault();first.focus()}
+        }
+      }
+    });
+
+    // A compact preferences panel near the chapter's publication metadata.
+    const progress=document.createElement('span');progress.className='ic-reading-percent';
+    progress.setAttribute('aria-label','当前阅读进度');progress.textContent='已读 0%';
+    const settingsButton=document.createElement('button');
+    settingsButton.type='button';settingsButton.className='ic-chapter-settings-trigger';
+    settingsButton.textContent='排版';settingsButton.setAttribute('aria-label','调整阅读宽度和行距');
+    settingsButton.setAttribute('aria-haspopup','dialog');settingsButton.setAttribute('aria-expanded','false');
+    const popover=document.createElement('section');popover.className='ic-settings-popover';
+    popover.setAttribute('role','dialog');popover.setAttribute('aria-label','阅读排版设置');popover.hidden=true;
+    const title=document.createElement('h2');title.className='ic-settings-title';title.textContent='阅读排版';popover.append(title);
+    function group(label,name,values,key){
+      const field=document.createElement('fieldset');field.className='ic-settings-group';
+      const legend=document.createElement('legend');legend.textContent=label;field.append(legend);
+      const row=document.createElement('div');row.className='ic-settings-options';
+      values.forEach(([value,text])=>{
+        const button=document.createElement('button');button.type='button';button.textContent=text;
+        button.setAttribute('aria-pressed',String((safeGet(key)|| (name==='width'?'standard':'relaxed'))===value));
+        button.addEventListener('click',()=>{
+          applySetting(name,value);
+          row.querySelectorAll('button').forEach(b=>b.setAttribute('aria-pressed',String(b===button)));
+        });row.append(button);
+      });field.append(row);popover.append(field);
+    }
+    group('阅读宽度','width',[['quiet','凝练'],['standard','标准'],['wide','舒展']],'ic:reading-width');
+    group('正文行距','leading',[['regular','紧凑'],['relaxed','舒适'],['airy','宽松']],'ic:reading-leading');
+    const hint=document.createElement('p');hint.className='ic-settings-hint';
+    hint.textContent='字号可通过右下角 A− / A＋ 调整；偏好保存在当前浏览器。';
+    popover.append(hint);
+    function setPopover(open){popover.hidden=!open;settingsButton.setAttribute('aria-expanded',String(open));if(!open)settingsButton.focus({preventScroll:true})}
+    settingsButton.addEventListener('click',()=>setPopover(popover.hidden));
+    document.addEventListener('pointerdown',e=>{
+      if(!popover.hidden&&!popover.contains(e.target)&&e.target!==settingsButton)setPopover(false);
+    });
+    document.addEventListener('keydown',e=>{if(e.key==='Escape'&&!popover.hidden){e.preventDefault();setPopover(false)}});
+    meta.append(progress,settingsButton,tocButton,popover);
+    let requested=false;
+    function updateReadingProgress(){
+      requested=false;
+      const max=Math.max(1,document.documentElement.scrollHeight-window.innerHeight);
+      const percent=Math.max(0,Math.min(100,Math.round(100*window.scrollY/max)));
+      progress.textContent=`已读 ${percent}%`;
+    }
+    document.addEventListener('scroll',()=>{if(!requested){requested=true;requestAnimationFrame(updateReadingProgress)}},{passive:true});
+    window.addEventListener('resize',updateReadingProgress,{passive:true});updateReadingProgress();
+  }
+  if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',init,{once:true});
+  else init();
 })();
 </script>
