@@ -213,3 +213,47 @@ html[data-reader-theme="night"] body:has(.novel-chapter) .history-note{backgroun
   body:has(.novel-chapter) .novel-chapter>p{font-size:11pt!important;line-height:1.85!important;color:#161616!important}
   body:has(.novel-chapter) .book-plate{break-inside:avoid}
 }
+
+
+/* V5 polish after desktop / mobile rendered-page inspection */
+body:has(.novel-chapter) #quarto-content>main#quarto-document-content{padding-top:76px!important}
+body:has(.novel-chapter) .chapter-preface{margin-bottom:28px!important}
+body:has(.novel-chapter) #title-block-header .ic-chapter-supertitle{margin-bottom:10px!important}
+body:has(.novel-chapter) #title-block-header h1.title{margin-bottom:14px!important}
+body:has(.novel-chapter) .chapter-dateline{margin-bottom:20px!important}
+body:has(.novel-chapter) .chapter-reading-meta{margin-bottom:42px!important}
+body:has(.novel-chapter) .reader-controls button{
+  white-space:nowrap!important;display:flex!important;align-items:center!important;
+  justify-content:center!important;line-height:1!important;flex-shrink:0!important;
+}
+@media(max-width:520px){
+  body:has(.novel-chapter) #quarto-content>main#quarto-document-content{padding-top:31px!important}
+  body:has(.novel-chapter) .chapter-reading-meta{
+    flex-wrap:nowrap!important;gap:5px!important;min-height:59px!important;
+    padding:10px 0!important;margin-bottom:37px!important;
+  }
+  body:has(.novel-chapter) .chapter-reading-meta>span:nth-child(2){display:none!important}
+  body:has(.novel-chapter) .ic-chapter-settings-trigger{margin-left:auto!important}
+  body:has(.novel-chapter) .ic-chapter-settings-trigger,
+  body:has(.novel-chapter) .ic-chapter-toc{padding:8px!important}
+}
+/* Keep mobile book reading unobstructed until tools are needed. */
+@media(min-width:521px){
+ body:has(.novel-chapter) .reader-controls .ic-reading-toggle{display:none!important}
+}
+@media(max-width:520px){
+ body:has(.novel-chapter) .reader-controls .ic-reading-toggle{
+   border:0!important;border-radius:50%!important;min-width:39px!important;
+   font:600 .88rem var(--font-interface)!important;color:var(--read-accent)!important;
+ }
+ body:has(.novel-chapter) .reader-controls.ic-reader-compact{
+   left:auto!important;right:14px!important;transform:none!important;
+   bottom:max(14px,env(safe-area-inset-bottom))!important;
+   width:auto!important;min-width:0!important;padding:.28rem!important;
+ }
+ body:has(.novel-chapter) .reader-controls.ic-reader-compact > button:not(.ic-reading-toggle){display:none!important}
+ body:has(.novel-chapter) .reader-controls:not(.ic-reader-compact){
+   overflow-x:auto;max-width:calc(100vw - 16px);
+   padding:.25rem!important;gap:0!important;
+ }
+}

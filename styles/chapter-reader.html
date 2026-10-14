@@ -72,7 +72,33 @@
     }
     const tocButton=makeTocButton('目录 ☰','ic-chapter-toc');
     const toolbar=document.querySelector('.reader-controls');
-    if(toolbar)toolbar.prepend(makeTocButton('☰','ic-chapter-toc-icon'));
+    if(toolbar){
+      toolbar.prepend(makeTocButton('☰','ic-chapter-toc-icon'));
+      const mobileToggle=document.createElement('button');
+      mobileToggle.type='button';
+      mobileToggle.className='ic-reading-toggle';
+      mobileToggle.textContent='Aa';
+      mobileToggle.setAttribute('aria-label','展开阅读工具');
+      mobileToggle.setAttribute('aria-expanded','false');
+      toolbar.prepend(mobileToggle);
+      const media=window.matchMedia('(max-width: 520px)');
+      function syncCompact(){
+        if(media.matches){
+          toolbar.classList.add('ic-reader-compact');
+          mobileToggle.textContent='Aa';
+          mobileToggle.setAttribute('aria-label','展开阅读工具');
+          mobileToggle.setAttribute('aria-expanded','false');
+        }else toolbar.classList.remove('ic-reader-compact');
+      }
+      syncCompact();
+      if(media.addEventListener)media.addEventListener('change',syncCompact);
+      mobileToggle.addEventListener('click',()=>{
+        const compact=toolbar.classList.toggle('ic-reader-compact');
+        mobileToggle.textContent=compact?'Aa':'×';
+        mobileToggle.setAttribute('aria-label',compact?'展开阅读工具':'收起阅读工具');
+        mobileToggle.setAttribute('aria-expanded',String(!compact));
+      });
+    }
     veil.addEventListener('click',()=>setDrawer(false));
     toc.addEventListener('click',e=>{if(e.target.closest('a[href]'))setDrawer(false)});
     document.addEventListener('keydown',e=>{
