@@ -36,15 +36,52 @@ function initDirectory(){
  const input=document.getElementById("chapter-filter");if(!input)return;
  const items=[...document.querySelectorAll(".directory-item")];
  const blocks=[...document.querySelectorAll(".directory-volume")];
+ const filterBtns=[...document.querySelectorAll("[data-kind-filter]")];
  const count=document.getElementById("chapter-count"),empty=document.getElementById("directory-empty");
- const update=()=>{
-  const q=input.value.trim().toLocaleLowerCase();let found=0;
-  for(const item of items){const hit=!q||item.textContent.toLocaleLowerCase().includes(q);item.hidden=!hit;if(hit)found++}
-  for(const block of blocks){block.hidden=!block.querySelector(".directory-item:not([hidden])")}
-  if(count)count.textContent="匹配 "+found+" / 48 章";
+ const clear=document.getElementById("chapter-filter-clear");
+ let mode="all";
+ const saved=storage.json("ic:bookmarks",[]);
+ const bookmarks=new Set(Array.isArray(saved)?saved.map(Number):[]);
+ const last=storage.json("ic:last-read",null);
+ for(const item of items){
+  const match=item.getAttribute("href").match(/chapter-(\d{2})\.html/);
+  const n=match?Number(match[1]):0;
+  if(bookmarks.has(n)){item.classList.add("is-bookmarked");const t=item.querySelector(".directory-item__type");if(t)t.textContent="已收藏";}
+  if(last&&Number(last.n)===n){item.classList.add("is-last-read");const t=item.querySelector(".directory-item__type");if(t)t.textContent="上次阅读";}
+ }
+ if(last&&Number(last.n)>=1&&Number(last.n)<=48){
+  const box=document.getElementById("directory-continue"),label=document.getElementById("directory-resume-label"),link=document.getElementById("directory-resume-link");
+  if(label)label.textContent="第"+last.n+"章 · "+(window.IC_CHAPTERS||[])[Number(last.n)-1]+" · 已读约 "+Math.round(Number(last.pct)||0)+"%";
+  if(link)link.href=pathFor(Number(last.n))+"?resume=1";
+  if(box)box.hidden=false;
+ }
+ function update(){
+  const q=input.value.trim().toLocaleLowerCase(),tokens=q.split(/\s+/).filter(Boolean);
+  let found=0;
+  for(const item of items){
+   const haystack=(item.textContent+" "+(item.dataset.search||"")).toLocaleLowerCase();
+   const hit=tokens.every(t=>haystack.includes(t))&&(mode==="all"||item.dataset.kind===mode);
+   item.hidden=!hit;if(hit)found++;
+  }
+  for(const block of blocks)block.hidden=!block.querySelector(".directory-item:not([hidden])");
+  if(count)count.textContent=q||mode!=="all"?"找到 "+found+" / 48 章":"共 48 章";
   if(empty)empty.hidden=found!==0;
- };
+  if(clear)clear.hidden=!q;
+  filterBtns.forEach(b=>b.setAttribute("aria-pressed",String(b.dataset.kindFilter===mode)));
+ }
+ filterBtns.forEach(b=>b.addEventListener("click",()=>{mode=b.dataset.kindFilter;update()}));
  input.addEventListener("input",update);
+ function reset(){mode="all";input.value="";update();input.focus();}
+ if(clear)clear.addEventListener("click",reset);
+ const resetBtn=document.getElementById("directory-reset");if(resetBtn)resetBtn.addEventListener("click",reset);
+ for(const a of document.querySelectorAll("[data-volume-jump]"))a.addEventListener("click",()=>{
+  if(mode!=="all"||input.value){mode="all";input.value="";update();}
+ });
+ input.addEventListener("keydown",e=>{if(e.key==="Escape"&&input.value){e.preventDefault();reset()}});
+ document.addEventListener("keydown",e=>{
+  if(e.key==="/"&&!e.altKey&&!e.ctrlKey&&!e.metaKey&&!/^(INPUT|TEXTAREA)$/.test(document.activeElement?.tagName||"")){e.preventDefault();input.focus()}
+ });
+ update();
 }
 function initHome(){
  const card=document.getElementById("continue-reading");if(!card)return;

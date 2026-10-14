@@ -5,51 +5,283 @@ page-layout: full
 sidebar: false
 toc: false
 ---
-<div class="editorial-page directory-page"><header class="editorial-page-head"><p class="eyebrow-small">THE COMPLETE CONTENTS</p><h1>六卷，四十八章。</h1><p>不妨从一滴水开始，也可以从一张脑影像向前追溯。每个章节都有独立的生活与科学问题。</p></header><div class="directory-search"><label for="chapter-filter">查找章节</label><input id="chapter-filter" type="search" placeholder="输入章节名称、年代或地点…" autocomplete="off"><span id="chapter-count" aria-live="polite">共 48 章</span></div><section class="directory-volume" data-volume="1"><div class="directory-volume__head"><span>01 / 06</span><h2>第一卷 · 未知的生命</h2><span>1665—1796</span></div><div class="directory-items"><a class="directory-item" href="chapters/volume-01/chapter-01.html"><span class="directory-item__no">01</span><span class="directory-item__name">纸上的霉</span><span class="directory-item__date">1665 · 伦敦</span><span class="directory-item__arrow">↗</span></a>
-<a class="directory-item" href="chapters/volume-01/chapter-02.html"><span class="directory-item__no">02</span><span class="directory-item__name">一滴水</span><span class="directory-item__date">1676 · 代尔夫特</span><span class="directory-item__arrow">↗</span></a>
-<a class="directory-item" href="chapters/volume-01/chapter-03.html"><span class="directory-item__no">03</span><span class="directory-item__name">寄往伦敦的信</span><span class="directory-item__date">1677 · 伦敦</span><span class="directory-item__arrow">↗</span></a>
-<a class="directory-item" href="chapters/volume-01/chapter-04.html"><span class="directory-item__no">04</span><span class="directory-item__name">档案盒</span><span class="directory-item__date">2026 · 中国南方</span><span class="directory-item__arrow">↗</span></a>
-<a class="directory-item" href="chapters/volume-01/chapter-05.html"><span class="directory-item__no">05</span><span class="directory-item__name">发酵的屋子</span><span class="directory-item__date">1738 · 英格兰</span><span class="directory-item__arrow">↗</span></a>
-<a class="directory-item" href="chapters/volume-01/chapter-06.html"><span class="directory-item__no">06</span><span class="directory-item__name">瓶中的争论</span><span class="directory-item__date">1765 · 摩德纳</span><span class="directory-item__arrow">↗</span></a>
-<a class="directory-item" href="chapters/volume-01/chapter-07.html"><span class="directory-item__no">07</span><span class="directory-item__name">一个男孩的手臂</span><span class="directory-item__date">1796 · 伯克利</span><span class="directory-item__arrow">↗</span></a>
-<a class="directory-item" href="chapters/volume-01/chapter-08.html"><span class="directory-item__no">08</span><span class="directory-item__name">酱香</span><span class="directory-item__date">2026 · 中国南方</span><span class="directory-item__arrow">↗</span></a></div></section>
-<section class="directory-volume" data-volume="2"><div class="directory-volume__head"><span>02 / 06</span><h2>第二卷 · 疾病与城市</h2><span>1832—1867</span></div><div class="directory-items"><a class="directory-item" href="chapters/volume-02/chapter-09.html"><span class="directory-item__no">09</span><span class="directory-item__name">河水进了屋</span><span class="directory-item__date">1832 · 伦敦</span><span class="directory-item__arrow">↗</span></a>
-<a class="directory-item" href="chapters/volume-02/chapter-10.html"><span class="directory-item__no">10</span><span class="directory-item__name">医生的双手</span><span class="directory-item__date">1847 · 维也纳</span><span class="directory-item__arrow">↗</span></a>
-<a class="directory-item" href="chapters/volume-02/chapter-11.html"><span class="directory-item__no">11</span><span class="directory-item__name">布罗德街</span><span class="directory-item__date">1854 · 伦敦</span><span class="directory-item__arrow">↗</span></a>
-<a class="directory-item" href="chapters/volume-02/chapter-12.html"><span class="directory-item__no">12</span><span class="directory-item__name">地图的另一边</span><span class="directory-item__date">2026 · 中国南方</span><span class="directory-item__arrow">↗</span></a>
-<a class="directory-item" href="chapters/volume-02/chapter-13.html"><span class="directory-item__no">13</span><span class="directory-item__name">没人相信的弯线</span><span class="directory-item__date">1854 · 佛罗伦萨</span><span class="directory-item__arrow">↗</span></a>
-<a class="directory-item" href="chapters/volume-02/chapter-14.html"><span class="directory-item__no">14</span><span class="directory-item__name">鹅颈瓶</span><span class="directory-item__date">1857–1861 · 法国</span><span class="directory-item__arrow">↗</span></a>
-<a class="directory-item" href="chapters/volume-02/chapter-15.html"><span class="directory-item__no">15</span><span class="directory-item__name">洁净的手术室</span><span class="directory-item__date">1867 · 格拉斯哥</span><span class="directory-item__arrow">↗</span></a>
-<a class="directory-item" href="chapters/volume-02/chapter-16.html"><span class="directory-item__no">16</span><span class="directory-item__name">死亡登记簿</span><span class="directory-item__date">2026 · 中国南方</span><span class="directory-item__arrow">↗</span></a></div></section>
-<section class="directory-volume" data-volume="3"><div class="directory-volume__head"><span>03 / 06</span><h2>第三卷 · 医学与战争</h2><span>1882—1945</span></div><div class="directory-items"><a class="directory-item" href="chapters/volume-03/chapter-17.html"><span class="directory-item__no">17</span><span class="directory-item__name">白色病人</span><span class="directory-item__date">1882 · 柏林</span><span class="directory-item__arrow">↗</span></a>
-<a class="directory-item" href="chapters/volume-03/chapter-18.html"><span class="directory-item__no">18</span><span class="directory-item__name">港口的鼠</span><span class="directory-item__date">1894 · 香港</span><span class="directory-item__arrow">↗</span></a>
-<a class="directory-item" href="chapters/volume-03/chapter-19.html"><span class="directory-item__no">19</span><span class="directory-item__name">零下三十度</span><span class="directory-item__date">1910–1911 · 中国东北</span><span class="directory-item__arrow">↗</span></a>
-<a class="directory-item" href="chapters/volume-03/chapter-20.html"><span class="directory-item__no">20</span><span class="directory-item__name">一道关闭的门</span><span class="directory-item__date">2026 · 中国南方</span><span class="directory-item__arrow">↗</span></a>
-<a class="directory-item" href="chapters/volume-03/chapter-21.html"><span class="directory-item__no">21</span><span class="directory-item__name">流感之年</span><span class="directory-item__date">1918 · 中国北方</span><span class="directory-item__arrow">↗</span></a>
-<a class="directory-item" href="chapters/volume-03/chapter-22.html"><span class="directory-item__no">22</span><span class="directory-item__name">长霉的培养皿</span><span class="directory-item__date">1928 · 伦敦</span><span class="directory-item__arrow">↗</span></a>
-<a class="directory-item" href="chapters/volume-03/chapter-23.html"><span class="directory-item__no">23</span><span class="directory-item__name">药物只剩下一瓶</span><span class="directory-item__date">1941–1945 · 英美</span><span class="directory-item__arrow">↗</span></a>
-<a class="directory-item" href="chapters/volume-03/chapter-24.html"><span class="directory-item__no">24</span><span class="directory-item__name">没有万能药</span><span class="directory-item__date">2026 · 中国南方</span><span class="directory-item__arrow">↗</span></a></div></section>
-<section class="directory-volume" data-volume="4"><div class="directory-volume__head"><span>04 / 06</span><h2>第四卷 · 生命的密码</h2><span>1928—1977</span></div><div class="directory-items"><a class="directory-item" href="chapters/volume-04/chapter-25.html"><span class="directory-item__no">25</span><span class="directory-item__name">死去的细菌</span><span class="directory-item__date">1928 · 伦敦</span><span class="directory-item__arrow">↗</span></a>
-<a class="directory-item" href="chapters/volume-04/chapter-26.html"><span class="directory-item__no">26</span><span class="directory-item__name">白色沉淀</span><span class="directory-item__date">1944 · 纽约</span><span class="directory-item__arrow">↗</span></a>
-<a class="directory-item" href="chapters/volume-04/chapter-27.html"><span class="directory-item__no">27</span><span class="directory-item__name">交换</span><span class="directory-item__date">1946 · 美国</span><span class="directory-item__arrow">↗</span></a>
-<a class="directory-item" href="chapters/volume-04/chapter-28.html"><span class="directory-item__no">28</span><span class="directory-item__name">被折叠的谱系</span><span class="directory-item__date">2026 · 中国南方</span><span class="directory-item__arrow">↗</span></a>
-<a class="directory-item" href="chapters/volume-04/chapter-29.html"><span class="directory-item__no">29</span><span class="directory-item__name">一张尚未完成的照片</span><span class="directory-item__date">1952–1953 · 伦敦</span><span class="directory-item__arrow">↗</span></a>
-<a class="directory-item" href="chapters/volume-04/chapter-30.html"><span class="directory-item__no">30</span><span class="directory-item__name">开关</span><span class="directory-item__date">1961 · 巴黎</span><span class="directory-item__arrow">↗</span></a>
-<a class="directory-item" href="chapters/volume-04/chapter-31.html"><span class="directory-item__no">31</span><span class="directory-item__name">第三种生命</span><span class="directory-item__date">1977 · 美国</span><span class="directory-item__arrow">↗</span></a>
-<a class="directory-item" href="chapters/volume-04/chapter-32.html"><span class="directory-item__no">32</span><span class="directory-item__name">谱系之外</span><span class="directory-item__date">2026 · 中国南方</span><span class="directory-item__arrow">↗</span></a></div></section>
-<section class="directory-volume" data-volume="5"><div class="directory-volume__head"><span>05 / 06</span><h2>第五卷 · 人体的另一半</h2><span>1995—2010年代</span></div><div class="directory-items"><a class="directory-item" href="chapters/volume-05/chapter-33.html"><span class="directory-item__no">33</span><span class="directory-item__name">培养不出的居民</span><span class="directory-item__date">1995 · 美国</span><span class="directory-item__arrow">↗</span></a>
-<a class="directory-item" href="chapters/volume-05/chapter-34.html"><span class="directory-item__no">34</span><span class="directory-item__name">不同的体重</span><span class="directory-item__date">2004–2006 · 美国</span><span class="directory-item__arrow">↗</span></a>
-<a class="directory-item" href="chapters/volume-05/chapter-35.html"><span class="directory-item__no">35</span><span class="directory-item__name">人体地图</span><span class="directory-item__date">2007–2012 · 美国</span><span class="directory-item__arrow">↗</span></a>
-<a class="directory-item" href="chapters/volume-05/chapter-36.html"><span class="directory-item__no">36</span><span class="directory-item__name">谁是健康的人</span><span class="directory-item__date">2026 · 中国南方</span><span class="directory-item__arrow">↗</span></a>
-<a class="directory-item" href="chapters/volume-05/chapter-37.html"><span class="directory-item__no">37</span><span class="directory-item__name">借来的菌群</span><span class="directory-item__date">2013 · 荷兰</span><span class="directory-item__arrow">↗</span></a>
-<a class="directory-item" href="chapters/volume-05/chapter-38.html"><span class="directory-item__no">38</span><span class="directory-item__name">一座移动的森林</span><span class="directory-item__date">2010年代 · 欧洲</span><span class="directory-item__arrow">↗</span></a>
-<a class="directory-item" href="chapters/volume-05/chapter-39.html"><span class="directory-item__no">39</span><span class="directory-item__name">泥土的另一部历史</span><span class="directory-item__date">19世纪末至当代</span><span class="directory-item__arrow">↗</span></a>
-<a class="directory-item" href="chapters/volume-05/chapter-40.html"><span class="directory-item__no">40</span><span class="directory-item__name">身体里的邻居</span><span class="directory-item__date">2026 · 中国南方</span><span class="directory-item__arrow">↗</span></a></div></section>
-<section class="directory-volume" data-volume="6"><div class="directory-volume__head"><span>06 / 06</span><h2>第六卷 · 生命的新边界</h2><span>2004—2026</span></div><div class="directory-items"><a class="directory-item" href="chapters/volume-06/chapter-41.html"><span class="directory-item__no">41</span><span class="directory-item__name">神经传来的消息</span><span class="directory-item__date">2004年后 · 日本</span><span class="directory-item__arrow">↗</span></a>
-<a class="directory-item" href="chapters/volume-06/chapter-42.html"><span class="directory-item__no">42</span><span class="directory-item__name">借来的基因</span><span class="directory-item__date">2020年代 · 医院</span><span class="directory-item__arrow">↗</span></a>
-<a class="directory-item" href="chapters/volume-06/chapter-43.html"><span class="directory-item__no">43</span><span class="directory-item__name">不止细菌</span><span class="directory-item__date">2020年代 · 科研机构</span><span class="directory-item__arrow">↗</span></a>
-<a class="directory-item" href="chapters/volume-06/chapter-44.html"><span class="directory-item__no">44</span><span class="directory-item__name">失灵的预测</span><span class="directory-item__date">2026 · 中国南方</span><span class="directory-item__arrow">↗</span></a>
-<a class="directory-item" href="chapters/volume-06/chapter-45.html"><span class="directory-item__no">45</span><span class="directory-item__name">一张脑影像</span><span class="directory-item__date">2026 · 中国南方</span><span class="directory-item__arrow">↗</span></a>
-<a class="directory-item" href="chapters/volume-06/chapter-46.html"><span class="directory-item__no">46</span><span class="directory-item__name">机器猜测的因果</span><span class="directory-item__date">2026 · 中国南方</span><span class="directory-item__arrow">↗</span></a>
-<a class="directory-item" href="chapters/volume-06/chapter-47.html"><span class="directory-item__no">47</span><span class="directory-item__name">一份没有签字的报告</span><span class="directory-item__date">2026 · 中国南方</span><span class="directory-item__arrow">↗</span></a>
-<a class="directory-item" href="chapters/volume-06/chapter-48.html"><span class="directory-item__no">48</span><span class="directory-item__name">看不见的文明</span><span class="directory-item__date">2026 · 中国南方</span><span class="directory-item__arrow">↗</span></a></div></section><div id="directory-empty" class="directory-empty" hidden>没有找到匹配的章节。试试其他关键词。</div><div class="site-colophon">章末科学解读提供史实背景，不替代原始史料。<a href="appendices/references.html">查阅参考资料 ↗</a></div></div>
+
+<div class="editorial-page directory-page directory-reimagined">
+<nav class="directory-crumb" aria-label="所在位置"><a href="index.html">看不见的文明</a><span aria-hidden="true">/</span><span aria-current="page">全书目录</span></nav>
+<header class="directory-hero">
+ <div class="directory-hero__copy"><p class="directory-kicker">THE COMPLETE CONTENTS <span>·</span> THE INVISIBLE CIVILIZATION</p><h1>从一滴水，<br>走进看不见的文明。</h1><p class="directory-hero__lede">六卷，四十八章。从十七世纪的显微镜，到疾病、遗传、人体微生物组与脑科学。故事发生在真实的科学史节点，人物的生活与抉择则将这些年代连在一起。</p><div class="directory-hero__meta"><span><strong>06</strong> 卷</span><span><strong>48</strong> 章</span><span><strong>1665—2026</strong> 故事年代</span></div></div>
+ <aside class="directory-hero__aside" aria-label="阅读提示"><span class="directory-aside__line">EDITOR'S NOTE / 阅读引导</span><p>你不必记住所有伟大的名字。先走进一个普通人的一天，再看科学怎样悄悄改变他们能够相信的事。</p><a href="chapters/volume-01/chapter-01.html">从第一章开始 <span aria-hidden="true">↗</span></a><span class="directory-aside__signature">一心问道 · 科学历史小说</span></aside>
+</header>
+<section class="directory-entrances" aria-label="三种阅读方式"><a href="chapters/volume-01/chapter-01.html"><span>01 / 按时间进入</span><strong>从显微镜与伦敦书铺开始</strong><small>第01章 · 纸上的霉 <span aria-hidden="true">↗</span></small></a><a href="chapters/volume-02/chapter-09.html"><span>02 / 从一场危机进入</span><strong>从城市疾病与公共卫生开始</strong><small>第09章 · 河水进了屋 <span aria-hidden="true">↗</span></small></a><a href="chapters/volume-05/chapter-36.html"><span>03 / 从当下进入</span><strong>从人体、微生物组与研究者开始</strong><small>第36章 · 谁是健康的人 <span aria-hidden="true">↗</span></small></a></section>
+<div id="directory-continue" class="directory-continue" hidden><div><span>你的阅读位置</span><strong id="directory-resume-label">上一次停在……</strong></div><a id="directory-resume-link" href="chapters/volume-01/chapter-01.html">继续阅读 <span aria-hidden="true">↗</span></a></div>
+<div class="directory-workbench" id="choose-chapters">
+ <div class="directory-workbench__top"><div><span class="directory-kicker">FIND YOUR CHAPTER</span><h2>选择下一段旅程</h2></div><span id="chapter-count" aria-live="polite">共 48 章</span></div>
+ <div class="directory-search"><label class="directory-search__field" for="chapter-filter"><span aria-hidden="true">⌕</span><span class="sr-only">查找章节</span><input id="chapter-filter" type="search" placeholder="搜索章节、年代、地点或故事内容…" autocomplete="off"></label><button id="chapter-filter-clear" type="button" hidden>清除</button><div class="directory-filters" role="group" aria-label="故事时间类型"><button type="button" data-kind-filter="all" aria-pressed="true">全部章节</button><button type="button" data-kind-filter="history" aria-pressed="false">历史故事</button><button type="button" data-kind-filter="modern" aria-pressed="false">当代叙事</button></div></div>
+ <nav class="directory-quicknav" aria-label="跳转到指定卷"><a href="#volume-1" data-volume-jump="1"><span>01</span>未知的生命</a><a href="#volume-2" data-volume-jump="2"><span>02</span>疾病与城市</a><a href="#volume-3" data-volume-jump="3"><span>03</span>医学与战争</a><a href="#volume-4" data-volume-jump="4"><span>04</span>生命的密码</a><a href="#volume-5" data-volume-jump="5"><span>05</span>人体的另一半</a><a href="#volume-6" data-volume-jump="6"><span>06</span>生命的新边界</a></nav>
+</div>
+<div class="directory-volumes"><section class="directory-volume" id="volume-1" data-volume="1" aria-labelledby="volume-1-title">
+ <div class="directory-volume__head"><div class="directory-volume__index"><span>VOLUME</span><strong>01</strong></div><div class="directory-volume__intro"><span class="directory-volume__period">1665—1796 · 观察如何开始</span><h2 id="volume-1-title">第一卷 · 未知的生命</h2><p>从看见微小结构，到怀疑旧有解释。我们先随书铺学徒、布商和酿造工匠进入一个尚不知道微生物为何物的时代。</p></div><a class="directory-volume__opening" href="volumes/volume-01.html">阅读本卷扉页 <span aria-hidden="true">↗</span></a></div>
+ <div class="directory-items"><a class="directory-item" href="chapters/volume-01/chapter-01.html" data-kind="history" data-search="乔纳在伦敦的书铺接触《显微图谱》，瘟疫也正在改变普通人的生活。" aria-label="第1章 纸上的霉，1665 · 伦敦">
+  <span class="directory-item__no">01</span>
+  <span class="directory-item__main"><span class="directory-item__name">纸上的霉</span><span class="directory-item__summary">乔纳在伦敦的书铺接触《显微图谱》，瘟疫也正在改变普通人的生活。</span><span class="directory-item__date">1665 · 伦敦</span></span>
+  <span class="directory-item__right"><span class="directory-item__type">历史故事</span><span class="directory-item__arrow" aria-hidden="true">↗</span></span>
+</a>
+<a class="directory-item" href="chapters/volume-01/chapter-02.html" data-kind="history" data-search="一位布商用自己磨制的透镜，窥见水中无法凭肉眼辨认的活动体。" aria-label="第2章 一滴水，1676 · 代尔夫特">
+  <span class="directory-item__no">02</span>
+  <span class="directory-item__main"><span class="directory-item__name">一滴水</span><span class="directory-item__summary">一位布商用自己磨制的透镜，窥见水中无法凭肉眼辨认的活动体。</span><span class="directory-item__date">1676 · 代尔夫特</span></span>
+  <span class="directory-item__right"><span class="directory-item__type">历史故事</span><span class="directory-item__arrow" aria-hidden="true">↗</span></span>
+</a>
+<a class="directory-item" href="chapters/volume-01/chapter-03.html" data-kind="history" data-search="一封荷兰来信抵达伦敦，印刷作坊里的学徒见证观察如何变成公共知识。" aria-label="第3章 寄往伦敦的信，1677 · 伦敦">
+  <span class="directory-item__no">03</span>
+  <span class="directory-item__main"><span class="directory-item__name">寄往伦敦的信</span><span class="directory-item__summary">一封荷兰来信抵达伦敦，印刷作坊里的学徒见证观察如何变成公共知识。</span><span class="directory-item__date">1677 · 伦敦</span></span>
+  <span class="directory-item__right"><span class="directory-item__type">历史故事</span><span class="directory-item__arrow" aria-hidden="true">↗</span></span>
+</a>
+<a class="directory-item" href="chapters/volume-01/chapter-04.html" data-kind="modern" data-search="一份漂亮的研究结果在独立数据里失灵，程屿开始寻找被忽略的记录。" aria-label="第4章 档案盒，2026 · 中国南方">
+  <span class="directory-item__no">04</span>
+  <span class="directory-item__main"><span class="directory-item__name">档案盒</span><span class="directory-item__summary">一份漂亮的研究结果在独立数据里失灵，程屿开始寻找被忽略的记录。</span><span class="directory-item__date">2026 · 中国南方</span></span>
+  <span class="directory-item__right"><span class="directory-item__type">当代叙事</span><span class="directory-item__arrow" aria-hidden="true">↗</span></span>
+</a>
+<a class="directory-item" href="chapters/volume-01/chapter-05.html" data-kind="history" data-search="十八世纪的酿造作坊遭遇失败，一家人的生计系于几只木桶。" aria-label="第5章 发酵的屋子，1738 · 英格兰">
+  <span class="directory-item__no">05</span>
+  <span class="directory-item__main"><span class="directory-item__name">发酵的屋子</span><span class="directory-item__summary">十八世纪的酿造作坊遭遇失败，一家人的生计系于几只木桶。</span><span class="directory-item__date">1738 · 英格兰</span></span>
+  <span class="directory-item__right"><span class="directory-item__type">历史故事</span><span class="directory-item__arrow" aria-hidden="true">↗</span></span>
+</a>
+<a class="directory-item" href="chapters/volume-01/chapter-06.html" data-kind="history" data-search="玻璃工匠为学者制造实验器皿，瓶口的细节成为争论的关键。" aria-label="第6章 瓶中的争论，1765 · 摩德纳">
+  <span class="directory-item__no">06</span>
+  <span class="directory-item__main"><span class="directory-item__name">瓶中的争论</span><span class="directory-item__summary">玻璃工匠为学者制造实验器皿，瓶口的细节成为争论的关键。</span><span class="directory-item__date">1765 · 摩德纳</span></span>
+  <span class="directory-item__right"><span class="directory-item__type">历史故事</span><span class="directory-item__arrow" aria-hidden="true">↗</span></span>
+</a>
+<a class="directory-item" href="chapters/volume-01/chapter-07.html" data-kind="history" data-search="1796年的乡村接种，让一个孩子及其身边的人面对未知的风险。" aria-label="第7章 一个男孩的手臂，1796 · 伯克利">
+  <span class="directory-item__no">07</span>
+  <span class="directory-item__main"><span class="directory-item__name">一个男孩的手臂</span><span class="directory-item__summary">1796年的乡村接种，让一个孩子及其身边的人面对未知的风险。</span><span class="directory-item__date">1796 · 伯克利</span></span>
+  <span class="directory-item__right"><span class="directory-item__type">历史故事</span><span class="directory-item__arrow" aria-hidden="true">↗</span></span>
+</a>
+<a class="directory-item" href="chapters/volume-01/chapter-08.html" data-kind="modern" data-search="母亲经营的发酵作坊，让程屿重新理解经验、记录与家庭。" aria-label="第8章 酱香，2026 · 中国南方">
+  <span class="directory-item__no">08</span>
+  <span class="directory-item__main"><span class="directory-item__name">酱香</span><span class="directory-item__summary">母亲经营的发酵作坊，让程屿重新理解经验、记录与家庭。</span><span class="directory-item__date">2026 · 中国南方</span></span>
+  <span class="directory-item__right"><span class="directory-item__type">当代叙事</span><span class="directory-item__arrow" aria-hidden="true">↗</span></span>
+</a></div>
+ </section>
+
+<section class="directory-volume" id="volume-2" data-volume="2" aria-labelledby="volume-2-title">
+ <div class="directory-volume__head"><div class="directory-volume__index"><span>VOLUME</span><strong>02</strong></div><div class="directory-volume__intro"><span class="directory-volume__period">1832—1867 · 证据如何出现</span><h2 id="volume-2-title">第二卷 · 疾病与城市</h2><p>疾病沿城市水系扩散，医生、洗衣工与印刷工从各自的位置接近同一个问题：怎样找到可靠的解释？</p></div><a class="directory-volume__opening" href="volumes/volume-02.html">阅读本卷扉页 <span aria-hidden="true">↗</span></a></div>
+ <div class="directory-items"><a class="directory-item" href="chapters/volume-02/chapter-09.html" data-kind="history" data-search="霍乱进入伦敦的街道，洗衣工玛莎不得不在生计与照护间选择。" aria-label="第9章 河水进了屋，1832 · 伦敦">
+  <span class="directory-item__no">09</span>
+  <span class="directory-item__main"><span class="directory-item__name">河水进了屋</span><span class="directory-item__summary">霍乱进入伦敦的街道，洗衣工玛莎不得不在生计与照护间选择。</span><span class="directory-item__date">1832 · 伦敦</span></span>
+  <span class="directory-item__right"><span class="directory-item__type">历史故事</span><span class="directory-item__arrow" aria-hidden="true">↗</span></span>
+</a>
+<a class="directory-item" href="chapters/volume-02/chapter-10.html" data-kind="history" data-search="维也纳产科病房里，安娜目睹洗手制度改变医护的日常。" aria-label="第10章 医生的双手，1847 · 维也纳">
+  <span class="directory-item__no">10</span>
+  <span class="directory-item__main"><span class="directory-item__name">医生的双手</span><span class="directory-item__summary">维也纳产科病房里，安娜目睹洗手制度改变医护的日常。</span><span class="directory-item__date">1847 · 维也纳</span></span>
+  <span class="directory-item__right"><span class="directory-item__type">历史故事</span><span class="directory-item__arrow" aria-hidden="true">↗</span></span>
+</a>
+<a class="directory-item" href="chapters/volume-02/chapter-11.html" data-kind="history" data-search="露西与玛莎在布罗德街遇见霍乱，水泵并不是故事的全部。" aria-label="第11章 布罗德街，1854 · 伦敦">
+  <span class="directory-item__no">11</span>
+  <span class="directory-item__main"><span class="directory-item__name">布罗德街</span><span class="directory-item__summary">露西与玛莎在布罗德街遇见霍乱，水泵并不是故事的全部。</span><span class="directory-item__date">1854 · 伦敦</span></span>
+  <span class="directory-item__right"><span class="directory-item__type">历史故事</span><span class="directory-item__arrow" aria-hidden="true">↗</span></span>
+</a>
+<a class="directory-item" href="chapters/volume-02/chapter-12.html" data-kind="modern" data-search="两张差异悬殊的预测图，迫使研究人员重读斯诺的调查方法。" aria-label="第12章 地图的另一边，2026 · 中国南方">
+  <span class="directory-item__no">12</span>
+  <span class="directory-item__main"><span class="directory-item__name">地图的另一边</span><span class="directory-item__summary">两张差异悬殊的预测图，迫使研究人员重读斯诺的调查方法。</span><span class="directory-item__date">2026 · 中国南方</span></span>
+  <span class="directory-item__right"><span class="directory-item__type">当代叙事</span><span class="directory-item__arrow" aria-hidden="true">↗</span></span>
+</a>
+<a class="directory-item" href="chapters/volume-02/chapter-13.html" data-kind="history" data-search="佛罗伦萨装订铺收到一部研究霍乱的薄册子，弯曲的微小结构尚无人重视。" aria-label="第13章 没人相信的弯线，1854 · 佛罗伦萨">
+  <span class="directory-item__no">13</span>
+  <span class="directory-item__main"><span class="directory-item__name">没人相信的弯线</span><span class="directory-item__summary">佛罗伦萨装订铺收到一部研究霍乱的薄册子，弯曲的微小结构尚无人重视。</span><span class="directory-item__date">1854 · 佛罗伦萨</span></span>
+  <span class="directory-item__right"><span class="directory-item__type">历史故事</span><span class="directory-item__arrow" aria-hidden="true">↗</span></span>
+</a>
+<a class="directory-item" href="chapters/volume-02/chapter-14.html" data-kind="history" data-search="法国蒸馏厂里，发酵失败将工匠与巴斯德的实验联系起来。" aria-label="第14章 鹅颈瓶，1857–1861 · 法国">
+  <span class="directory-item__no">14</span>
+  <span class="directory-item__main"><span class="directory-item__name">鹅颈瓶</span><span class="directory-item__summary">法国蒸馏厂里，发酵失败将工匠与巴斯德的实验联系起来。</span><span class="directory-item__date">1857–1861 · 法国</span></span>
+  <span class="directory-item__right"><span class="directory-item__type">历史故事</span><span class="directory-item__arrow" aria-hidden="true">↗</span></span>
+</a>
+<a class="directory-item" href="chapters/volume-02/chapter-15.html" data-kind="history" data-search="格拉斯哥的病房尝试新的防腐方法，治病的希望与危险同时存在。" aria-label="第15章 洁净的手术室，1867 · 格拉斯哥">
+  <span class="directory-item__no">15</span>
+  <span class="directory-item__main"><span class="directory-item__name">洁净的手术室</span><span class="directory-item__summary">格拉斯哥的病房尝试新的防腐方法，治病的希望与危险同时存在。</span><span class="directory-item__date">1867 · 格拉斯哥</span></span>
+  <span class="directory-item__right"><span class="directory-item__type">历史故事</span><span class="directory-item__arrow" aria-hidden="true">↗</span></span>
+</a>
+<a class="directory-item" href="chapters/volume-02/chapter-16.html" data-kind="modern" data-search="展览文字一次次被改写：讲述科学史，也要交代证据从何而来。" aria-label="第16章 死亡登记簿，2026 · 中国南方">
+  <span class="directory-item__no">16</span>
+  <span class="directory-item__main"><span class="directory-item__name">死亡登记簿</span><span class="directory-item__summary">展览文字一次次被改写：讲述科学史，也要交代证据从何而来。</span><span class="directory-item__date">2026 · 中国南方</span></span>
+  <span class="directory-item__right"><span class="directory-item__type">当代叙事</span><span class="directory-item__arrow" aria-hidden="true">↗</span></span>
+</a></div>
+ </section>
+
+<section class="directory-volume" id="volume-3" data-volume="3" aria-labelledby="volume-3-title">
+ <div class="directory-volume__head"><div class="directory-volume__index"><span>VOLUME</span><strong>03</strong></div><div class="directory-volume__intro"><span class="directory-volume__period">1882—1945 · 发现如何改变命运</span><h2 id="volume-3-title">第三卷 · 医学与战争</h2><p>公共卫生、战争与实验室互相牵连。找到病原体和获得真正可用的治疗，原来是两段不同的历史。</p></div><a class="directory-volume__opening" href="volumes/volume-03.html">阅读本卷扉页 <span aria-hidden="true">↗</span></a></div>
+ <div class="directory-items"><a class="directory-item" href="chapters/volume-03/chapter-17.html" data-kind="history" data-search="科赫报告结核病病原体，但病人的生活尚未因此变得容易。" aria-label="第17章 白色病人，1882 · 柏林">
+  <span class="directory-item__no">17</span>
+  <span class="directory-item__main"><span class="directory-item__name">白色病人</span><span class="directory-item__summary">科赫报告结核病病原体，但病人的生活尚未因此变得容易。</span><span class="directory-item__date">1882 · 柏林</span></span>
+  <span class="directory-item__right"><span class="directory-item__type">历史故事</span><span class="directory-item__arrow" aria-hidden="true">↗</span></span>
+</a>
+<a class="directory-item" href="chapters/volume-03/chapter-18.html" data-kind="history" data-search="香港港口的鼠疫，改变了搬运工人与家庭的日常秩序。" aria-label="第18章 港口的鼠，1894 · 香港">
+  <span class="directory-item__no">18</span>
+  <span class="directory-item__main"><span class="directory-item__name">港口的鼠</span><span class="directory-item__summary">香港港口的鼠疫，改变了搬运工人与家庭的日常秩序。</span><span class="directory-item__date">1894 · 香港</span></span>
+  <span class="directory-item__right"><span class="directory-item__type">历史故事</span><span class="directory-item__arrow" aria-hidden="true">↗</span></span>
+</a>
+<a class="directory-item" href="chapters/volume-03/chapter-19.html" data-kind="history" data-search="1910—1911年东北肺鼠疫期间，一位护士经历隔离与失去。" aria-label="第19章 零下三十度，1910–1911 · 中国东北">
+  <span class="directory-item__no">19</span>
+  <span class="directory-item__main"><span class="directory-item__name">零下三十度</span><span class="directory-item__summary">1910—1911年东北肺鼠疫期间，一位护士经历隔离与失去。</span><span class="directory-item__date">1910–1911 · 中国东北</span></span>
+  <span class="directory-item__right"><span class="directory-item__type">历史故事</span><span class="directory-item__arrow" aria-hidden="true">↗</span></span>
+</a>
+<a class="directory-item" href="chapters/volume-03/chapter-20.html" data-kind="modern" data-search="一份被写成临床产品的研究方案，让实验室面对责任边界。" aria-label="第20章 一道关闭的门，2026 · 中国南方">
+  <span class="directory-item__no">20</span>
+  <span class="directory-item__main"><span class="directory-item__name">一道关闭的门</span><span class="directory-item__summary">一份被写成临床产品的研究方案，让实验室面对责任边界。</span><span class="directory-item__date">2026 · 中国南方</span></span>
+  <span class="directory-item__right"><span class="directory-item__type">当代叙事</span><span class="directory-item__arrow" aria-hidden="true">↗</span></span>
+</a>
+<a class="directory-item" href="chapters/volume-03/chapter-21.html" data-kind="history" data-search="八年之后，沈素云再次面对疫情：这一次是席卷全球的流感。" aria-label="第21章 流感之年，1918 · 中国北方">
+  <span class="directory-item__no">21</span>
+  <span class="directory-item__main"><span class="directory-item__name">流感之年</span><span class="directory-item__summary">八年之后，沈素云再次面对疫情：这一次是席卷全球的流感。</span><span class="directory-item__date">1918 · 中国北方</span></span>
+  <span class="directory-item__right"><span class="directory-item__type">历史故事</span><span class="directory-item__arrow" aria-hidden="true">↗</span></span>
+</a>
+<a class="directory-item" href="chapters/volume-03/chapter-22.html" data-kind="history" data-search="一只受霉菌污染的培养皿，尚未成为能够挽救病人的药物。" aria-label="第22章 长霉的培养皿，1928 · 伦敦">
+  <span class="directory-item__no">22</span>
+  <span class="directory-item__main"><span class="directory-item__name">长霉的培养皿</span><span class="directory-item__summary">一只受霉菌污染的培养皿，尚未成为能够挽救病人的药物。</span><span class="directory-item__date">1928 · 伦敦</span></span>
+  <span class="directory-item__right"><span class="directory-item__type">历史故事</span><span class="directory-item__arrow" aria-hidden="true">↗</span></span>
+</a>
+<a class="directory-item" href="chapters/volume-03/chapter-23.html" data-kind="history" data-search="从牛津研究室到战时生产，青霉素经历漫长的开发与供应难题。" aria-label="第23章 药物只剩下一瓶，1941–1945 · 英美">
+  <span class="directory-item__no">23</span>
+  <span class="directory-item__main"><span class="directory-item__name">药物只剩下一瓶</span><span class="directory-item__summary">从牛津研究室到战时生产，青霉素经历漫长的开发与供应难题。</span><span class="directory-item__date">1941–1945 · 英美</span></span>
+  <span class="directory-item__right"><span class="directory-item__type">历史故事</span><span class="directory-item__arrow" aria-hidden="true">↗</span></span>
+</a>
+<a class="directory-item" href="chapters/volume-03/chapter-24.html" data-kind="modern" data-search="临床用药改变微生物生态，研究者却必须先弄清影响来自哪里。" aria-label="第24章 没有万能药，2026 · 中国南方">
+  <span class="directory-item__no">24</span>
+  <span class="directory-item__main"><span class="directory-item__name">没有万能药</span><span class="directory-item__summary">临床用药改变微生物生态，研究者却必须先弄清影响来自哪里。</span><span class="directory-item__date">2026 · 中国南方</span></span>
+  <span class="directory-item__right"><span class="directory-item__type">当代叙事</span><span class="directory-item__arrow" aria-hidden="true">↗</span></span>
+</a></div>
+ </section>
+
+<section class="directory-volume" id="volume-4" data-volume="4" aria-labelledby="volume-4-title">
+ <div class="directory-volume__head"><div class="directory-volume__index"><span>VOLUME</span><strong>04</strong></div><div class="directory-volume__intro"><span class="directory-volume__period">1928—1977 · 生命如何书写自己</span><h2 id="volume-4-title">第四卷 · 生命的密码</h2><p>从性状转化到DNA、基因调控和古菌演化，微生物逐渐从显微镜下的形状，成为可以追踪的遗传故事。</p></div><a class="directory-volume__opening" href="volumes/volume-04.html">阅读本卷扉页 <span aria-hidden="true">↗</span></a></div>
+ <div class="directory-items"><a class="directory-item" href="chapters/volume-04/chapter-25.html" data-kind="history" data-search="格里菲思的小鼠实验显示细菌性状可以发生意外改变。" aria-label="第25章 死去的细菌，1928 · 伦敦">
+  <span class="directory-item__no">25</span>
+  <span class="directory-item__main"><span class="directory-item__name">死去的细菌</span><span class="directory-item__summary">格里菲思的小鼠实验显示细菌性状可以发生意外改变。</span><span class="directory-item__date">1928 · 伦敦</span></span>
+  <span class="directory-item__right"><span class="directory-item__type">历史故事</span><span class="directory-item__arrow" aria-hidden="true">↗</span></span>
+</a>
+<a class="directory-item" href="chapters/volume-04/chapter-26.html" data-kind="history" data-search="艾弗里及同事寻找遗传转化的物质基础，DNA走向研究中心。" aria-label="第26章 白色沉淀，1944 · 纽约">
+  <span class="directory-item__no">26</span>
+  <span class="directory-item__main"><span class="directory-item__name">白色沉淀</span><span class="directory-item__summary">艾弗里及同事寻找遗传转化的物质基础，DNA走向研究中心。</span><span class="directory-item__date">1944 · 纽约</span></span>
+  <span class="directory-item__right"><span class="directory-item__type">历史故事</span><span class="directory-item__arrow" aria-hidden="true">↗</span></span>
+</a>
+<a class="directory-item" href="chapters/volume-04/chapter-27.html" data-kind="history" data-search="两种细菌混合培养的结果，动摇了对微生物遗传的旧认识。" aria-label="第27章 交换，1946 · 美国">
+  <span class="directory-item__no">27</span>
+  <span class="directory-item__main"><span class="directory-item__name">交换</span><span class="directory-item__summary">两种细菌混合培养的结果，动摇了对微生物遗传的旧认识。</span><span class="directory-item__date">1946 · 美国</span></span>
+  <span class="directory-item__right"><span class="directory-item__type">历史故事</span><span class="directory-item__arrow" aria-hidden="true">↗</span></span>
+</a>
+<a class="directory-item" href="chapters/volume-04/chapter-28.html" data-kind="modern" data-search="复杂的菌株网络似乎讲了一个完整故事，证据却还缺了几环。" aria-label="第28章 被折叠的谱系，2026 · 中国南方">
+  <span class="directory-item__no">28</span>
+  <span class="directory-item__main"><span class="directory-item__name">被折叠的谱系</span><span class="directory-item__summary">复杂的菌株网络似乎讲了一个完整故事，证据却还缺了几环。</span><span class="directory-item__date">2026 · 中国南方</span></span>
+  <span class="directory-item__right"><span class="directory-item__type">当代叙事</span><span class="directory-item__arrow" aria-hidden="true">↗</span></span>
+</a>
+<a class="directory-item" href="chapters/volume-04/chapter-29.html" data-kind="history" data-search="照片49和照片51背后，是富兰克林的研究设计与科学史再解读。" aria-label="第29章 一张尚未完成的照片，1952–1953 · 伦敦">
+  <span class="directory-item__no">29</span>
+  <span class="directory-item__main"><span class="directory-item__name">一张尚未完成的照片</span><span class="directory-item__summary">照片49和照片51背后，是富兰克林的研究设计与科学史再解读。</span><span class="directory-item__date">1952–1953 · 伦敦</span></span>
+  <span class="directory-item__right"><span class="directory-item__type">历史故事</span><span class="directory-item__arrow" aria-hidden="true">↗</span></span>
+</a>
+<a class="directory-item" href="chapters/volume-04/chapter-30.html" data-kind="history" data-search="细菌不是简单开关，调控机制让基因与环境发生联系。" aria-label="第30章 开关，1961 · 巴黎">
+  <span class="directory-item__no">30</span>
+  <span class="directory-item__main"><span class="directory-item__name">开关</span><span class="directory-item__summary">细菌不是简单开关，调控机制让基因与环境发生联系。</span><span class="directory-item__date">1961 · 巴黎</span></span>
+  <span class="directory-item__right"><span class="directory-item__type">历史故事</span><span class="directory-item__arrow" aria-hidden="true">↗</span></span>
+</a>
+<a class="directory-item" href="chapters/volume-04/chapter-31.html" data-kind="history" data-search="核糖体RNA比较揭示古菌的重要演化分支，分类地图被重画。" aria-label="第31章 第三种生命，1977 · 美国">
+  <span class="directory-item__no">31</span>
+  <span class="directory-item__main"><span class="directory-item__name">第三种生命</span><span class="directory-item__summary">核糖体RNA比较揭示古菌的重要演化分支，分类地图被重画。</span><span class="directory-item__date">1977 · 美国</span></span>
+  <span class="directory-item__right"><span class="directory-item__type">历史故事</span><span class="directory-item__arrow" aria-hidden="true">↗</span></span>
+</a>
+<a class="directory-item" href="chapters/volume-04/chapter-32.html" data-kind="modern" data-search="程屿把一张过于热闹的遗传网络拆开，保留真正可检验的问题。" aria-label="第32章 谱系之外，2026 · 中国南方">
+  <span class="directory-item__no">32</span>
+  <span class="directory-item__main"><span class="directory-item__name">谱系之外</span><span class="directory-item__summary">程屿把一张过于热闹的遗传网络拆开，保留真正可检验的问题。</span><span class="directory-item__date">2026 · 中国南方</span></span>
+  <span class="directory-item__right"><span class="directory-item__type">当代叙事</span><span class="directory-item__arrow" aria-hidden="true">↗</span></span>
+</a></div>
+ </section>
+
+<section class="directory-volume" id="volume-5" data-volume="5" aria-labelledby="volume-5-title">
+ <div class="directory-volume__head"><div class="directory-volume__index"><span>VOLUME</span><strong>05</strong></div><div class="directory-volume__intro"><span class="directory-volume__period">1995—2010年代 · 共生意味着什么</span><h2 id="volume-5-title">第五卷 · 人体的另一半</h2><p>在人体内部，在土壤与家庭中，微生物并非简单的敌人或朋友。有关健康的故事需要更多尺度。</p></div><a class="directory-volume__opening" href="volumes/volume-05.html">阅读本卷扉页 <span aria-hidden="true">↗</span></a></div>
+ <div class="directory-items"><a class="directory-item" href="chapters/volume-05/chapter-33.html" data-kind="history" data-search="从培养皿到核酸序列，研究者逐渐看到更多环境微生物。" aria-label="第33章 培养不出的居民，1995 · 美国">
+  <span class="directory-item__no">33</span>
+  <span class="directory-item__main"><span class="directory-item__name">培养不出的居民</span><span class="directory-item__summary">从培养皿到核酸序列，研究者逐渐看到更多环境微生物。</span><span class="directory-item__date">1995 · 美国</span></span>
+  <span class="directory-item__right"><span class="directory-item__type">历史故事</span><span class="directory-item__arrow" aria-hidden="true">↗</span></span>
+</a>
+<a class="directory-item" href="chapters/volume-05/chapter-34.html" data-kind="history" data-search="一篇关于体重与肠道菌群的论文，被家庭和媒体读成了不同故事。" aria-label="第34章 不同的体重，2004–2006 · 美国">
+  <span class="directory-item__no">34</span>
+  <span class="directory-item__main"><span class="directory-item__name">不同的体重</span><span class="directory-item__summary">一篇关于体重与肠道菌群的论文，被家庭和媒体读成了不同故事。</span><span class="directory-item__date">2004–2006 · 美国</span></span>
+  <span class="directory-item__right"><span class="directory-item__type">历史故事</span><span class="directory-item__arrow" aria-hidden="true">↗</span></span>
+</a>
+<a class="directory-item" href="chapters/volume-05/chapter-35.html" data-kind="history" data-search="人体微生物组计划绘制多部位图谱，健康并不是单一的配方。" aria-label="第35章 人体地图，2007–2012 · 美国">
+  <span class="directory-item__no">35</span>
+  <span class="directory-item__main"><span class="directory-item__name">人体地图</span><span class="directory-item__summary">人体微生物组计划绘制多部位图谱，健康并不是单一的配方。</span><span class="directory-item__date">2007–2012 · 美国</span></span>
+  <span class="directory-item__right"><span class="directory-item__type">历史故事</span><span class="directory-item__arrow" aria-hidden="true">↗</span></span>
+</a>
+<a class="directory-item" href="chapters/volume-05/chapter-36.html" data-kind="modern" data-search="林晓拿着商业检测报告提问：一个分数能够说明自己的健康吗？" aria-label="第36章 谁是健康的人，2026 · 中国南方">
+  <span class="directory-item__no">36</span>
+  <span class="directory-item__main"><span class="directory-item__name">谁是健康的人</span><span class="directory-item__summary">林晓拿着商业检测报告提问：一个分数能够说明自己的健康吗？</span><span class="directory-item__date">2026 · 中国南方</span></span>
+  <span class="directory-item__right"><span class="directory-item__type">当代叙事</span><span class="directory-item__arrow" aria-hidden="true">↗</span></span>
+</a>
+<a class="directory-item" href="chapters/volume-05/chapter-37.html" data-kind="history" data-search="复发性肠道感染的治疗迎来新的证据，家属仍须作出艰难决定。" aria-label="第37章 借来的菌群，2013 · 荷兰">
+  <span class="directory-item__no">37</span>
+  <span class="directory-item__main"><span class="directory-item__name">借来的菌群</span><span class="directory-item__summary">复发性肠道感染的治疗迎来新的证据，家属仍须作出艰难决定。</span><span class="directory-item__date">2013 · 荷兰</span></span>
+  <span class="directory-item__right"><span class="directory-item__type">历史故事</span><span class="directory-item__arrow" aria-hidden="true">↗</span></span>
+</a>
+<a class="directory-item" href="chapters/volume-05/chapter-38.html" data-kind="history" data-search="抗菌药物之后，一个家庭在繁杂的健康建议中寻找平常生活。" aria-label="第38章 一座移动的森林，2010年代 · 欧洲">
+  <span class="directory-item__no">38</span>
+  <span class="directory-item__main"><span class="directory-item__name">一座移动的森林</span><span class="directory-item__summary">抗菌药物之后，一个家庭在繁杂的健康建议中寻找平常生活。</span><span class="directory-item__date">2010年代 · 欧洲</span></span>
+  <span class="directory-item__right"><span class="directory-item__type">历史故事</span><span class="directory-item__arrow" aria-hidden="true">↗</span></span>
+</a>
+<a class="directory-item" href="chapters/volume-05/chapter-39.html" data-kind="history" data-search="从田间泥土到当代实验室，微生物改变我们理解生态的方式。" aria-label="第39章 泥土的另一部历史，19世纪末至当代">
+  <span class="directory-item__no">39</span>
+  <span class="directory-item__main"><span class="directory-item__name">泥土的另一部历史</span><span class="directory-item__summary">从田间泥土到当代实验室，微生物改变我们理解生态的方式。</span><span class="directory-item__date">19世纪末至当代</span></span>
+  <span class="directory-item__right"><span class="directory-item__type">历史故事</span><span class="directory-item__arrow" aria-hidden="true">↗</span></span>
+</a>
+<a class="directory-item" href="chapters/volume-05/chapter-40.html" data-kind="modern" data-search="母亲想缩小作坊规模，程屿也重新思考何为可以传承的经验。" aria-label="第40章 身体里的邻居，2026 · 中国南方">
+  <span class="directory-item__no">40</span>
+  <span class="directory-item__main"><span class="directory-item__name">身体里的邻居</span><span class="directory-item__summary">母亲想缩小作坊规模，程屿也重新思考何为可以传承的经验。</span><span class="directory-item__date">2026 · 中国南方</span></span>
+  <span class="directory-item__right"><span class="directory-item__type">当代叙事</span><span class="directory-item__arrow" aria-hidden="true">↗</span></span>
+</a></div>
+ </section>
+
+<section class="directory-volume" id="volume-6" data-volume="6" aria-labelledby="volume-6-title">
+ <div class="directory-volume__head"><div class="directory-volume__index"><span>VOLUME</span><strong>06</strong></div><div class="directory-volume__intro"><span class="directory-volume__period">2004—2026 · 边界在哪里</span><h2 id="volume-6-title">第六卷 · 生命的新边界</h2><p>模型、脑影像与微生物遗传学打开新问题，也带来新的误读风险。研究的结局不是万能答案，而是有边界的理解。</p></div><a class="directory-volume__opening" href="volumes/volume-06.html">阅读本卷扉页 <span aria-hidden="true">↗</span></a></div>
+ <div class="directory-items"><a class="directory-item" href="chapters/volume-06/chapter-41.html" data-kind="history" data-search="日本动物实验研究提示微生物与应激轴有关，边界仍需清楚。" aria-label="第41章 神经传来的消息，2004年后 · 日本">
+  <span class="directory-item__no">41</span>
+  <span class="directory-item__main"><span class="directory-item__name">神经传来的消息</span><span class="directory-item__summary">日本动物实验研究提示微生物与应激轴有关，边界仍需清楚。</span><span class="directory-item__date">2004年后 · 日本</span></span>
+  <span class="directory-item__right"><span class="directory-item__type">历史故事</span><span class="directory-item__arrow" aria-hidden="true">↗</span></span>
+</a>
+<a class="directory-item" href="chapters/volume-06/chapter-42.html" data-kind="modern" data-search="耐药相关基因在不同样本中出现，传播路径却尚不能被轻易画出。" aria-label="第42章 借来的基因，2020年代 · 医院">
+  <span class="directory-item__no">42</span>
+  <span class="directory-item__main"><span class="directory-item__name">借来的基因</span><span class="directory-item__summary">耐药相关基因在不同样本中出现，传播路径却尚不能被轻易画出。</span><span class="directory-item__date">2020年代 · 医院</span></span>
+  <span class="directory-item__right"><span class="directory-item__type">当代叙事</span><span class="directory-item__arrow" aria-hidden="true">↗</span></span>
+</a>
+<a class="directory-item" href="chapters/volume-06/chapter-43.html" data-kind="modern" data-search="细菌之外的古菌、病毒和微型真核生物，令研究图景更复杂。" aria-label="第43章 不止细菌，2020年代 · 科研机构">
+  <span class="directory-item__no">43</span>
+  <span class="directory-item__main"><span class="directory-item__name">不止细菌</span><span class="directory-item__summary">细菌之外的古菌、病毒和微型真核生物，令研究图景更复杂。</span><span class="directory-item__date">2020年代 · 科研机构</span></span>
+  <span class="directory-item__right"><span class="directory-item__type">当代叙事</span><span class="directory-item__arrow" aria-hidden="true">↗</span></span>
+</a>
+<a class="directory-item" href="chapters/volume-06/chapter-44.html" data-kind="modern" data-search="独立验证没有让每个指标变得漂亮，却让研究问题更明确。" aria-label="第44章 失灵的预测，2026 · 中国南方">
+  <span class="directory-item__no">44</span>
+  <span class="directory-item__main"><span class="directory-item__name">失灵的预测</span><span class="directory-item__summary">独立验证没有让每个指标变得漂亮，却让研究问题更明确。</span><span class="directory-item__date">2026 · 中国南方</span></span>
+  <span class="directory-item__right"><span class="directory-item__type">当代叙事</span><span class="directory-item__arrow" aria-hidden="true">↗</span></span>
+</a>
+<a class="directory-item" href="chapters/volume-06/chapter-45.html" data-kind="modern" data-search="一次磁共振检查，将脑影像数据背后具体的人的生活带入实验室。" aria-label="第45章 一张脑影像，2026 · 中国南方">
+  <span class="directory-item__no">45</span>
+  <span class="directory-item__main"><span class="directory-item__name">一张脑影像</span><span class="directory-item__summary">一次磁共振检查，将脑影像数据背后具体的人的生活带入实验室。</span><span class="directory-item__date">2026 · 中国南方</span></span>
+  <span class="directory-item__right"><span class="directory-item__type">当代叙事</span><span class="directory-item__arrow" aria-hidden="true">↗</span></span>
+</a>
+<a class="directory-item" href="chapters/volume-06/chapter-46.html" data-kind="modern" data-search="新模型意外学会了识别采样中心，许澈重新审视预测的意义。" aria-label="第46章 机器猜测的因果，2026 · 中国南方">
+  <span class="directory-item__no">46</span>
+  <span class="directory-item__main"><span class="directory-item__name">机器猜测的因果</span><span class="directory-item__summary">新模型意外学会了识别采样中心，许澈重新审视预测的意义。</span><span class="directory-item__date">2026 · 中国南方</span></span>
+  <span class="directory-item__right"><span class="directory-item__type">当代叙事</span><span class="directory-item__arrow" aria-hidden="true">↗</span></span>
+</a>
+<a class="directory-item" href="chapters/volume-06/chapter-47.html" data-kind="modern" data-search="一份合作协议迟迟未签：科研发现距离临床应用还有多远？" aria-label="第47章 一份没有签字的报告，2026 · 中国南方">
+  <span class="directory-item__no">47</span>
+  <span class="directory-item__main"><span class="directory-item__name">一份没有签字的报告</span><span class="directory-item__summary">一份合作协议迟迟未签：科研发现距离临床应用还有多远？</span><span class="directory-item__date">2026 · 中国南方</span></span>
+  <span class="directory-item__right"><span class="directory-item__type">当代叙事</span><span class="directory-item__arrow" aria-hidden="true">↗</span></span>
+</a>
+<a class="directory-item" href="chapters/volume-06/chapter-48.html" data-kind="modern" data-search="科学史展览开幕，程屿终于把研究与母亲的日常生活重新放在一起。" aria-label="第48章 看不见的文明，2026 · 中国南方">
+  <span class="directory-item__no">48</span>
+  <span class="directory-item__main"><span class="directory-item__name">看不见的文明</span><span class="directory-item__summary">科学史展览开幕，程屿终于把研究与母亲的日常生活重新放在一起。</span><span class="directory-item__date">2026 · 中国南方</span></span>
+  <span class="directory-item__right"><span class="directory-item__type">当代叙事</span><span class="directory-item__arrow" aria-hidden="true">↗</span></span>
+</a></div>
+ </section></div>
+<div id="directory-empty" class="directory-empty" hidden><strong>暂时没有匹配的章节</strong><p>试试人物、年代、地点，或者清除筛选后继续浏览。</p><button type="button" id="directory-reset">显示全部章节</button></div>
+<footer class="directory-foot"><p>关于这本书：正文是科学历史小说；每章末尾的“真实历史与科学解读”说明史实依据及虚构边界，并不替代原始史料。阅读书签和进度只保存在本机浏览器。</p><a href="appendices/references.html">查阅全书参考资料 <span aria-hidden="true">↗</span></a></footer>
+</div>

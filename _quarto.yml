@@ -132,6 +132,7 @@ format:
     css:
       - styles/reader.css
       - styles/home-v2.css
+      - styles/directory-revision.css
       - styles/figure-gallery.css
       - styles/chapter-reader.css
     include-after-body:
