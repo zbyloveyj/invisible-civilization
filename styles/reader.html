@@ -146,7 +146,7 @@ function initChapter(){
  const next=elem("a","next");next.href=nextNum<=48?pathFor(nextNum):root+"index.html";
  const ne=elem("span","chapter-turn__eyebrow",(nextNum<=48?"下一章":"返回扉页")+" →");
  const nt=elem("span","chapter-turn__title",nextNum<=48?names[nextNum-1]:"看不见的文明");next.append(ne,nt);
- nav.append(prev,next);note.after(nav);
+ nav.append(prev,next);(document.querySelector(".volume-bridge")||note).after(nav);
  const progress=elem("div","reader-progress");progress.setAttribute("aria-hidden","true");document.body.append(progress);
  let scheduled=false,lastWrite=0;
  const update=()=>{

@@ -1,0 +1,9 @@
+/* Long-form editorial bridge, never part of historical source notes. */
+.volume-bridge{margin:2.3rem auto 1.5rem;max-width:760px;padding:23px 0 22px;border-top:1px solid var(--line);border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;gap:22px}
+.volume-bridge>span{font-size:11px;color:var(--muted);letter-spacing:.07em}
+.volume-bridge>a{display:flex;align-items:center;gap:18px;font-family:var(--font-literary);font-size:1.12rem;font-weight:600;color:var(--ink);text-decoration:none!important}
+.volume-bridge>a>b{font-family:Georgia,serif;font-weight:400;font-size:14px;color:var(--accent)}
+.volume-bridge>a:hover{color:var(--accent)}
+body:has(.novel-chapter) .volume-bridge{max-width:var(--ic-reader-width,750px)}
+@media(max-width:640px){.volume-bridge{display:block;padding:19px 0}.volume-bridge>span{display:block;margin:0 0 10px}.volume-bridge>a{justify-content:space-between;font-size:1.03rem}}
+html[data-reader-theme="night"] .volume-bridge{border-color:#546158}
