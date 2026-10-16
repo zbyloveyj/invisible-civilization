@@ -3,6 +3,7 @@ project:
   output-dir: _site
   resources:
     - assets/**
+    - downloads/**
 
 lang: zh-CN
 number-sections: false

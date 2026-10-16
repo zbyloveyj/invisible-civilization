@@ -7,6 +7,9 @@ import re, subprocess, sys
 
 root=Path("_site").resolve()
 need=["index.html","contents.html","timeline.html","about.html","download.html","figures.html"]
+pdf_file=root/'downloads'/'invisible-civilization-complete.pdf'
+if not pdf_file.is_file() or pdf_file.stat().st_size<200000:
+    raise SystemExit('Missing downloadable complete PDF at _site/downloads/invisible-civilization-complete.pdf')
 need += [f"volumes/volume-{v:02d}.html" for v in range(1,7)]
 need += [f"chapters/volume-{(n-1)//8+1:02d}/chapter-{n:02d}.html" for n in range(1,49)]
 missing=[p for p in need if not (root/p).is_file()]

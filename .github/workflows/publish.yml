@@ -4,7 +4,7 @@ on:
     branches: [main]
   workflow_dispatch:
 permissions:
-  contents: read
+  contents: write
   pages: write
   id-token: write
 concurrency:
@@ -18,11 +18,49 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install PDF publishing dependencies
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq fonts-arphic-uming
+          python -m pip install --disable-pip-version-check reportlab Pillow cairosvg pymupdf
       - uses: quarto-dev/quarto-actions/setup@v2
       - name: Check manuscript structure and continuity
         run: python scripts/editorial_lint.py
+      - name: Generate complete A5 PDF from all 48 chapters
+        run: python scripts/build_ebook.py --output downloads/invisible-civilization-complete.pdf
+      - name: Validate PDF content and chapter bookmarks
+        run: |
+          python - <<'PY'
+          import fitz
+          from pathlib import Path
+          p=Path('downloads/invisible-civilization-complete.pdf')
+          assert p.is_file() and p.stat().st_size > 200000, 'PDF missing or unusually small'
+          doc=fitz.open(p)
+          toc=doc.get_toc()
+          assert doc.page_count>180, f'Unexpectedly short PDF: {doc.page_count} pages'
+          assert len(toc)>=54, f'Book is missing chapter/volume bookmarks: {len(toc)}'
+          print(f'PASS: generated PDF {doc.page_count} pages, {len(toc)} bookmarks, {p.stat().st_size:,} bytes')
+          PY
+      - name: Upload current PDF into GitHub repository
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add downloads/invisible-civilization-complete.pdf
+          if ! git diff --cached --quiet; then
+            git commit -m 'Update complete six-volume downloadable PDF [skip ci]'
+            git push origin HEAD:main
+          else
+            echo 'PDF is already current'
+          fi
       - name: Render HTML book
         run: quarto render --to html
+      - name: Include PDF in the published reading website
+        run: |
+          mkdir -p _site/downloads
+          cp downloads/invisible-civilization-complete.pdf _site/downloads/invisible-civilization-complete.pdf
       - name: Validate published pages, links and reading scripts
         run: python scripts/site_smoke_test.py
       - uses: actions/configure-pages@v5
