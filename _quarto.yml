@@ -136,6 +136,7 @@ format:
       - styles/editorial-corrections.css
       - styles/figure-gallery.css
       - styles/chapter-reader.css
+      - styles/chapter-final.css
     include-after-body:
       - styles/reader.html
       - styles/chapter-reader.html

@@ -46,6 +46,7 @@
     veil.className='ic-toc-backdrop';veil.hidden=true;veil.setAttribute('aria-hidden','true');
     document.body.append(veil);
     toc.setAttribute('aria-hidden','true');
+    toc.inert=true;
     const controls=[];
     let drawerOpen=false,lastFocused=null,previousOverflow='';
     function setDrawer(value){
@@ -53,6 +54,7 @@
       document.body.classList.toggle('ic-toc-open',drawerOpen);
       veil.hidden=!drawerOpen;
       toc.setAttribute('aria-hidden',String(!drawerOpen));
+      toc.inert=!drawerOpen;
       controls.forEach(c=>c.setAttribute('aria-expanded',String(drawerOpen)));
       if(drawerOpen){
         lastFocused=document.activeElement;
