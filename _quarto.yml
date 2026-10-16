@@ -138,6 +138,7 @@ format:
       - styles/figure-gallery.css
       - styles/chapter-reader.css
       - styles/chapter-final.css
+      - styles/editorial-book-2026.css
     include-after-body:
       - styles/reader.html
       - styles/chapter-reader.html
