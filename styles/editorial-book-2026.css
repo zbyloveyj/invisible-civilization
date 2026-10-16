@@ -1,0 +1,122 @@
+/* Invisible Civilization — Editorial refinement, 2026-10.
+   A small final design layer; keeps existing Quarto/reader interactions intact. */
+:root{
+  --paper:#f7f5ef;
+  --surface:#fffdf8;
+  --surface-tint:#f1eee6;
+  --surface-alt:#eae5da;
+  --ink:#30362f;
+  --ink-light:#495149;
+  --muted:#697269;
+  --line:#dcd9ce;
+  --accent:#8e684d;
+  --accent-dark:#654b3c;
+  --sage:#647568;
+}
+html{scroll-padding-top:5.4rem}
+body{overflow-x:clip}
+img,svg,video,iframe{max-width:100%}
+.navbar{background:rgba(247,245,239,.96)!important;border-bottom-color:var(--line)!important}
+.navbar .navbar-brand{letter-spacing:.09em!important}
+#quarto-content main.content{min-width:0}
+:where(.editorial-page,.directory-page,.home-page,.volume-opening,.volume-toc,.timeline-page,.about-layout){min-width:0}
+:where(.editorial-page,.directory-page,.home-page) :is(h1,h2,h3){text-wrap:balance}
+:where(.editorial-page,.directory-page,.home-page) p{overflow-wrap:break-word}
+:where(.directory-item,.volume-chapter-row,.feature-chapter){transition:background-color .18s ease,border-color .18s ease,transform .18s ease}
+:where(.directory-item,.volume-chapter-row,.feature-chapter):focus-visible{outline:2px solid var(--sage);outline-offset:3px}
+:where(.book-plate,.figure-gallery-item) img{height:auto;object-fit:contain}
+:where(.book-plate,.figure-gallery-item) figcaption{overflow-wrap:anywhere}
+body:has(.novel-chapter){
+  --read-bg:#f1efe9;
+  --read-paper:#fffdf9;
+  --read-text:#30362f;
+  --read-muted:#697269;
+  --read-rule:#dedbd1;
+  --read-accent:#647568;
+  --ic-reader-width:700px;
+  --ic-reader-leading:1.98;
+}
+body:has(.novel-chapter) #quarto-content>main#quarto-document-content{
+  width:min(970px,100%)!important;max-width:970px!important;
+  padding-left:clamp(32px,6vw,88px)!important;
+  padding-right:clamp(32px,6vw,88px)!important;
+}
+body:has(.novel-chapter) .novel-chapter>p{
+  font-size:calc(1.11rem * var(--reader-scale))!important;
+  line-height:var(--ic-reader-leading)!important;
+  margin-bottom:.92em!important;
+  letter-spacing:.008em!important;
+  text-align:justify!important;
+}
+body:has(.novel-chapter) .chapter-reading-meta{
+  gap:12px!important;
+  border-color:var(--read-rule)!important;
+}
+body:has(.novel-chapter) .book-plate__media{
+  background:#f0eee7!important;
+}
+body:has(.novel-chapter) .book-plate img{cursor:zoom-in}
+body:has(.novel-chapter) .book-plate figcaption{
+  line-height:1.8!important;
+}
+body:has(.novel-chapter) .history-note{
+  background:#f4f1e9!important;
+  border-left:2px solid var(--read-accent)!important;
+}
+html[data-reader-theme="night"] body:has(.novel-chapter){
+  --read-bg:#181f1b;
+  --read-paper:#242e27;
+  --read-text:#e7e9e1;
+  --read-muted:#bbc3b8;
+  --read-rule:#435046;
+  --read-accent:#c7bcaa;
+}
+html[data-reader-theme="night"] body:has(.novel-chapter) .history-note{background:#2d382f!important}
+html[data-reader-theme="night"] body:has(.novel-chapter) .book-plate__media{background:#303a32!important}
+@media(min-width:1100px){
+  body:has(.novel-chapter) #title-block-header h1.title{
+    font-size:clamp(2.55rem,3.5vw,3.35rem)!important;
+    letter-spacing:.085em!important;
+  }
+}
+@media(max-width:850px){
+  body:has(.novel-chapter) #quarto-content>main#quarto-document-content{
+    width:100%!important;padding-left:clamp(22px,5vw,44px)!important;
+    padding-right:clamp(22px,5vw,44px)!important;
+  }
+  body:has(.novel-chapter) .novel-chapter>p{
+    font-size:calc(1.075rem * var(--reader-scale))!important;
+    line-height:2.02!important;
+  }
+}
+@media(max-width:520px){
+  html{scroll-padding-top:4.5rem}
+  body:has(.novel-chapter) #quarto-content>main#quarto-document-content{
+    padding:34px 19px 104px!important;
+  }
+  body:has(.novel-chapter) #title-block-header h1.title{
+    font-size:clamp(2rem,9vw,2.42rem)!important;
+    letter-spacing:.055em!important;
+    overflow-wrap:anywhere;
+  }
+  body:has(.novel-chapter) .novel-chapter>p{
+    font-size:calc(1.04rem * var(--reader-scale))!important;
+    line-height:2.03!important;
+    margin-bottom:.95em!important;
+  }
+  body:has(.novel-chapter) .book-plate__media{padding:12px!important;min-height:0}
+  body:has(.novel-chapter) .book-plate figcaption{padding:14px 0 16px!important}
+  body:has(.novel-chapter) .history-note{padding:23px 19px!important}
+  body:has(.novel-chapter) .chapter-turn{grid-template-columns:1fr!important}
+}
+@media print{
+  :root{--paper:#fff;--ink:#111}
+  body:has(.novel-chapter) .novel-chapter>p{
+    font-size:11pt!important;line-height:1.8!important;
+    color:#171717!important;
+  }
+  .book-plate,.history-note{break-inside:avoid}
+}
+@media(prefers-reduced-motion:reduce){
+  :where(.directory-item,.volume-chapter-row,.feature-chapter){transition:none!important}
+}
