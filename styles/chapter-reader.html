@@ -16,8 +16,8 @@
     const chapterNumber=Number((location.pathname.match(/chapter-(\d{2})\.html$/)||[])[1]||0);
     const root=document.documentElement;
     const applySetting=(name,value)=>{
-      if(name==='width' && WIDTHS[value]){root.style.setProperty('--ic-reader-width',WIDTHS[value]);safeSet('ic:reading-width',value)}
-      if(name==='leading' && LEADING[value]){root.style.setProperty('--ic-reader-leading',LEADING[value]);safeSet('ic:reading-leading',value)}
+      if(name==='width' && WIDTHS[value]){root.style.setProperty('--ic-reader-width',WIDTHS[value]);root.style.setProperty('--ic-reader-width-value',WIDTHS[value]);safeSet('ic:reading-width',value)}
+      if(name==='leading' && LEADING[value]){root.style.setProperty('--ic-reader-leading',LEADING[value]);root.style.setProperty('--ic-reader-leading-value',LEADING[value]);safeSet('ic:reading-leading',value)}
     };
     applySetting('width',safeGet('ic:reading-width')||'standard');
     applySetting('leading',safeGet('ic:reading-leading')||'relaxed');

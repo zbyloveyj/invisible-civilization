@@ -132,6 +132,14 @@ for needle in ('class="novel-chapter"', 'class="chapter-dateline"', 'ic-chapter-
 if "body:has(.novel-chapter) #quarto-content.page-columns" not in chapter_css.read_text(encoding="utf-8"):
     raise SystemExit("Centered chapter page rule is missing")
 print("PASS: centered chapter sheet, chapter navigation drawer and reading controls.")
+
+# Keep the final literary reader asset present in every built chapter.
+reader_style = ROOT / "styles" / "reader-v6.css" if "ROOT" in globals() else root / "styles" / "reader-v6.css"
+assert reader_style.is_file(), "Missing final reader-v6.css in published site"
+chapter_html = (root / "chapters" / "volume-01" / "chapter-01.html").read_text(encoding="utf-8")
+if "reader-v6.css" not in chapter_html or "ic-reader-margin" not in chapter_html:
+    raise SystemExit("V6 reader CSS/script missing from the chapter HTML")
+print("PASS: V6 chapter styling and accessible marginal navigation are included")
 print(f"PASS: {len(need)} book pages; {checked} local links; reader script syntax.")
 
 # Directory feature and responsive-asset smoke checks.

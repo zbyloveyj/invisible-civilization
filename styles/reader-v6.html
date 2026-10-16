@@ -1,0 +1,42 @@
+<script>
+(function(){
+ "use strict";
+ function setup(){
+  const novel=document.querySelector('.novel-chapter');if(!novel)return;
+  const match=location.pathname.match(/chapter-(\d{2})\.html$/);if(!match)return;
+  const n=Number(match[1]),index=Math.floor((n-1)/8);
+  const names=['未知的生命','疾病与城市','医学与战争','生命的密码','人体的另一半','生命的新边界'];
+  const root=location.pathname.includes('/invisible-civilization/')?'/invisible-civilization/':'/';
+  const make=(tag,klass,content)=>{
+   const element=document.createElement(tag);element.className=klass;
+   if(content!==undefined)element.textContent=content;return element;
+  };
+  const aside=make('aside','ic-reader-margin');
+  aside.setAttribute('aria-label','本章阅读进度与快捷入口');
+  const nlabel=make('span','ic-reader-margin__num',String(n).padStart(2,'0')+' / 48');
+  const volume=make('span','ic-reader-margin__volume','第'+['一','二','三','四','五','六'][index]+'卷 · '+names[index]);
+  const track=make('div','ic-reader-margin__line');
+  track.setAttribute('aria-hidden','true');
+  const fill=make('div','ic-reader-margin__fill');track.append(fill);
+  const progress=make('span','ic-reader-margin__percent','已读 0%');
+  const vol=make('a','ic-reader-margin__link','本卷目录 ↗');
+  vol.href=root+'volumes/volume-'+String(index+1).padStart(2,'0')+'.html';
+  const top=make('a','ic-reader-margin__link','回到章首 ↑');
+  top.href='#';top.addEventListener('click',e=>{e.preventDefault();window.scrollTo({top:0,behavior:'smooth'})});
+  aside.append(nlabel,volume,track,progress,vol,top);document.body.append(aside);
+  let request=false;
+  function update(){
+   request=false;
+   const max=Math.max(1,document.documentElement.scrollHeight-window.innerHeight);
+   const pct=Math.max(0,Math.min(100,Math.round(window.scrollY/max*100)));
+   fill.style.width=pct+'%';progress.textContent='已读 '+pct+'%';
+  }
+  window.addEventListener('scroll',()=>{
+   if(!request){request=true;requestAnimationFrame(update)}
+  },{passive:true});
+  window.addEventListener('resize',update,{passive:true});update();
+ }
+ if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',setup,{once:true});
+ else setup();
+})();
+</script>

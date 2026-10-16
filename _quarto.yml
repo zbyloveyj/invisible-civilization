@@ -139,9 +139,11 @@ format:
       - styles/chapter-reader.css
       - styles/chapter-final.css
       - styles/editorial-book-2026.css
+      - styles/reader-v6.css
     include-after-body:
       - styles/reader.html
       - styles/chapter-reader.html
+      - styles/reader-v6.html
     toc: false
     smooth-scroll: true
     anchor-sections: false
