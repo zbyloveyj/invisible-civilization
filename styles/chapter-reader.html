@@ -100,6 +100,34 @@
         mobileToggle.setAttribute('aria-label',compact?'展开阅读工具':'收起阅读工具');
         mobileToggle.setAttribute('aria-expanded',String(!compact));
       });
+
+      // Keep the floating controls accessible, but fold the expanded panel
+      // when reading resumes, instead of covering multiple lines of prose.
+      let collapseTimer=null;
+      function collapseMobileTools(){
+        if(!media.matches||toolbar.classList.contains('ic-reader-compact'))return;
+        toolbar.classList.add('ic-reader-compact');
+        mobileToggle.textContent='Aa';
+        mobileToggle.setAttribute('aria-label','展开阅读工具');
+        mobileToggle.setAttribute('aria-expanded','false');
+      }
+      function scheduleMobileCollapse(){
+        if(collapseTimer)clearTimeout(collapseTimer);
+        if(media.matches&&!toolbar.classList.contains('ic-reader-compact')){
+          collapseTimer=setTimeout(collapseMobileTools,5600);
+        }
+      }
+      mobileToggle.addEventListener('click',scheduleMobileCollapse);
+      toolbar.addEventListener('click',e=>{
+        if(e.target.closest('button')&&e.target!==mobileToggle)scheduleMobileCollapse();
+      });
+      let previousScrollY=window.scrollY;
+      window.addEventListener('scroll',()=>{
+        if(!media.matches)return;
+        const y=window.scrollY;
+        if(Math.abs(y-previousScrollY)>15)collapseMobileTools();
+        previousScrollY=y;
+      },{passive:true});
     }
     veil.addEventListener('click',()=>setDrawer(false));
     toc.addEventListener('click',e=>{if(e.target.closest('a[href]'))setDrawer(false)});

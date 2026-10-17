@@ -120,3 +120,58 @@ html[data-reader-theme="night"] body:has(.novel-chapter) .book-plate__media{back
 @media(prefers-reduced-motion:reduce){
   :where(.directory-item,.volume-chapter-row,.feature-chapter){transition:none!important}
 }
+
+
+/* Final volume-frontispiece polish — a book landing page, not a documentation sidebar.
+   The novel chapters retain their own narrower paper-leaf reading layout. */
+#quarto-sidebar .sidebar-menu-container>ul>li:has(> .sidebar-item-container a[href$="index.html"]){
+  display:none!important;
+}
+body:has(.volume-opening):not(:has(.novel-chapter)) #quarto-sidebar{
+  display:none!important;
+}
+body:has(.volume-opening):not(:has(.novel-chapter)) #quarto-content.page-columns{
+  display:block!important;
+  width:100%!important;
+  max-width:none!important;
+  min-width:0!important;
+  margin:0!important;
+  padding:clamp(24px,3vw,46px) clamp(18px,4vw,54px) 92px!important;
+}
+body:has(.volume-opening):not(:has(.novel-chapter)) #quarto-content>main#quarto-document-content{
+  display:block!important;
+  grid-column:auto!important;
+  grid-row:auto!important;
+  float:none!important;
+  box-sizing:border-box!important;
+  width:min(1040px,100%)!important;
+  max-width:1040px!important;
+  min-width:0!important;
+  margin:0 auto!important;
+  padding:0!important;
+}
+body:has(.volume-opening) .volume-opening,
+body:has(.volume-opening) .volume-toc{
+  box-sizing:border-box!important;
+  max-width:1040px!important;
+  width:100%!important;
+  margin-left:auto!important;
+  margin-right:auto!important;
+}
+body:has(.volume-opening) .volume-opening{
+  padding:clamp(30px,4vw,55px)!important;
+}
+body:has(.volume-opening) .volume-toc{
+  padding-inline:clamp(0px,2vw,22px)!important;
+}
+@media(max-width:720px){
+  body:has(.volume-opening) #quarto-content.page-columns{
+    padding:16px 14px 60px!important;
+  }
+  body:has(.volume-opening) .volume-opening{
+    padding:24px 20px 30px!important;
+  }
+  body:has(.volume-opening) .volume-toc{
+    padding-inline:0!important;
+  }
+}

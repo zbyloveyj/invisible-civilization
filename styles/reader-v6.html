@@ -40,3 +40,24 @@
  else setup();
 })();
 </script>
+
+<script>
+/* Quarto's generated navbar can erroneously keep Home highlighted on volume covers. */
+(function(){
+  function markVolumeNavigation(){
+    if(!document.querySelector('.volume-opening'))return;
+    document.querySelectorAll('#quarto-header .navbar-nav .nav-link').forEach(link=>{
+      const name=(link.textContent||'').trim();
+      if(name==='首页'){
+        link.classList.remove('active');
+        link.removeAttribute('aria-current');
+      }else if(name==='六卷目录'){
+        link.classList.add('active');
+        link.setAttribute('aria-current','page');
+      }
+    });
+  }
+  if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',markVolumeNavigation,{once:true});
+  else markVolumeNavigation();
+})();
+</script>

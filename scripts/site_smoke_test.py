@@ -140,6 +140,17 @@ chapter_html = (root / "chapters" / "volume-01" / "chapter-01.html").read_text(e
 if "reader-v6.css" not in chapter_html or "ic-reader-margin" not in chapter_html:
     raise SystemExit("V6 reader CSS/script missing from the chapter HTML")
 print("PASS: V6 chapter styling and accessible marginal navigation are included")
+
+# Ensure every volume is a complete and usable literary frontispiece.
+for volume_number in range(1, 7):
+    volume_page = root / f"volumes/volume-{volume_number:02d}.html"
+    volume_html = volume_page.read_text(encoding="utf-8")
+    if 'class="volume-opening"' not in volume_html:
+        raise SystemExit(f"Volume {volume_number} missing its frontispiece")
+    if volume_html.count('class="volume-chapter-row"') != 8:
+        raise SystemExit(f"Volume {volume_number} does not link to exactly eight chapters")
+print("PASS: all six volume frontispieces contain eight chapter links.")
+
 print(f"PASS: {len(need)} book pages; {checked} local links; reader script syntax.")
 
 # Directory feature and responsive-asset smoke checks.
