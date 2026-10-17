@@ -140,6 +140,7 @@ format:
       - styles/chapter-final.css
       - styles/editorial-book-2026.css
       - styles/reader-v6.css
+      - styles/editorial-unified.css
     include-after-body:
       - styles/reader.html
       - styles/chapter-reader.html
