@@ -1,0 +1,25 @@
+/* 2026 editorial coherence layer — intentionally small and reversible.
+   Single source for final typography and responsive book framing. */
+:root{--ic-cream:#f7f5ef;--ic-ink:#30362f;--ic-muted:#687168;--ic-quiet:#dcd8cc;--ic-highlight:#775c46}
+html{scroll-padding-top:5rem}
+body{overflow-x:clip}
+:where(.ic-home,.directory-page) :is(h1,h2,h3){text-wrap:balance}
+:where(.ic-home,.directory-page) :is(p,a){overflow-wrap:break-word}
+:where(.ic-home,.directory-page) a:focus-visible,
+:where(.novel-chapter,.chapter-reading-meta) a:focus-visible,
+:where(.novel-chapter,.chapter-reading-meta) button:focus-visible{outline:2px solid #775c46!important;outline-offset:4px}
+body:has(.novel-chapter){--ic-reader-width-value:700px;--ic-reader-leading-value:1.98}
+body:has(.novel-chapter) #quarto-content>main#quarto-document-content{max-width:960px!important;width:min(960px,100%)!important}
+body:has(.novel-chapter) .novel-chapter>p{line-height:1.98!important;letter-spacing:.008em!important;margin-bottom:1.05em!important;orphans:2;widows:2}
+body:has(.novel-chapter) .history-note{margin-top:4rem!important}
+body:has(.novel-chapter) .book-plate img{height:auto!important}
+.ic-hero__brief,.directory-hero__lede{max-width:58ch}
+@media(min-width:1100px){.ic-home{max-width:1440px;margin-inline:auto}}
+@media(max-width:760px){
+ body:has(.novel-chapter) #quarto-content.page-columns{padding:10px 12px 72px!important}
+ body:has(.novel-chapter) #quarto-content>main#quarto-document-content{width:100%!important;padding:35px clamp(19px,5vw,36px) 90px!important;box-shadow:none!important}
+ body:has(.novel-chapter) .novel-chapter>p{font-size:calc(1.075rem * var(--reader-scale))!important;line-height:1.94!important;text-align:start!important}
+ .ic-home :is(.ic-hero,.ic-manifesto__grid,.ic-section__heading){min-width:0}
+}
+@media(max-width:420px){body:has(.novel-chapter) #quarto-content.page-columns{padding:0 0 52px!important}body:has(.novel-chapter) #quarto-content>main#quarto-document-content{border-left:0!important;border-right:0!important;padding-inline:19px!important}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;transition-duration:.01ms!important}}
