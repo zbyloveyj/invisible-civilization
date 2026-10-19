@@ -16,7 +16,7 @@ toc: false
   <p class="ic-hero__subtitle">微生物与人类的三百年</p>
   <div class="ic-hero__hairline"></div>
   <p class="ic-hero__lead">人类用了几百年才知道，<br>那些看不见的生命，始终与我们共同生活。</p>
-  <p class="ic-hero__brief">从显微镜里的第一滴水，到霍乱街区、战争年代的实验室，再到基因组与脑肠轴研究。这是一部关于发现、误解、抗争与理解的长篇小说。</p>
+  <p class="ic-hero__brief">从十七世纪伦敦书铺的一幅霉菌图，到霍乱中的城市、战争年代的病房，再到今天的实验室。三百余年的科学史，也是一代代普通人的生活。</p>
   <div class="ic-hero__actions"><a class="ic-button ic-button--primary" href="chapters/volume-01/chapter-01.html"><span>开始阅读</span><span aria-hidden="true">↗</span></a><a class="ic-button ic-button--secondary" href="contents.html"><span>查看全书目录</span><span aria-hidden="true">→</span></a></div>
   <div class="ic-hero__byline"><span>一心问道 · 著</span><span class="ic-dot"></span><span>六卷 · 四十八章</span></div>
  </div>
@@ -30,7 +30,7 @@ toc: false
 <section class="ic-section ic-manifesto" id="about-the-book"><div class="ic-section__label"><span>01 / THE STORY</span><i></i></div><div class="ic-manifesto__grid"><h2>我们所居住的世界，<br>从不只有人类。</h2><div class="ic-manifesto__body"><p>本书不是六位科学家的传记，也不是一本按年份编排的微生物学教材。历史上的重要发现，与那些没有留下名字的普通人，共同构成了故事。</p><p>伦敦书铺的学徒、经历霍乱的母女、东北防疫的护士、研究DNA的实验人员，与现代研究者程屿的困惑相互映照：那些发生在不同时代的故事，也在彼此照应。</p><a class="ic-text-link" href="about.html">关于作品与作者 <span aria-hidden="true">↗</span></a></div></div></section>
 
 ```{=html}
-<section class="ic-section ic-volumes" id="volumes"><div class="ic-section__heading"><div><span class="ic-section-label">02 / THE SIX VOLUMES</span><h2>六卷，一部不断展开的历史。</h2></div><a class="ic-text-link" href="contents.html">全部48章 <span aria-hidden="true">↗</span></a></div><div class="ic-volume-grid">
+<section class="ic-section ic-volumes" id="volumes"><div class="ic-section__heading"><div><span class="ic-section-label">02 / THE SIX VOLUMES</span><h2>六卷故事，跨越三百余年。</h2></div><a class="ic-text-link" href="contents.html">全部48章 <span aria-hidden="true">↗</span></a></div><div class="ic-volume-grid">
 <a class="ic-volume" href="volumes/volume-01.html" aria-label="进入第1卷未知的生命">
   <div class="ic-volume__top"><span class="ic-volume__index">01 <small>/ 06</small></span><span class="ic-volume__years">1665 — 1796</span></div>
   <h3>未知的生命</h3><p class="ic-volume__latin">THE FIRST SIGHT</p><p class="ic-volume__summary">显微镜、发酵与未知的生命</p>
@@ -67,7 +67,7 @@ toc: false
 
 <section class="ic-section ic-time"><div class="ic-section__heading"><div><span class="ic-section-label">04 / A HISTORY IN FRAGMENTS</span><h2>三百余年的时间刻度。</h2></div><a class="ic-text-link" href="timeline.html">完整科学史年表 <span aria-hidden="true">↗</span></a></div><div class="ic-time__track"><div><b>1665</b><span>显微镜</span></div><div><b>1854</b><span>霍乱与城市</span></div><div><b>1928</b><span>青霉素</span></div><div><b>1953</b><span>DNA结构</span></div><div><b>2012</b><span>微生物组</span></div><div><b>2026</b><span>当代故事</span></div></div></section>
 
-<section class="ic-section ic-principles"><div class="ic-section__heading"><div><span class="ic-section-label">05 / HOW TO READ</span><h2>小说，也是一次科学史旅行。</h2></div></div><div class="ic-principles__grid"><article><span>01</span><h3>故事先于解释</h3><p>每一章都有自己的场景、人物和冲突。科学发现进入生活，而不是代替故事。</p></article><article><span>02</span><h3>史实与虚构分明</h3><p>章末附“真实历史与科学解读”，说明事实依据和虚构情节，避免把想象当作史料。</p></article><article><span>03</span><h3>持续公开修订</h3><p>六卷故事交织真实科学史与虚构人物的生活，既写发现，也写发现背后的人。</p></article></div></section>
+<section class="ic-section ic-principles"><div class="ic-section__heading"><div><span class="ic-section-label">05 / HOW TO READ</span><h2>在故事里读科学史。</h2></div></div><div class="ic-principles__grid"><article><span>01</span><h3>先读故事</h3><p>从书铺、街巷、病房到实验室，跟随人物经历他们所处的年代。</p></article><article><span>02</span><h3>历史与小说</h3><p>章末附“真实历史与科学解读”，说明事实依据和虚构情节，避免把想象当作史料。</p></article><article><span>03</span><h3>完整在线阅读</h3><p>六卷四十八章均可在线阅读，也可按年代与主题选择章节。</p></article></div></section>
 
 <section class="ic-author"><div><span class="ic-section-label">THE AUTHOR</span><h2>一心问道</h2><p>华南理工大学博士在读，关注微生物组、脑科学与智能生物解析。这本书源于对微生物科学史与普通人命运的共同兴趣。</p></div><a class="ic-text-link" href="about.html">读一读作者的话 ↗</a></section>
 
