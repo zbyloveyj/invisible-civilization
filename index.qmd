@@ -10,7 +10,7 @@ toc: false
 
 <section class="ic-hero" aria-label="作品封面">
  <div class="ic-hero__content">
-  <div class="ic-hero__meta"><span class="ic-kicker"><i></i> A SCIENCE-HISTORY NOVEL</span><span class="ic-hero__edition">2026 / EDITORIAL EDITION</span></div>
+  <div class="ic-hero__meta"><span class="ic-kicker"><i></i> A SCIENCE-HISTORY NOVEL</span><span class="ic-hero__edition">一心问道 · 作品集</span></div>
   <p class="ic-hero__overline">跨越三个多世纪的科学与人类故事</p>
   <h1 class="ic-hero__title">看不见的<br><span>文明</span></h1>
   <p class="ic-hero__subtitle">微生物与人类的三百年</p>
@@ -23,11 +23,11 @@ toc: false
  <figure class="ic-hero__figure"><img src="assets/micrograph-plate.svg" alt="以传统科学史铜版画为灵感绘制的菌丝与孢子显微图版" width="720" height="880" loading="eager"><figcaption>原创科学线描 · 非历史原图 <span>PLATE NO. 001</span></figcaption></figure>
 </section>
 
-<div class="ic-ribbon"><span><strong>06</strong><small>VOLUMES / 卷</small></span><span><strong>48</strong><small>CHAPTERS / 章</small></span><span><strong>1665—2026</strong><small>ACROSS THE CENTURIES</small></span><div class="ic-ribbon__end">一部持续修订的科学历史小说 <span aria-hidden="true">↘</span></div></div>
+<div class="ic-ribbon"><span><strong>06</strong><small>VOLUMES / 卷</small></span><span><strong>48</strong><small>CHAPTERS / 章</small></span><span><strong>1665—2026</strong><small>ACROSS THE CENTURIES</small></span><div class="ic-ribbon__end">微生物与人类的三百年 <span aria-hidden="true">↘</span></div></div>
 
 <div class="ic-continue" id="continue-reading" hidden><div><span class="ic-section-label">YOUR READING JOURNEY</span><h2>从上一次停下的地方继续</h2><p id="resume-label">重新进入书中的那个世界。</p></div><a id="resume-link" class="ic-text-link" href="chapters/volume-01/chapter-01.html">继续阅读 <span aria-hidden="true">↗</span></a></div>
 
-<section class="ic-section ic-manifesto" id="about-the-book"><div class="ic-section__label"><span>01 / THE STORY</span><i></i></div><div class="ic-manifesto__grid"><h2>我们所居住的世界，<br>从不只有人类。</h2><div class="ic-manifesto__body"><p>本书不是六位科学家的传记，也不是一本按年份编排的微生物学教材。历史上的重要发现，与那些没有留下名字的普通人，共同构成了故事。</p><p>伦敦书铺的学徒、经历霍乱的母女、东北防疫的护士、研究DNA的实验人员，与现代研究者程屿的困惑相互映照：我们究竟看见了什么？又凭什么相信自己已经理解？</p><a class="ic-text-link" href="about.html">关于作品与作者 <span aria-hidden="true">↗</span></a></div></div></section>
+<section class="ic-section ic-manifesto" id="about-the-book"><div class="ic-section__label"><span>01 / THE STORY</span><i></i></div><div class="ic-manifesto__grid"><h2>我们所居住的世界，<br>从不只有人类。</h2><div class="ic-manifesto__body"><p>本书不是六位科学家的传记，也不是一本按年份编排的微生物学教材。历史上的重要发现，与那些没有留下名字的普通人，共同构成了故事。</p><p>伦敦书铺的学徒、经历霍乱的母女、东北防疫的护士、研究DNA的实验人员，与现代研究者程屿的困惑相互映照：那些发生在不同时代的故事，也在彼此照应。</p><a class="ic-text-link" href="about.html">关于作品与作者 <span aria-hidden="true">↗</span></a></div></div></section>
 
 ```{=html}
 <section class="ic-section ic-volumes" id="volumes"><div class="ic-section__heading"><div><span class="ic-section-label">02 / THE SIX VOLUMES</span><h2>六卷，一部不断展开的历史。</h2></div><a class="ic-text-link" href="contents.html">全部48章 <span aria-hidden="true">↗</span></a></div><div class="ic-volume-grid">
@@ -58,7 +58,7 @@ toc: false
 </div></section>
 ```
 
-<section class="ic-breath"><div class="ic-breath__left"><span>FROM THE PAGES</span><div class="ic-breath__mark" aria-hidden="true">“</div></div><div class="ic-breath__right"><p>我们能看见的，<br>永远只是世界的一部分。</p><span>作品主题引语 · 非历史人物原话</span></div></section>
+<section class="ic-breath"><div class="ic-breath__left"><span>FROM THE PAGES</span><div class="ic-breath__mark" aria-hidden="true">“</div></div><div class="ic-breath__right"><p>我们能看见的，<br>永远只是世界的一部分。</p><span>摘自本书的主题文字</span></div></section>
 
 <section class="ic-section ic-selected"><div class="ic-section__heading"><div><span class="ic-section-label">03 / WHERE TO BEGIN</span><h2>从一章故事开始。</h2></div><p>四个不同年代，四种观看生命的方式。</p></div><div class="ic-picks"><a class="ic-pick" href="chapters/volume-01/chapter-01.html"><span class="ic-pick__head"><b>01</b><span>EDITOR'S SELECTION</span></span><h3>纸上的霉</h3><p>一张霉菌图改变了少年理解世界的方式。</p><div class="ic-pick__foot"><span>1665 · 伦敦</span><span aria-hidden="true">↗</span></div></a>
 <a class="ic-pick" href="chapters/volume-02/chapter-11.html"><span class="ic-pick__head"><b>11</b><span>EDITOR'S SELECTION</span></span><h3>布罗德街</h3><p>当疾病进入城市，一口水井承载了太多人的命运。</p><div class="ic-pick__foot"><span>1854 · 伦敦</span><span aria-hidden="true">↗</span></div></a>
@@ -67,7 +67,7 @@ toc: false
 
 <section class="ic-section ic-time"><div class="ic-section__heading"><div><span class="ic-section-label">04 / A HISTORY IN FRAGMENTS</span><h2>三百余年的时间刻度。</h2></div><a class="ic-text-link" href="timeline.html">完整科学史年表 <span aria-hidden="true">↗</span></a></div><div class="ic-time__track"><div><b>1665</b><span>显微镜</span></div><div><b>1854</b><span>霍乱与城市</span></div><div><b>1928</b><span>青霉素</span></div><div><b>1953</b><span>DNA结构</span></div><div><b>2012</b><span>微生物组</span></div><div><b>2026</b><span>当代故事</span></div></div></section>
 
-<section class="ic-section ic-principles"><div class="ic-section__heading"><div><span class="ic-section-label">05 / HOW TO READ</span><h2>小说，也是一次科学史旅行。</h2></div></div><div class="ic-principles__grid"><article><span>01</span><h3>故事先于解释</h3><p>每一章都有自己的场景、人物和冲突。科学发现进入生活，而不是代替故事。</p></article><article><span>02</span><h3>史实与虚构分明</h3><p>章末附“真实历史与科学解读”，说明事实依据和虚构情节，避免把想象当作史料。</p></article><article><span>03</span><h3>持续公开修订</h3><p>正在公开的是文学统稿，后续将在保留章节历史的基础上继续完善科学和文学细节。</p></article></div></section>
+<section class="ic-section ic-principles"><div class="ic-section__heading"><div><span class="ic-section-label">05 / HOW TO READ</span><h2>小说，也是一次科学史旅行。</h2></div></div><div class="ic-principles__grid"><article><span>01</span><h3>故事先于解释</h3><p>每一章都有自己的场景、人物和冲突。科学发现进入生活，而不是代替故事。</p></article><article><span>02</span><h3>史实与虚构分明</h3><p>章末附“真实历史与科学解读”，说明事实依据和虚构情节，避免把想象当作史料。</p></article><article><span>03</span><h3>持续公开修订</h3><p>六卷故事交织真实科学史与虚构人物的生活，既写发现，也写发现背后的人。</p></article></div></section>
 
 <section class="ic-author"><div><span class="ic-section-label">THE AUTHOR</span><h2>一心问道</h2><p>华南理工大学博士在读，关注微生物组、脑科学与智能生物解析。这本书源于对微生物科学史与普通人命运的共同兴趣。</p></div><a class="ic-text-link" href="about.html">读一读作者的话 ↗</a></section>
 
