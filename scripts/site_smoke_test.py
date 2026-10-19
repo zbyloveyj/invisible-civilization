@@ -65,7 +65,7 @@ for num in range(1,49):
             raise SystemExit(f"Figure missing image source: chapter {num}")
         src = m.group(1)
         if not src.startswith(("http://","https://")):
-            target = (path.parent / src).resolve()
+            target = (path.parent / unquote(urlsplit(src).path)).resolve()
             if not target.is_file():
                 raise SystemExit(f"Missing local image: {target} (chapter {num})")
 if figure_count < 12:
