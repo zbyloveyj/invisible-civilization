@@ -1,5 +1,4 @@
-/* 2026 editorial coherence layer — intentionally small and reversible.
-   Single source for final typography and responsive book framing. */
+/* Book typography and responsive layout */
 :root{--ic-cream:#f7f5ef;--ic-ink:#30362f;--ic-muted:#687168;--ic-quiet:#dcd8cc;--ic-highlight:#775c46}
 html{scroll-padding-top:5rem}
 body{overflow-x:clip}
@@ -25,7 +24,7 @@ body:has(.novel-chapter) .book-plate img{height:auto!important}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;transition-duration:.01ms!important}}
 
 
-/* Book cover and site-wide finishing */
+/* Cover, navigation and contents */
 body:has(.ic-home){--ic-bg:#f6f3eb;--ic-paper:#fffdf8;--ic-ink:#24342e;--ic-forest-deep:#28483c;--ic-clay:#946d50}
 body:has(.ic-home) .ic-home{width:min(1320px,calc(100% - clamp(30px,7vw,112px)))!important}
 .ic-hero{margin-top:26px!important;min-height:620px!important;border-color:#d9d2c5!important;box-shadow:0 20px 55px rgba(49,51,41,.05)!important}
@@ -47,3 +46,29 @@ body:has(.ic-home) .ic-home{width:min(1320px,calc(100% - clamp(30px,7vw,112px)))
 @media(max-width:970px){.ic-hero{min-height:0!important}.ic-hero__content{padding:34px!important}.ic-hero__title{font-size:clamp(3.6rem,8vw,5.5rem)!important}}
 @media(max-width:790px){body:has(.ic-home) .ic-home{width:calc(100% - 32px)!important}.ic-hero{grid-template-columns:1fr!important;margin-top:16px!important}.ic-hero__content{padding:30px 26px 32px!important}.ic-hero__overline{margin:24px 0 14px!important}.ic-hero__figure{height:auto!important;aspect-ratio:720/700;max-height:520px;border-top:1px solid #d8d0c2!important}.ic-hero__figure img{height:100%!important}.ic-ribbon__end{width:100%;margin-left:0!important}.ic-hero__title{font-size:clamp(3.6rem,12vw,5.6rem)!important}}
 @media(max-width:480px){.ic-hero__content{padding:27px 21px!important}.ic-hero__figure{aspect-ratio:1.02!important;max-height:375px}.ic-hero__subtitle{letter-spacing:.04em!important}.ic-hero__lead{font-size:1.04rem!important}.ic-hero__brief{font-size:.88rem!important}.ic-hero__figure figcaption{left:14px!important;right:14px!important;font-size:.58rem!important}.ic-ribbon{gap:14px!important}}
+
+/* Final visual rhythm: editorial, not dashboard */
+#quarto-header nav.navbar{box-shadow:none!important;border-bottom:1px solid #ddd7ca!important}
+#quarto-header .navbar-container{max-width:1380px!important}
+#quarto-header .navbar-nav .nav-link{font-size:.87rem!important;letter-spacing:.025em!important}
+#quarto-header .navbar-nav .nav-link:hover{color:#946d50!important}
+.ic-hero__figure{isolation:isolate}
+.ic-hero__figure:after{content:"";position:absolute;inset:14px;pointer-events:none;border:1px solid rgba(87,101,83,.14)}
+.ic-manifesto__grid{align-items:start}
+.ic-manifesto__body p{line-height:2.05!important}
+.ic-volume-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+.ic-volume{min-height:248px;display:flex;flex-direction:column;background:#fcfaf5}
+.ic-volume__bottom{margin-top:auto}
+.ic-volume:hover{border-color:#8e9c8e!important}
+.ic-pick{background:#fcfbf7}
+.ic-time__track{border-top:1px solid #d9d3c7}
+.ic-home-footer{border-top:1px solid #d9d3c7}
+.directory-page .directory-hero{max-width:100%}
+.directory-page .directory-item{border-bottom-color:#e1ddd3}
+.directory-page .directory-item:hover{background:#f2efe6}
+body:has(.novel-chapter) #title-block-header h1.title{letter-spacing:.045em!important}
+body:has(.novel-chapter) .novel-chapter>p{line-height:1.93!important}
+body:has(.novel-chapter) .history-note{border-left:2px solid #8d9b87!important}
+@media(max-width:1080px){.ic-volume-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:790px){.ic-hero__figure:after{inset:10px}.ic-volume{min-height:225px}.ic-manifesto__grid{gap:22px!important}}
+@media(max-width:590px){.ic-volume-grid,.ic-picks{grid-template-columns:1fr!important}.ic-volume{min-height:195px}.ic-section__heading{gap:20px;flex-wrap:wrap}.ic-time__track{grid-template-columns:repeat(2,minmax(0,1fr))!important}.ic-home-footer{flex-wrap:wrap;gap:16px}.ic-hero__figure figcaption{display:none!important}}
