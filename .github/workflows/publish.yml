@@ -61,6 +61,8 @@ jobs:
         run: |
           mkdir -p _site/downloads
           cp downloads/invisible-civilization-complete.pdf _site/downloads/invisible-civilization-complete.pdf
+      - name: Version static assets for browser refresh
+        run: python scripts/version_assets.py
       - name: Validate published pages, links and reading scripts
         run: python scripts/site_smoke_test.py
       - uses: actions/configure-pages@v5
